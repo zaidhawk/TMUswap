@@ -1,0 +1,12 @@
+{
+  "name": "tmuswap",
+  "private": true,
+  "workspaces": [
+    "api",
+    "web",
+    "e2e"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}
