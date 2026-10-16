@@ -8,6 +8,26 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+
+    # A throwaway Postgres for the API tests, same version as docker-compose.yml.
+    services:
+      db:
+        image: postgres:16
+        env:
+          POSTGRES_USER: tmuswap
+          POSTGRES_PASSWORD: tmuswap
+          POSTGRES_DB: tmuswap
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U tmuswap"
+          --health-interval 2s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      DATABASE_URL: postgres://tmuswap:tmuswap@localhost:5432/tmuswap
+
     steps:
       - uses: actions/checkout@v4
 
@@ -19,5 +39,6 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
+      - run: npm run db:migrate -w api
       - run: npm test
       - run: npm run build --workspaces --if-present

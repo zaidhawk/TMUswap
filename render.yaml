@@ -1,0 +1,16 @@
+# Render Blueprint: describes the API service so Render can create it from this file.
+services:
+  - type: web
+    name: tmuswap-api
+    runtime: node
+    plan: free
+    region: ohio
+    buildCommand: npm ci && npm run build -w api
+    # Apply any new migrations, then start the server.
+    startCommand: npm run db:migrate:prod -w api && npm run start -w api
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: WEB_ORIGIN
+        sync: false
