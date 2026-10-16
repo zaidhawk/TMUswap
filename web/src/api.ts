@@ -2,6 +2,27 @@ const apiUrl = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
 
 export type User = { id: string; email: string; displayName: string | null };
 
+export type Course = { id: string; code: string; title: string };
+
+export type SectionKind = "lecture" | "lab" | "tutorial";
+
+export type Section = { id: string; kind: SectionKind; label: string };
+
+export type SwapRequest = {
+  id: string;
+  status: "open" | "matched" | "completed" | "cancelled" | "expired";
+  createdAt: string;
+  courseId: string;
+  courseCode: string;
+  courseTitle: string;
+  kind: SectionKind;
+  have: string;
+  wants: string[];
+};
+
+// Where students report a course that isn't listed yet.
+export const SUPPORT_EMAIL = "zaidhaque63@gmail.com";
+
 export class ApiError extends Error {
   constructor(
     message: string,

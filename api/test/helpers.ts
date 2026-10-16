@@ -17,3 +17,10 @@ export async function login(app: Express, email = "student@torontomu.ca") {
   const res = await agent.post("/auth/verify").send({ email, code }).expect(200);
   return { agent, res };
 }
+
+// Logs in and picks a display name, so the user can post requests.
+export async function loginReady(app: Express, email = "student@torontomu.ca") {
+  const { agent, res } = await login(app, email);
+  await agent.patch("/auth/me").send({ displayName: `Student ${email.split("@")[0]}` }).expect(200);
+  return { agent, userId: res.body.user.id as string };
+}

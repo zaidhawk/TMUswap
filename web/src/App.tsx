@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { BrowserRouter, Navigate, NavLink, Route, Routes } from "react-router";
 import { api, ApiError, type User } from "./api";
 import { LoginForm } from "./LoginForm";
 import { DisplayNameForm } from "./DisplayNameForm";
+import { MyRequests } from "./MyRequests";
+import { NewRequest } from "./NewRequest";
 
 type Auth =
   | { status: "loading" }
@@ -38,6 +41,33 @@ export function App() {
     setAuth({ status: "loggedOut" });
   }
 
+  if (auth.status === "loggedIn" && auth.user.displayName) {
+    return (
+      <BrowserRouter>
+        <header>
+          <h1>TMU Swap</h1>
+          <nav>
+            <NavLink to="/" end>
+              My requests
+            </NavLink>
+            <NavLink to="/new">New request</NavLink>
+            <span className="hint">{auth.user.displayName}</span>
+            <button className="link" onClick={logout}>
+              Log out
+            </button>
+          </nav>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<MyRequests />} />
+            <Route path="/new" element={<NewRequest />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    );
+  }
+
   return (
     <main>
       <h1>TMU Swap</h1>
@@ -51,15 +81,8 @@ export function App() {
       {auth.status === "loggedOut" && (
         <LoginForm onLoggedIn={(user) => setAuth({ status: "loggedIn", user })} />
       )}
-      {auth.status === "loggedIn" && !auth.user.displayName && (
+      {auth.status === "loggedIn" && (
         <DisplayNameForm onSaved={(user) => setAuth({ status: "loggedIn", user })} />
-      )}
-      {auth.status === "loggedIn" && auth.user.displayName && (
-        <section>
-          <h2>Hi, {auth.user.displayName}!</h2>
-          <p>You're logged in as {auth.user.email}. Swap requests are coming soon.</p>
-          <button onClick={logout}>Log out</button>
-        </section>
       )}
     </main>
   );

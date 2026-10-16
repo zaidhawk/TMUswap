@@ -7,8 +7,8 @@ services:
     region: ohio
     # --include=dev: the build needs TypeScript, which npm skips when NODE_ENV=production.
     buildCommand: npm ci --include=dev && npm run build -w api
-    # Apply any new migrations, then start the server.
-    startCommand: npm run db:migrate:prod -w api && npm run start -w api
+    # Apply any new migrations, load the course list (safe to repeat), then start the server.
+    startCommand: npm run db:migrate:prod -w api && npm run db:seed:prod -w api && npm run start -w api
     healthCheckPath: /health
     envVars:
       - key: NODE_ENV

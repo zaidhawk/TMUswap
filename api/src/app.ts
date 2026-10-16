@@ -2,6 +2,8 @@ import express, { type ErrorRequestHandler } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { authRouter } from "./auth/routes.js";
+import { coursesRouter } from "./courses/routes.js";
+import { requestsRouter } from "./requests/routes.js";
 import { testRouter } from "./test-routes.js";
 
 // The web app's address. Browsers block calls to the API from any other site.
@@ -19,6 +21,8 @@ export function createApp() {
   });
 
   app.use("/auth", authRouter);
+  app.use("/courses", coursesRouter);
+  app.use("/requests", requestsRouter);
 
   if (process.env.NODE_ENV !== "production") {
     app.use("/test", testRouter);
