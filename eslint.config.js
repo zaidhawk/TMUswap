@@ -8,6 +8,12 @@ export default tseslint.config(
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
+    rules: {
+      // A leading underscore marks a parameter as intentionally unused (e.g. Express's `_next`).
+      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    },
+  },
+  {
     files: ["api/**/*.ts"],
     languageOptions: { globals: globals.node },
   },

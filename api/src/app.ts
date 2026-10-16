@@ -1,4 +1,4 @@
-import express from "express";
+import express, { type ErrorRequestHandler } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { authRouter } from "./auth/routes.js";
@@ -23,6 +23,17 @@ export function createApp() {
   if (process.env.NODE_ENV !== "production") {
     app.use("/test", testRouter);
   }
+
+  app.use((_req, res) => {
+    res.status(404).json({ error: "Not found" });
+  });
+
+  // Any unexpected error: log the details for us, send the browser a plain JSON message.
+  const handleError: ErrorRequestHandler = (err, _req, res, _next) => {
+    console.error(err);
+    res.status(500).json({ error: "Something went wrong on our end. Try again in a minute." });
+  };
+  app.use(handleError);
 
   return app;
 }

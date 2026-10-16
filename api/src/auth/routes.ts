@@ -68,12 +68,24 @@ authRouter.post("/request-code", async (req, res) => {
   }
 
   const code = generateCode();
-  await db.insert(loginCodes).values({
-    email,
-    codeHash: hashCode(code),
-    expiresAt: new Date(Date.now() + CODE_TTL_MS),
-  });
-  await sendLoginCode(email, code);
+  const [row] = await db
+    .insert(loginCodes)
+    .values({
+      email,
+      codeHash: hashCode(code),
+      expiresAt: new Date(Date.now() + CODE_TTL_MS),
+    })
+    .returning({ id: loginCodes.id });
+
+  try {
+    await sendLoginCode(email, code);
+  } catch (err) {
+    // The student never got this code, so it shouldn't count toward their hourly limit.
+    await db.delete(loginCodes).where(eq(loginCodes.id, row!.id));
+    console.error("Failed to send login code:", err);
+    res.status(502).json({ error: "We couldn't send the email. Try again in a minute." });
+    return;
+  }
 
   res.json({ ok: true });
 });
