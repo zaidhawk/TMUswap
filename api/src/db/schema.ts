@@ -39,7 +39,8 @@ export const users = pgTable(
   {
     id: uuid("id").primaryKey().defaultRandom(),
     email: text("email").notNull().unique(),
-    displayName: text("display_name").notNull(),
+    // Null until the user picks one on their first login.
+    displayName: text("display_name"),
     isBanned: boolean("is_banned").notNull().default(false),
     createdAt: createdAt(),
   },
@@ -199,3 +200,5 @@ export const reports = pgTable("reports", {
   createdAt: createdAt(),
   resolvedAt: time("resolved_at"),
 });
+
+export type User = typeof users.$inferSelect;

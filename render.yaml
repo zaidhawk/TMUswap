@@ -5,12 +5,19 @@ services:
     runtime: node
     plan: free
     region: ohio
-    buildCommand: npm ci && npm run build -w api
+    # --include=dev: the build needs TypeScript, which npm skips when NODE_ENV=production.
+    buildCommand: npm ci --include=dev && npm run build -w api
     # Apply any new migrations, then start the server.
     startCommand: npm run db:migrate:prod -w api && npm run start -w api
     healthCheckPath: /health
     envVars:
+      - key: NODE_ENV
+        value: production
+      - key: AUTH_SECRET
+        generateValue: true
       - key: DATABASE_URL
         sync: false
       - key: WEB_ORIGIN
+        sync: false
+      - key: RESEND_API_KEY
         sync: false

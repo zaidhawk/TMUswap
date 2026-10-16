@@ -27,6 +27,7 @@ jobs:
 
     env:
       DATABASE_URL: postgres://tmuswap:tmuswap@localhost:5432/tmuswap
+      TEST_DATABASE_URL: postgres://tmuswap:tmuswap@localhost:5432/tmuswap_test
 
     steps:
       - uses: actions/checkout@v4
