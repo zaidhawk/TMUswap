@@ -1,8 +1,9 @@
-import { afterAll, describe, expect, it } from "vitest";
+import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { drizzle, type NodePgDatabase } from "drizzle-orm/node-postgres";
 import { pool } from "../src/db/index.js";
 import * as schema from "../src/db/schema.js";
 import { courses, messages, matches, sections, swapRequests, users } from "../src/db/schema.js";
+import { resetDb } from "./db.js";
 
 type Db = NodePgDatabase<typeof schema>;
 
@@ -38,6 +39,7 @@ async function seedSection(db: Db) {
   return { user: user!, course: course!, section: section! };
 }
 
+beforeAll(resetDb);
 afterAll(() => pool.end());
 
 describe("users", () => {
