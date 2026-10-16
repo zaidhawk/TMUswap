@@ -1,0 +1,20 @@
+# Local Postgres for development and tests. Start it with: docker compose up -d
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: tmuswap
+      POSTGRES_PASSWORD: tmuswap
+      POSTGRES_DB: tmuswap
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tmuswap"]
+      interval: 2s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  db-data:
