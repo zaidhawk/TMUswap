@@ -147,6 +147,8 @@ export const matches = pgTable(
     firstRequestId: uuid("first_request_id"),
     // Set when the last member presses Start countdown: the moment everyone starts, by the server's clock.
     countdownStartsAt: time("countdown_starts_at"),
+    // When the match ended (completed, failed or expired). Its chat is deleted 30 days later.
+    closedAt: time("closed_at"),
   },
   (t) => [check("matches_size_2_or_3", sql`${t.size} IN (2, 3)`)],
 );

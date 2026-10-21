@@ -3,8 +3,10 @@ import { config } from "../config.js";
 export const COUNTDOWN_LEAD_MS = 10_000;
 
 // The current time, as the countdown rules see it. Tests replace now() to check the nightly
-// downtime without depending on when they happen to run.
-export const clock = { now: () => new Date() };
+// downtime without depending on when they happen to run. End-to-end tests run a real server,
+// so they pin it with FIXED_COUNTDOWN_TIME instead (ignored in production).
+const fixedTime = !config.isProduction ? process.env.FIXED_COUNTDOWN_TIME : undefined;
+export const clock = { now: () => (fixedTime ? new Date(fixedTime) : new Date()) };
 
 // The time of day in Toronto as "HH:MM", and the date as "YYYY-MM-DD".
 function torontoParts(date: Date) {

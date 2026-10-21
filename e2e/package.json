@@ -2,5 +2,15 @@
   "name": "@tmuswap/e2e",
   "version": "0.0.0",
   "private": true,
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^24.19.2",
+    "pg": "^8.23.1",
+    "typescript": "~6.0.3"
+  }
 }

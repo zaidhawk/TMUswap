@@ -51,12 +51,14 @@ async function loadMatchView(matchId: string, userId: string) {
   if (!rows.some((r) => r.userId === userId)) return { status: 403 as const };
 
   // Put the members in swap order starting with you: each person gives the section the
-  // previous person gets.
+  // previous person gets. (The chain can be broken if someone has since deleted their account.)
   const ordered = [rows.find((r) => r.userId === userId)!];
   while (ordered.length < rows.length) {
-    const last = ordered[ordered.length - 1]!;
-    ordered.push(rows.find((r) => r.gives === last.gets)!);
+    const next = rows.find((r) => r.gives === ordered[ordered.length - 1]!.gets);
+    if (!next || ordered.includes(next)) break;
+    ordered.push(next);
   }
+  for (const r of rows) if (!ordered.includes(r)) ordered.push(r);
   const members = ordered.map((r) => ({
     memberId: r.memberId,
     displayName: r.displayName,
@@ -311,7 +313,10 @@ matchesRouter.post("/:id/outcome", async (req, res) => {
     if (match.status !== "accepted" && match.status !== "counting_down") {
       return { status: 409, error: "This swap has already been closed" };
     }
-    await tx.update(matches).set({ status: body.outcome }).where(eq(matches.id, match.id));
+    await tx
+      .update(matches)
+      .set({ status: body.outcome, closedAt: new Date() })
+      .where(eq(matches.id, match.id));
     await tx
       .update(swapRequests)
       .set({ status: body.outcome === "completed" ? "completed" : "cancelled" })

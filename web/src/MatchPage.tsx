@@ -5,6 +5,7 @@ import { getSocket } from "./socket";
 import { KIND_LABELS } from "./sections";
 import { Chat } from "./Chat";
 import { Countdown } from "./Countdown";
+import { ReportForm } from "./ReportForm";
 
 const CHAT_OPEN = new Set<Match["status"]>(["accepted", "counting_down", "completed", "failed"]);
 
@@ -76,12 +77,22 @@ export function MatchPage({ user }: { user: User }) {
     }
   }
 
-  if (error && !match) return <p className="error">{error}</p>;
+  if (error && !match) {
+    return (
+      <section>
+        <h2>This match isn't available</h2>
+        <p>
+          {error} It may have ended, or the link may be wrong. <Link to="/">Back to my requests</Link>
+        </p>
+      </section>
+    );
+  }
   if (!match) return <p className="hint">Loading…</p>;
 
   const me = match.members.find((m) => m.isMe)!;
   const others = match.members.filter((m) => !m.isMe);
-  const giverToMe = match.members.find((m) => m.gives === me.gets)!;
+  // Missing if that student has since deleted their account.
+  const giverToMe = match.members.find((m) => m.gives === me.gets);
 
   return (
     <section>
@@ -94,7 +105,8 @@ export function MatchPage({ user }: { user: User }) {
 
       <div className="card">
         <p>
-          You give <strong>{me.gives}</strong> and get <strong>{me.gets}</strong> from {giverToMe.displayName}.
+          You give <strong>{me.gives}</strong> and get <strong>{me.gets}</strong>
+          {giverToMe ? ` from ${giverToMe.displayName}` : ""}.
         </p>
         {others.map((m) => (
           <p key={m.memberId} className="hint">
@@ -156,6 +168,8 @@ export function MatchPage({ user }: { user: User }) {
           <Chat matchId={match.id} myUserId={user.id} canSend={CHAT_OPEN.has(match.status)} />
         </>
       )}
+
+      <ReportForm matchId={match.id} others={others} />
     </section>
   );
 }

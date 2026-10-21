@@ -1,7 +1,16 @@
 import { and, asc, eq, inArray, lt, sql } from "drizzle-orm";
 import { config } from "../config.js";
 import { db } from "../db/index.js";
-import { courses, matches, matchMembers, sections, swapRequests, swapWants, users } from "../db/schema.js";
+import {
+  courses,
+  matches,
+  matchMembers,
+  messages,
+  sections,
+  swapRequests,
+  swapWants,
+  users,
+} from "../db/schema.js";
 import { sendMatchFound } from "../email.js";
 import { emitToUsers } from "../realtime/io.js";
 import { findTriangle, type Cycle, type OpenRequest } from "./cycles.js";
@@ -181,7 +190,7 @@ export async function endMatch(
   matchId: string,
   nextStatus: (member: MemberOutcome) => "open" | "cancelled" | "expired",
 ): Promise<string[]> {
-  await tx.update(matches).set({ status: "expired" }).where(eq(matches.id, matchId));
+  await tx.update(matches).set({ status: "expired", closedAt: new Date() }).where(eq(matches.id, matchId));
   const members = await tx
     .select({
       requestId: matchMembers.requestId,
@@ -222,9 +231,25 @@ export async function expireDueMatches(now = new Date()): Promise<string[]> {
   return reopened;
 }
 
-// The safety net, run every 10 minutes: expire stale matches, then try every open request,
-// oldest first.
+export const CHAT_RETENTION_MS = 30 * 24 * 60 * 60 * 1000;
+
+// Privacy promise: chats are deleted 30 days after their match ends.
+export async function deleteOldChats(now = new Date()): Promise<number> {
+  const closedLongAgo = db
+    .select({ id: matches.id })
+    .from(matches)
+    .where(lt(matches.closedAt, new Date(now.getTime() - CHAT_RETENTION_MS)));
+  const deleted = await db
+    .delete(messages)
+    .where(inArray(messages.matchId, closedLongAgo))
+    .returning({ id: messages.id });
+  return deleted.length;
+}
+
+// The safety net, run every 10 minutes: delete old chats, expire stale matches, then try every
+// open request, oldest first.
 export async function runSweep(now = new Date()): Promise<void> {
+  await deleteOldChats(now);
   await expireDueMatches(now);
   const open = await db
     .select({ id: swapRequests.id })

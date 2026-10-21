@@ -36,6 +36,13 @@
       "when": 1792142307586,
       "tag": "0004_backfill_first_mover",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1792543050425,
+      "tag": "0005_match_closed_at",
+      "breakpoints": true
     }
   ]
 }

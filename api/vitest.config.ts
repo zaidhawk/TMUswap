@@ -11,5 +11,12 @@ export default defineConfig({
     globalSetup: ["./test/global-setup.ts"],
     // Test files share one database, so run them one at a time.
     fileParallelism: false,
+    coverage: {
+      provider: "v8",
+      include: ["src/**/*.ts"],
+      // Startup scripts, run by hand or on deploy rather than by tests.
+      exclude: ["src/index.ts", "src/db/migrate.ts", "src/db/seed.ts", "src/**/*.d.ts"],
+      reporter: ["text-summary", "lcov"],
+    },
   },
 });

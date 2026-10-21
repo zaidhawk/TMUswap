@@ -17,6 +17,8 @@ export const config = {
   // Last day to enrol for the term (YYYY-MM-DD, Toronto time). After it, swaps are blocked.
   // Unset until TMU publishes the date.
   lastDayToEnrol: process.env.LAST_DAY_TO_ENROL ?? null,
+  // Receives reports and money-mention alerts.
+  adminEmail: process.env.ADMIN_EMAIL ?? "zaidhaque63@gmail.com",
   // Must be on a domain verified in Resend.
   emailFrom: process.env.EMAIL_FROM ?? "TMU Swap <login@swap.zaidhaque.ca>",
 };
