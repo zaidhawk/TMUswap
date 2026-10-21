@@ -135,6 +135,37 @@ export const swapWants = pgTable(
   ],
 );
 
+export const offerStatus = pgEnum("offer_status", ["pending", "accepted", "declined", "withdrawn"]);
+
+// "I'll give you my section for yours": an offer made from the Board on someone's open request,
+// for when the sections don't line up for automatic matching. The poster accepts or declines.
+export const swapOffers = pgTable(
+  "swap_offers",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    requestId: uuid("request_id")
+      .notNull()
+      .references(() => swapRequests.id, { onDelete: "cascade" }),
+    fromUserId: uuid("from_user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    // Same course and kind as the request's section (checked in code).
+    offeredSectionId: uuid("offered_section_id")
+      .notNull()
+      .references(() => sections.id),
+    status: offerStatus("status").notNull().default("pending"),
+    createdAt: createdAt(),
+    respondedAt: time("responded_at"),
+  },
+  (t) => [
+    // One waiting offer per person per request.
+    uniqueIndex("swap_offers_one_pending")
+      .on(t.requestId, t.fromUserId)
+      .where(sql`${t.status} = 'pending'`),
+    index("swap_offers_from_user_idx").on(t.fromUserId),
+  ],
+);
+
 export const matches = pgTable(
   "matches",
   {
@@ -219,7 +250,12 @@ export const feedback = pgTable("feedback", {
   createdAt: createdAt(),
 });
 
-export const analyticsEventType = pgEnum("analytics_event_type", ["signed_up", "request_posted"]);
+export const analyticsEventType = pgEnum("analytics_event_type", [
+  "signed_up",
+  "request_posted",
+  "offer_sent",
+  "offer_accepted",
+]);
 
 // Anonymous counts for the admin stats page: what happened and when, never who. Rows stay when
 // an account is deleted, so totals don't shrink. Matches are never deleted, so they're counted

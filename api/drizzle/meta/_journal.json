@@ -57,6 +57,13 @@
       "when": 1792606933865,
       "tag": "0007_feedback",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1792624882477,
+      "tag": "0008_swap_offers",
+      "breakpoints": true
     }
   ]
 }

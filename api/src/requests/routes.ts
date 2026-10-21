@@ -21,7 +21,7 @@ export const MAX_REQUESTS_PER_DAY = 10;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 // "11" and "011" mean the same section, so store every label as 3 digits.
-const sectionLabel = z
+export const sectionLabel = z
   .string({ error: "Enter a section number" })
   .trim()
   .regex(/^\d{1,3}$/, "Section numbers are 1–3 digits, like 011")
@@ -103,7 +103,7 @@ async function loadRequests(where: ReturnType<typeof eq>) {
 }
 
 // Finds or creates the sections with these labels and returns their ids by label.
-async function upsertSections(
+export async function upsertSections(
   tx: Parameters<Parameters<typeof db.transaction>[0]>[0],
   courseId: string,
   kind: "lecture" | "lab" | "tutorial",

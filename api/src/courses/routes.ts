@@ -8,7 +8,7 @@ import { courses, sections } from "../db/schema.js";
 export const coursesRouter = Router();
 
 // Escapes the LIKE wildcards % and _ so a search for "100%" is taken literally.
-function likeEscape(text: string): string {
+export function likeEscape(text: string): string {
   return text.replace(/[\\%_]/g, "\\$&");
 }
 

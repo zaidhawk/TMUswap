@@ -1,29 +1,39 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router";
-import { api, ApiError, type SwapRequest } from "./api";
+import { api, ApiError, type ReceivedOffer, type SentOffer, type SwapRequest } from "./api";
+import { ReceivedOffers, SentOffers } from "./Offers";
 import { KIND_LABELS, parseSectionList } from "./sections";
 import { getSocket } from "./socket";
 
+type OffersData = { received: ReceivedOffer[]; sent: SentOffer[] };
+
 export function MyRequests() {
   const [requests, setRequests] = useState<SwapRequest[] | null>(null);
+  const [offers, setOffers] = useState<OffersData>({ received: [], sent: [] });
   const [error, setError] = useState("");
 
-  // Load your requests, and reload live when one of them is matched or its match changes.
+  const loadOffers = useCallback(() => {
+    api<OffersData>("/offers")
+      .then(setOffers)
+      .catch(() => {}); // the requests list still works without them
+  }, []);
+
+  // Load your requests and offers, and reload live when a match or an offer changes.
   useEffect(() => {
     function load() {
       api<{ requests: SwapRequest[] }>("/requests/mine")
         .then(({ requests }) => setRequests(requests))
         .catch((e) => setError(e instanceof ApiError ? e.message : "Couldn't load your requests."));
+      loadOffers();
     }
     load();
     const socket = getSocket();
-    socket.on("match:new", load);
-    socket.on("match:updated", load);
+    const events = ["match:new", "match:updated", "offer:new", "offer:updated"];
+    for (const event of events) socket.on(event, load);
     return () => {
-      socket.off("match:new", load);
-      socket.off("match:updated", load);
+      for (const event of events) socket.off(event, load);
     };
-  }, []);
+  }, [loadOffers]);
 
   function replace(updated: SwapRequest) {
     setRequests((current) => current?.map((r) => (r.id === updated.id ? updated : r)) ?? null);
@@ -38,14 +48,18 @@ export function MyRequests() {
   return (
     <section>
       <h2>My requests</h2>
+      <ReceivedOffers offers={offers.received} onChange={loadOffers} />
+      {offers.received.length > 0 && <h3>Your requests</h3>}
       {open.length === 0 && (
         <p>
-          You have no open requests. <Link to="/new">Post one</Link> to get matched.
+          You have no open requests. <Link to="/new">Post one</Link> to get matched, or browse the{" "}
+          <Link to="/board">Board</Link>.
         </p>
       )}
       {open.map((r) => (
         <RequestCard key={r.id} request={r} onChange={replace} />
       ))}
+      <SentOffers offers={offers.sent} onChange={loadOffers} />
       {past.length > 0 && (
         <>
           <h3>Past requests</h3>

@@ -101,6 +101,10 @@ export function NewRequest() {
       </label>
 
       {error && <p className="error">{error}</p>}
+      <p className="hint">
+        Your request also goes on the Board, without your name, so others can offer you a swap even if their section
+        isn't on your list.
+      </p>
       <button disabled={busy || !noWaitlist}>{busy ? "Posting…" : "Post request"}</button>
     </form>
   );

@@ -5,6 +5,7 @@ import { LoginForm } from "./LoginForm";
 import { DisplayNameForm } from "./DisplayNameForm";
 import { MyRequests } from "./MyRequests";
 import { NewRequest } from "./NewRequest";
+import { Board } from "./Board";
 import { MatchPage } from "./MatchPage";
 import { Account } from "./Account";
 import { Rules } from "./Rules";
@@ -93,6 +94,7 @@ export function App() {
             <NavLink to="/" end>
               My requests
             </NavLink>
+            <NavLink to="/board">Board</NavLink>
             <NavLink to="/new">New request</NavLink>
             <NavLink to="/account">Account</NavLink>
             {auth.status === "loggedIn" && auth.user.isAdmin && <NavLink to="/admin">Stats</NavLink>}
@@ -111,6 +113,7 @@ export function App() {
         {auth.status === "loggedIn" && auth.user.displayName ? (
           <Routes>
             <Route path="/" element={<MyRequests />} />
+            <Route path="/board" element={<Board />} />
             <Route path="/new" element={<NewRequest />} />
             <Route path="/matches/:id" element={<MatchPage user={auth.user} />} />
             <Route
