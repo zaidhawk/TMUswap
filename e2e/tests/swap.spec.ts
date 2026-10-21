@@ -64,6 +64,24 @@ test("a student can report someone they were matched with", async ({ browser }) 
   await expect(dan.getByText("Thanks. We've received your report")).toBeVisible();
 });
 
+test("a student can send feedback from any page and get back to it", async ({ browser }) => {
+  const eve = await signUp(browser, "Eve");
+  await eve.getByRole("link", { name: "New request" }).click();
+  await eve.getByRole("link", { name: "Feedback" }).click();
+  await eve.getByLabel("Your message").fill("Search found my course right away.");
+  await eve.getByRole("button", { name: "Send feedback" }).click();
+
+  await expect(eve.getByRole("heading", { name: "Thanks!" })).toBeVisible();
+  await eve.getByRole("link", { name: "Back to where you were" }).click();
+  await expect(eve.getByRole("heading", { name: "New swap request" })).toBeVisible();
+});
+
+test("someone who can't log in is told how to reach us", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("link", { name: "Feedback" }).click();
+  await expect(page.getByText("Can't log in, or the code never arrived?")).toBeVisible();
+});
+
 test("the rules are readable without logging in, and the login rejects non-TMU emails", async ({ page }) => {
   await page.goto("/rules");
   await expect(page.getByRole("heading", { name: "No wait-listed sections" })).toBeVisible();

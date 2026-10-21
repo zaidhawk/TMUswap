@@ -28,6 +28,9 @@ Section swaps happen in Reddit threads and Discord servers today. Posts get buri
 - **Step-by-step plan.** Who drops first, who uses Swap into which freed seat, and who adds last. Only one person is ever without a seat, for a few seconds.
 - **Safety.** A report button in every match, and an automatic admin alert when a chat mentions money (selling seats is banned).
 - **Privacy.** Other students only see your display name. Chats are deleted 30 days after a match ends, and you can delete your account at any time.
+- **523 courses** in computer science, math, physics, chemistry and every engineering program, taken from TMU's 2026–27 undergraduate calendar. Students type their own section numbers, so new sections need no setup.
+- **Feedback from any page.** Each message reaches the admin with the page it came from and the browser used, so bugs can be reproduced.
+- **Admin stats.** Sign-ups, requests, matches and completed swaps, all time and per day, from anonymous counts.
 
 ## How it works
 

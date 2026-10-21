@@ -9,6 +9,7 @@ import { MatchPage } from "./MatchPage";
 import { Account } from "./Account";
 import { Rules } from "./Rules";
 import { Stats } from "./Stats";
+import { Feedback } from "./Feedback";
 import { disconnectSocket, getSocket } from "./socket";
 
 type Auth =
@@ -118,11 +119,16 @@ export function App() {
             />
             <Route path="/rules" element={<Rules />} />
             {auth.user.isAdmin && <Route path="/admin" element={<Stats />} />}
+            <Route path="/feedback" element={<Feedback loggedIn />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         ) : (
           <Routes>
             <Route path="/rules" element={<Rules />} />
+            {/* Logged in but no display name yet still counts: they may be stuck on that step. */}
+            {auth.status !== "loading" && (
+              <Route path="/feedback" element={<Feedback loggedIn={auth.status === "loggedIn"} />} />
+            )}
             <Route
               path="*"
               element={
@@ -143,10 +149,18 @@ export function App() {
         )}
       </main>
 
-      <footer>
-        <Link to="/rules">Rules</Link> · Not affiliated with TMU. We never ask for your TMU password.
-      </footer>
+      <Footer />
     </BrowserRouter>
+  );
+}
+
+function Footer() {
+  const { pathname } = useLocation();
+  return (
+    <footer>
+      <Link to="/rules">Rules</Link> · <Link to="/feedback" state={{ from: pathname }}>Feedback</Link> · Not
+      affiliated with TMU. We never ask for your TMU password.
+    </footer>
   );
 }
 
