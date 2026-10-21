@@ -14,6 +14,9 @@ export const config = {
   webOrigin: process.env.WEB_ORIGIN ?? "http://localhost:5173",
   // The term students are swapping for. Courses are seeded from data/courses-<term>.csv.
   currentTerm: process.env.CURRENT_TERM ?? "2027W",
+  // Last day to enrol for the term (YYYY-MM-DD, Toronto time). After it, swaps are blocked.
+  // Unset until TMU publishes the date.
+  lastDayToEnrol: process.env.LAST_DAY_TO_ENROL ?? null,
   // Must be on a domain verified in Resend.
   emailFrom: process.env.EMAIL_FROM ?? "TMU Swap <login@swap.zaidhaque.ca>",
 };

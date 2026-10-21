@@ -2,15 +2,27 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { api, ApiError, type SwapRequest } from "./api";
 import { KIND_LABELS, parseSectionList } from "./sections";
+import { getSocket } from "./socket";
 
 export function MyRequests() {
   const [requests, setRequests] = useState<SwapRequest[] | null>(null);
   const [error, setError] = useState("");
 
+  // Load your requests, and reload live when one of them is matched or its match changes.
   useEffect(() => {
-    api<{ requests: SwapRequest[] }>("/requests/mine")
-      .then(({ requests }) => setRequests(requests))
-      .catch((e) => setError(e instanceof ApiError ? e.message : "Couldn't load your requests."));
+    function load() {
+      api<{ requests: SwapRequest[] }>("/requests/mine")
+        .then(({ requests }) => setRequests(requests))
+        .catch((e) => setError(e instanceof ApiError ? e.message : "Couldn't load your requests."));
+    }
+    load();
+    const socket = getSocket();
+    socket.on("match:new", load);
+    socket.on("match:updated", load);
+    return () => {
+      socket.off("match:new", load);
+      socket.off("match:updated", load);
+    };
   }, []);
 
   function replace(updated: SwapRequest) {

@@ -4,30 +4,31 @@ import { db } from "../db/index.js";
 import { sessions, users, type User } from "../db/schema.js";
 import { SESSION_COOKIE, hashToken } from "./sessions.js";
 
-// Rejects the request unless it carries a valid session cookie for a user who isn't banned.
-export const requireAuth: RequestHandler = async (req, res, next) => {
-  const token: unknown = req.cookies?.[SESSION_COOKIE];
-  if (typeof token !== "string") {
-    res.status(401).json({ error: "Not logged in" });
-    return;
-  }
-
+// The user a session token belongs to, or null if the session doesn't exist or has expired.
+// Used for both HTTP requests and WebSocket connections.
+export async function findSessionUser(token: string): Promise<User | null> {
   const [row] = await db
     .select({ user: users, expiresAt: sessions.expiresAt })
     .from(sessions)
     .innerJoin(users, eq(users.id, sessions.userId))
     .where(eq(sessions.id, hashToken(token)));
+  return row && row.expiresAt > new Date() ? row.user : null;
+}
 
-  if (!row || row.expiresAt <= new Date()) {
+// Rejects the request unless it carries a valid session cookie for a user who isn't banned.
+export const requireAuth: RequestHandler = async (req, res, next) => {
+  const token: unknown = req.cookies?.[SESSION_COOKIE];
+  const user = typeof token === "string" ? await findSessionUser(token) : null;
+  if (!user) {
     res.status(401).json({ error: "Not logged in" });
     return;
   }
-  if (row.user.isBanned) {
+  if (user.isBanned) {
     res.status(403).json({ error: "This account has been banned" });
     return;
   }
 
-  res.locals.user = row.user;
+  res.locals.user = user;
   next();
 };
 

@@ -22,6 +22,20 @@
       "when": 1792134014980,
       "tag": "0002_display_name_optional",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792141671189,
+      "tag": "0003_countdown",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1792142307586,
+      "tag": "0004_backfill_first_mover",
+      "breakpoints": true
     }
   ]
 }

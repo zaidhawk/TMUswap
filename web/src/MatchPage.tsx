@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
-import { api, ApiError, type Match } from "./api";
+import { api, ApiError, type Match, type User } from "./api";
+import { getSocket } from "./socket";
 import { KIND_LABELS } from "./sections";
+import { Chat } from "./Chat";
+import { Countdown } from "./Countdown";
 
-const REFRESH_MS = 15_000;
+const CHAT_OPEN = new Set<Match["status"]>(["accepted", "counting_down", "completed", "failed"]);
 
 // "23h 05m left", or "less than a minute left".
 function timeLeft(expiresAt: string, now: number): string {
@@ -14,44 +17,58 @@ function timeLeft(expiresAt: string, now: number): string {
   return h > 0 ? `${h}h ${String(m).padStart(2, "0")}m left` : `${m}m left`;
 }
 
-export function MatchPage() {
+export function MatchPage({ user }: { user: User }) {
   const { id } = useParams();
   const [match, setMatch] = useState<Match | null>(null);
+  // Server clock minus this browser's clock, so the countdown is the same for everyone.
+  const [clockOffset, setClockOffset] = useState(0);
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
   const [now, setNow] = useState(() => Date.now());
 
-  // Load the match, then refresh every 15 seconds while we wait for the others to answer.
-  // (Week 5 replaces this polling with live updates over a WebSocket.)
+  const show = useCallback((m: Match) => {
+    setMatch(m);
+    setNow(Date.now());
+    setClockOffset(new Date(m.serverTime).getTime() - Date.now());
+  }, []);
+
+  // Keeps "time left to accept" current.
+  useEffect(() => {
+    const timer = setInterval(() => setNow(Date.now()), 30_000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // Load the match, and reload whenever the server says it changed (someone accepted,
+  // pressed Start, and so on) or the connection comes back after a drop.
   useEffect(() => {
     let stopped = false;
     function load() {
       api<{ match: Match }>(`/matches/${id}`)
-        .then(({ match }) => {
-          if (!stopped) setMatch(match);
-        })
-        .catch((e) => {
-          if (!stopped) setError(e instanceof ApiError ? e.message : "Couldn't load this match.");
-        });
-      setNow(Date.now());
+        .then(({ match }) => !stopped && show(match))
+        .catch((e) => !stopped && setError(e instanceof ApiError ? e.message : "Couldn't load this match."));
     }
+    function onUpdate(event: { matchId: string }) {
+      if (event.matchId === id) load();
+    }
+
     load();
-    const timer = setInterval(load, REFRESH_MS);
+    const socket = getSocket();
+    socket.on("match:updated", onUpdate);
+    socket.on("connect", load);
     return () => {
       stopped = true;
-      clearInterval(timer);
+      socket.off("match:updated", onUpdate);
+      socket.off("connect", load);
     };
-  }, [id]);
+  }, [id, show]);
 
-  async function answer(accept: boolean) {
-    if (!accept && !window.confirm("Decline this swap? Your request will be cancelled, and you can post a new one.")) {
-      return;
-    }
+  async function act(path: string, body: object, confirmText?: string) {
+    if (confirmText && !window.confirm(confirmText)) return;
     setError("");
     setBusy(true);
     try {
-      const { match } = await api<{ match: Match }>(`/matches/${id}/accept`, { method: "POST", body: { accept } });
-      setMatch(match);
+      const { match } = await api<{ match: Match }>(`/matches/${id}/${path}`, { method: "POST", body });
+      show(match);
     } catch (e) {
       setError(e instanceof ApiError ? e.message : "Something went wrong. Try again.");
     } finally {
@@ -80,8 +97,9 @@ export function MatchPage() {
           You give <strong>{me.gives}</strong> and get <strong>{me.gets}</strong> from {giverToMe.displayName}.
         </p>
         {others.map((m) => (
-          <p key={m.displayName} className="hint">
-            {m.displayName} gives {m.gives}, gets {m.gets} · {m.accepted ? "✓ accepted" : "hasn't answered yet"}
+          <p key={m.memberId} className="hint">
+            {m.displayName} gives {m.gives}, gets {m.gets}
+            {match.status === "proposed" && (m.accepted ? " · ✓ accepted" : " · hasn't answered yet")}
           </p>
         ))}
       </div>
@@ -91,24 +109,30 @@ export function MatchPage() {
           <p>
             {me.accepted
               ? "You accepted. Waiting for the others."
-              : "Everyone has to accept before you can coordinate the swap."}{" "}
-            <span className="hint">({timeLeft(match.expiresAt, now)})</span>
+              : "Everyone has to accept before you can chat and coordinate the swap."}{" "}
+            <span className="hint">({timeLeft(match.expiresAt, now + clockOffset)})</span>
           </p>
           {!me.accepted && (
             <div className="row">
-              <button disabled={busy} onClick={() => answer(true)}>
+              <button disabled={busy} onClick={() => act("accept", { accept: true })}>
                 Accept swap
               </button>
-              <button className="secondary danger" disabled={busy} onClick={() => answer(false)}>
+              <button
+                className="secondary danger"
+                disabled={busy}
+                onClick={() =>
+                  act(
+                    "accept",
+                    { accept: false },
+                    "Decline this swap? Your request will be cancelled, and you can post a new one.",
+                  )
+                }
+              >
                 Decline
               </button>
             </div>
           )}
         </>
-      )}
-
-      {match.status === "accepted" && (
-        <p>Everyone accepted! Next you'll chat to plan the swap and press Start countdown together (coming soon).</p>
       )}
 
       {match.status === "expired" && (
@@ -118,6 +142,20 @@ export function MatchPage() {
       )}
 
       {error && <p className="error">{error}</p>}
+
+      {CHAT_OPEN.has(match.status) && (
+        <>
+          <Countdown
+            match={match}
+            clockOffset={clockOffset}
+            busy={busy}
+            onPress={(press) => act("start-countdown", { press })}
+            onChooseFirst={(memberId) => act("first-mover", { memberId })}
+            onOutcome={(outcome) => act("outcome", { outcome })}
+          />
+          <Chat matchId={match.id} myUserId={user.id} canSend={CHAT_OPEN.has(match.status)} />
+        </>
+      )}
     </section>
   );
 }

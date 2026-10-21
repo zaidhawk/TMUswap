@@ -128,7 +128,7 @@ nav .hint {
   margin-left: auto;
 }
 
-header + main {
+main.wide {
   max-width: 560px;
   padding-top: 24px;
 }
@@ -231,4 +231,82 @@ button.result:hover {
 .badge-matched {
   color: var(--text);
   border-color: var(--text);
+}
+
+.banner {
+  max-width: 560px;
+  margin: 12px auto 0;
+  padding: 10px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-log {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 360px;
+  overflow-y: auto;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.bubble {
+  max-width: 80%;
+  align-self: flex-start;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.bubble.mine {
+  align-self: flex-end;
+  border-color: var(--accent);
+}
+
+.bubble p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.chat-form {
+  flex-direction: row;
+}
+
+.chat-form input {
+  flex: 1;
+  min-width: 0;
+}
+
+.steps {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.my-step {
+  font-weight: 600;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 16px;
+}
+
+.countdown-number {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
 }

@@ -1,4 +1,4 @@
-const apiUrl = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
+export const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
 
 export type User = { id: string; email: string; displayName: string | null };
 
@@ -22,11 +22,23 @@ export type SwapRequest = {
 };
 
 export type MatchMember = {
+  memberId: string;
   displayName: string;
   gives: string;
   gets: string;
   accepted: boolean;
+  pressedStart: boolean;
+  goesFirst: boolean;
   isMe: boolean;
+};
+
+export type SwapStep = {
+  memberId: string;
+  displayName: string;
+  isMe: boolean;
+  action: "drop" | "swap" | "add";
+  from?: string;
+  to?: string;
 };
 
 export type Match = {
@@ -38,6 +50,19 @@ export type Match = {
   courseTitle: string;
   kind: SectionKind;
   members: MatchMember[];
+  steps: SwapStep[];
+  countdownStartsAt: string | null;
+  countdownBlockedReason: string | null;
+  serverTime: string;
+};
+
+export type ChatMessage = {
+  id: string;
+  matchId: string;
+  senderId: string;
+  senderName: string;
+  body: string;
+  createdAt: string;
 };
 
 // Where students report a course that isn't listed yet.
@@ -57,7 +82,7 @@ export class ApiError extends Error {
 export async function api<T>(path: string, init: { method?: string; body?: unknown } = {}): Promise<T> {
   let res: Response;
   try {
-    res = await fetch(`${apiUrl}${path}`, {
+    res = await fetch(`${API_URL}${path}`, {
       method: init.method ?? "GET",
       credentials: "include", // send and receive the session cookie
       headers: init.body === undefined ? undefined : { "Content-Type": "application/json" },

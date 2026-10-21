@@ -143,6 +143,10 @@ export const matches = pgTable(
     status: matchStatus("status").notNull().default("proposed"),
     createdAt: createdAt(),
     expiresAt: time("expires_at").notNull(),
+    // The member who drops their section first. Only they are briefly without a seat.
+    firstRequestId: uuid("first_request_id"),
+    // Set when the last member presses Start countdown: the moment everyone starts, by the server's clock.
+    countdownStartsAt: time("countdown_starts_at"),
   },
   (t) => [check("matches_size_2_or_3", sql`${t.size} IN (2, 3)`)],
 );

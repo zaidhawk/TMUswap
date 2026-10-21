@@ -18,9 +18,14 @@ export async function login(app: Express, email = "student@torontomu.ca") {
   return { agent, res };
 }
 
-// Logs in and picks a display name, so the user can post requests.
+// Logs in and picks a display name, so the user can post requests. `cookie` is the raw
+// "sid=..." value, for connecting a WebSocket as this user.
 export async function loginReady(app: Express, email = "student@torontomu.ca") {
   const { agent, res } = await login(app, email);
   await agent.patch("/auth/me").send({ displayName: `Student ${email.split("@")[0]}` }).expect(200);
-  return { agent, userId: res.body.user.id as string };
+  return {
+    agent,
+    userId: res.body.user.id as string,
+    cookie: sessionCookie(res)!.split(";")[0]!,
+  };
 }

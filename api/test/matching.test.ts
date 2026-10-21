@@ -64,9 +64,15 @@ describe("pairs", () => {
     const view = (await ann.get("/requests/mine")).body.requests[0];
     const res = await ann.get(`/matches/${view.matchId}`);
 
-    expect(res.body.match.members).toEqual([
-      { displayName: "Student ann", gives: "011", gets: "012", accepted: false, isMe: true },
-      { displayName: "Student bob", gives: "012", gets: "011", accepted: false, isMe: false },
+    expect(res.body.match.members).toMatchObject([
+      { displayName: "Student ann", gives: "011", gets: "012", accepted: false, isMe: true, goesFirst: true },
+      { displayName: "Student bob", gives: "012", gets: "011", accepted: false, isMe: false, goesFirst: false },
+    ]);
+    // ann posted first, so she drops first by default.
+    expect(res.body.match.steps.map((s: { displayName: string; action: string }) => [s.displayName, s.action])).toEqual([
+      ["Student ann", "drop"],
+      ["Student bob", "swap"],
+      ["Student ann", "add"],
     ]);
   });
 

@@ -3,6 +3,7 @@ import { config } from "../config.js";
 import { db } from "../db/index.js";
 import { courses, matches, matchMembers, sections, swapRequests, swapWants, users } from "../db/schema.js";
 import { sendMatchFound } from "../email.js";
+import { emitToUsers } from "../realtime/io.js";
 import { findTriangle, type Cycle, type OpenRequest } from "./cycles.js";
 
 export const MATCH_TTL_MS = 24 * 60 * 60 * 1000;
@@ -70,7 +71,12 @@ async function findTriangleFor(requestId: string): Promise<Cycle | null> {
 async function reserve(cycle: Cycle): Promise<string | null> {
   return db.transaction(async (tx) => {
     const locked = await tx
-      .select({ id: swapRequests.id, status: swapRequests.status, have: swapRequests.haveSectionId })
+      .select({
+        id: swapRequests.id,
+        status: swapRequests.status,
+        have: swapRequests.haveSectionId,
+        createdAt: swapRequests.createdAt,
+      })
       .from(swapRequests)
       .where(inArray(swapRequests.id, cycle))
       .orderBy(asc(swapRequests.id)) // same lock order everywhere, so two transactions can't deadlock
@@ -91,9 +97,15 @@ async function reserve(cycle: Cycle): Promise<string | null> {
     if (!stillValid) return null;
 
     await tx.update(swapRequests).set({ status: "matched" }).where(inArray(swapRequests.id, cycle));
+    // Whoever posted first goes first by default; the group can change it before the countdown.
+    const oldest = [...locked].sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())[0]!;
     const [match] = await tx
       .insert(matches)
-      .values({ size: cycle.length, expiresAt: new Date(Date.now() + MATCH_TTL_MS) })
+      .values({
+        size: cycle.length,
+        expiresAt: new Date(Date.now() + MATCH_TTL_MS),
+        firstRequestId: oldest.id,
+      })
       .returning({ id: matches.id });
     await tx.insert(matchMembers).values(
       cycle.map((id, i) => ({
@@ -107,10 +119,11 @@ async function reserve(cycle: Cycle): Promise<string | null> {
   });
 }
 
-// Emails everyone in a new match. A failed email is logged, never fatal: the match still stands.
+// Tells everyone in a new match, live in any open tab and by email. A failed email is logged,
+// never fatal: the match still stands.
 async function notifyMatch(matchId: string) {
   const members = await db
-    .select({ email: users.email, courseCode: courses.code })
+    .select({ userId: users.id, email: users.email, courseCode: courses.code })
     .from(matchMembers)
     .innerJoin(swapRequests, eq(swapRequests.id, matchMembers.requestId))
     .innerJoin(users, eq(users.id, swapRequests.userId))
@@ -118,6 +131,11 @@ async function notifyMatch(matchId: string) {
     .innerJoin(courses, eq(courses.id, sections.courseId))
     .where(eq(matchMembers.matchId, matchId));
 
+  emitToUsers(
+    members.map((m) => m.userId),
+    "match:new",
+    { matchId },
+  );
   const url = `${config.webOrigin}/matches/${matchId}`;
   await Promise.all(
     members.map((m) =>
