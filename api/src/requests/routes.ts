@@ -3,10 +3,11 @@ import { and, count, desc, eq, gt, inArray } from "drizzle-orm";
 import { z } from "zod";
 import { config } from "../config.js";
 import { db } from "../db/index.js";
-import { courses, sections, swapRequests, swapWants } from "../db/schema.js";
+import { courses, matches, matchMembers, sections, swapRequests, swapWants } from "../db/schema.js";
 import { currentUser, requireAuth } from "../auth/middleware.js";
 import { parseBody } from "../validate.js";
 import { isUniqueViolation } from "../db/errors.js";
+import { tryMatchRequest } from "../matching/engine.js";
 
 export const MAX_REQUESTS_PER_DAY = 10;
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -66,16 +67,30 @@ async function loadRequests(where: ReturnType<typeof eq>) {
     .orderBy(desc(swapRequests.createdAt));
   if (rows.length === 0) return [];
 
+  const ids = rows.map((r) => r.id);
   const wants = await db
     .select({ requestId: swapWants.requestId, label: sections.label })
     .from(swapWants)
     .innerJoin(sections, eq(sections.id, swapWants.sectionId))
-    .where(inArray(swapWants.requestId, rows.map((r) => r.id)))
+    .where(inArray(swapWants.requestId, ids))
     .orderBy(sections.label);
+
+  // The match each request is currently in, if any (ended matches don't count).
+  const active = await db
+    .select({ requestId: matchMembers.requestId, matchId: matchMembers.matchId })
+    .from(matchMembers)
+    .innerJoin(matches, eq(matches.id, matchMembers.matchId))
+    .where(
+      and(
+        inArray(matchMembers.requestId, ids),
+        inArray(matches.status, ["proposed", "accepted", "counting_down"]),
+      ),
+    );
 
   return rows.map((row) => ({
     ...row,
     wants: wants.filter((w) => w.requestId === row.id).map((w) => w.label),
+    matchId: active.find((a) => a.requestId === row.id)?.matchId ?? null,
   }));
 }
 
@@ -153,6 +168,7 @@ requestsRouter.post("/", async (req, res) => {
     throw err;
   }
 
+  await tryMatchRequest(requestId);
   const [created] = await loadRequests(eq(swapRequests.id, requestId));
   res.status(201).json({ request: created });
 });
@@ -192,13 +208,28 @@ requestsRouter.patch("/:id", async (req, res) => {
       res.status(400).json({ error: "You can't ask for the section you already have" });
       return;
     }
-    await db.transaction(async (tx) => {
+    const updated = await db.transaction(async (tx) => {
+      // Lock the request so it can't get matched halfway through the edit.
+      const [locked] = await tx
+        .select({ status: swapRequests.status })
+        .from(swapRequests)
+        .where(eq(swapRequests.id, existing.id))
+        .for("update");
+      if (locked?.status !== "open") return false;
+
       const ids = await upsertSections(tx, existing.courseId, existing.kind, wants);
       await tx.delete(swapWants).where(eq(swapWants.requestId, existing.id));
       await tx
         .insert(swapWants)
         .values(wants.map((label) => ({ requestId: existing.id, sectionId: ids.get(label)! })));
+      return true;
     });
+    if (!updated) {
+      res.status(409).json({ error: "This request just changed. Refresh and try again." });
+      return;
+    }
+    // New wants might complete a swap that wasn't possible before.
+    await tryMatchRequest(existing.id);
   }
 
   const [updated] = await loadRequests(eq(swapRequests.id, existing.id));

@@ -18,6 +18,26 @@ export type SwapRequest = {
   kind: SectionKind;
   have: string;
   wants: string[];
+  matchId: string | null;
+};
+
+export type MatchMember = {
+  displayName: string;
+  gives: string;
+  gets: string;
+  accepted: boolean;
+  isMe: boolean;
+};
+
+export type Match = {
+  id: string;
+  size: 2 | 3;
+  status: "proposed" | "accepted" | "counting_down" | "completed" | "failed" | "expired";
+  expiresAt: string;
+  courseCode: string;
+  courseTitle: string;
+  kind: SectionKind;
+  members: MatchMember[];
 };
 
 // Where students report a course that isn't listed yet.

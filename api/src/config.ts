@@ -10,6 +10,8 @@ export const config = {
   isProduction,
   // Signs login code hashes. Production must set a long random value; locally any value works.
   authSecret: isProduction ? required("AUTH_SECRET") : (process.env.AUTH_SECRET ?? "dev-only-secret"),
+  // The web app's address: the only site allowed to call the API, and the base for email links.
+  webOrigin: process.env.WEB_ORIGIN ?? "http://localhost:5173",
   // The term students are swapping for. Courses are seeded from data/courses-<term>.csv.
   currentTerm: process.env.CURRENT_TERM ?? "2027W",
   // Must be on a domain verified in Resend.

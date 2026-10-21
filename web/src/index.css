@@ -223,3 +223,12 @@ button.result {
 button.result:hover {
   border-color: var(--accent);
 }
+
+.match-link {
+  font-weight: 600;
+}
+
+.badge-matched {
+  color: var(--text);
+  border-color: var(--text);
+}

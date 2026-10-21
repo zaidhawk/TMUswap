@@ -1,18 +1,17 @@
 import express, { type ErrorRequestHandler } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import { config } from "./config.js";
 import { authRouter } from "./auth/routes.js";
 import { coursesRouter } from "./courses/routes.js";
 import { requestsRouter } from "./requests/routes.js";
+import { matchesRouter } from "./matching/routes.js";
 import { testRouter } from "./test-routes.js";
-
-// The web app's address. Browsers block calls to the API from any other site.
-const webOrigin = process.env.WEB_ORIGIN ?? "http://localhost:5173";
 
 // Builds the Express app without starting it, so tests can use it directly.
 export function createApp() {
   const app = express();
-  app.use(cors({ origin: webOrigin, credentials: true }));
+  app.use(cors({ origin: config.webOrigin, credentials: true }));
   app.use(express.json());
   app.use(cookieParser());
 
@@ -23,6 +22,7 @@ export function createApp() {
   app.use("/auth", authRouter);
   app.use("/courses", coursesRouter);
   app.use("/requests", requestsRouter);
+  app.use("/matches", matchesRouter);
 
   if (process.env.NODE_ENV !== "production") {
     app.use("/test", testRouter);

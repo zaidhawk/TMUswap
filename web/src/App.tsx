@@ -5,6 +5,7 @@ import { LoginForm } from "./LoginForm";
 import { DisplayNameForm } from "./DisplayNameForm";
 import { MyRequests } from "./MyRequests";
 import { NewRequest } from "./NewRequest";
+import { MatchPage } from "./MatchPage";
 
 type Auth =
   | { status: "loading" }
@@ -61,6 +62,7 @@ export function App() {
           <Routes>
             <Route path="/" element={<MyRequests />} />
             <Route path="/new" element={<NewRequest />} />
+            <Route path="/matches/:id" element={<MatchPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

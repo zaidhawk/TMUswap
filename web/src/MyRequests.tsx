@@ -111,6 +111,12 @@ function RequestCard({ request, onChange }: { request: SwapRequest; onChange: (r
         </form>
       )}
 
+      {request.matchId && (
+        <Link to={`/matches/${request.matchId}`} className="match-link">
+          You have a match! View it →
+        </Link>
+      )}
+
       {error && <p className="error">{error}</p>}
 
       {request.status === "open" && !editing && (
