@@ -6,7 +6,7 @@ import { courses, matches, matchMembers, swapRequests, swapWants } from "../src/
 import { seedCourses } from "../src/courses/seed.js";
 import { matchRequest, runSweep } from "../src/matching/engine.js";
 import { emailsSentTo } from "../src/email.js";
-import { resetDb } from "./db.js";
+import { resetDb, waitForLockWaiters } from "./db.js";
 import { loginReady } from "./helpers.js";
 
 const app = createApp();
@@ -232,17 +232,6 @@ describe("reserving", () => {
 });
 
 // Waits until `n` database sessions are blocked waiting for a row lock.
-async function waitForLockWaiters(n: number) {
-  for (let i = 0; i < 250; i++) {
-    const { rows } = await pool.query<{ n: number }>(
-      "SELECT count(*)::int AS n FROM pg_stat_activity WHERE wait_event_type = 'Lock' AND datname = current_database()",
-    );
-    if (rows[0]!.n >= n) return;
-    await new Promise((resolve) => setTimeout(resolve, 20));
-  }
-  throw new Error(`Expected ${n} sessions waiting on a lock`);
-}
-
 // Makes request `fromId` also want the section that request `toId` has, without triggering matching.
 async function addWant(fromId: string, toId: string) {
   const [to] = await db.select().from(swapRequests).where(eq(swapRequests.id, toId));

@@ -89,6 +89,8 @@ describe("totals", () => {
       accounts: 2,
       requestsPosted: 2,
       openRequests: 0,
+      offersSent: 0,
+      offersAccepted: 0,
       matches: 1,
       threeWayMatches: 0,
       acceptedMatches: 1,

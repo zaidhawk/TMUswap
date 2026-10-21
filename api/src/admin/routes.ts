@@ -10,6 +10,8 @@ type Totals = {
   accounts: number;
   requestsPosted: number;
   openRequests: number;
+  offersSent: number;
+  offersAccepted: number;
   matches: number;
   threeWayMatches: number;
   acceptedMatches: number;
@@ -36,6 +38,8 @@ export async function loadStats(now = new Date()): Promise<{ totals: Totals; day
       (SELECT count(*) FROM users)::int AS "accounts",
       (SELECT count(*) FROM analytics_events WHERE type = 'request_posted')::int AS "requestsPosted",
       (SELECT count(*) FROM swap_requests WHERE status = 'open')::int AS "openRequests",
+      (SELECT count(*) FROM analytics_events WHERE type = 'offer_sent')::int AS "offersSent",
+      (SELECT count(*) FROM analytics_events WHERE type = 'offer_accepted')::int AS "offersAccepted",
       (SELECT count(*) FROM matches)::int AS "matches",
       (SELECT count(*) FROM matches WHERE size = 3)::int AS "threeWayMatches",
       -- Everyone said yes. Failed swaps got that far too: an outcome can only be reported after.

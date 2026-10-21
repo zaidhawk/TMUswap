@@ -21,6 +21,40 @@ export type SwapRequest = {
   matchId: string | null;
 };
 
+// Someone's open request as it appears on the Board. Who posted it stays hidden until a match.
+export type BoardRequest = {
+  id: string;
+  createdAt: string;
+  courseCode: string;
+  courseTitle: string;
+  kind: SectionKind;
+  have: string;
+  wants: string[];
+  isMine: boolean;
+  myOffer: "pending" | "declined" | null;
+};
+
+export type ReceivedOffer = {
+  id: string;
+  requestId: string;
+  courseCode: string;
+  kind: SectionKind;
+  yourSection: string;
+  theirSection: string;
+  createdAt: string;
+};
+
+export type SentOffer = {
+  id: string;
+  status: "pending" | "accepted" | "declined" | "withdrawn";
+  courseCode: string;
+  kind: SectionKind;
+  yourSection: string;
+  theirSection: string;
+  requestOpen: boolean;
+  createdAt: string;
+};
+
 export type MatchMember = {
   memberId: string;
   displayName: string;
@@ -71,6 +105,8 @@ export type Stats = {
     accounts: number;
     requestsPosted: number;
     openRequests: number;
+    offersSent: number;
+    offersAccepted: number;
     matches: number;
     threeWayMatches: number;
     acceptedMatches: number;

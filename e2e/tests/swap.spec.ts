@@ -64,6 +64,29 @@ test("a student can report someone they were matched with", async ({ browser }) 
   await expect(dan.getByText("Thanks. We've received your report")).toBeVisible();
 });
 
+test("a student offers a different section from the Board, and the poster accepts", async ({ browser }) => {
+  const fay = await signUp(browser, "Fay");
+  const gus = await signUp(browser, "Gus");
+  // Fay only lists 032, so automatic matching would never pair her with Gus's 033.
+  await postRequest(fay, { have: "031", wants: "032", kind: "Tutorial" });
+
+  await gus.getByRole("navigation").getByRole("link", { name: "Board" }).click();
+  await gus.getByLabel("Search courses").fill("cps 510");
+  const card = gus.locator("article", { hasText: "Has 031" });
+  await card.getByRole("button", { name: "Offer a swap" }).click();
+  await card.getByLabel("Your tutorial section").fill("033");
+  await card.getByLabel("Neither section has a wait list.").check();
+  await card.getByRole("button", { name: "Send offer" }).click();
+  await expect(card.getByText("Offer sent.")).toBeVisible();
+
+  // Fay sees the offer appear live, accepts, and lands in the match with the plan and chat open.
+  await expect(fay.getByText("A student offers tutorial 033 for your 031.")).toBeVisible();
+  await fay.getByRole("button", { name: "Accept" }).click();
+  await expect(fay.getByText("You give 031 and get 033 from Gus.")).toBeVisible();
+  await expect(fay.getByText("The swap, step by step")).toBeVisible();
+  await expect(gus.getByText("You have a new swap match!")).toBeVisible();
+});
+
 test("a student can send feedback from any page and get back to it", async ({ browser }) => {
   const eve = await signUp(browser, "Eve");
   await eve.getByRole("link", { name: "New request" }).click();

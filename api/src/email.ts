@@ -48,6 +48,34 @@ export async function sendMatchFound(email: string, courseCode: string, matchUrl
   });
 }
 
+export async function sendOfferReceived(email: string, courseCode: string, url: string): Promise<void> {
+  await sendEmail({
+    to: email,
+    subject: `Someone offered you a swap for ${courseCode}`,
+    text: [
+      `Another student saw your ${courseCode} request on the Board and offered you a swap.`,
+      "",
+      `Accept or decline it on your requests page: ${url}`,
+      "",
+      FOOTER,
+    ].join("\n"),
+  });
+}
+
+export async function sendOfferAccepted(email: string, courseCode: string, matchUrl: string): Promise<void> {
+  await sendEmail({
+    to: email,
+    subject: `Your ${courseCode} swap offer was accepted`,
+    text: [
+      `Good news: your swap offer for ${courseCode} was accepted, so you're matched.`,
+      "",
+      `The chat is open. Plan the swap and start the countdown together: ${matchUrl}`,
+      "",
+      FOOTER,
+    ].join("\n"),
+  });
+}
+
 // Something for the admin to review: a report, or a chat that mentions money.
 export async function sendAdminAlert(subject: string, text: string): Promise<void> {
   await sendEmail({ to: config.adminEmail, subject: `[TMU Swap admin] ${subject}`, text });

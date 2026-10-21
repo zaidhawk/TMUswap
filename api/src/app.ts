@@ -8,6 +8,7 @@ import { requestsRouter } from "./requests/routes.js";
 import { matchesRouter } from "./matching/routes.js";
 import { reportsRouter } from "./reports/routes.js";
 import { feedbackRouter } from "./feedback/routes.js";
+import { boardRouter, offersRouter } from "./board/routes.js";
 import { adminRouter } from "./admin/routes.js";
 import { testRouter } from "./test-routes.js";
 
@@ -28,6 +29,8 @@ export function createApp() {
   app.use("/matches", matchesRouter);
   app.use("/reports", reportsRouter);
   app.use("/feedback", feedbackRouter);
+  app.use("/board", boardRouter);
+  app.use("/offers", offersRouter);
   app.use("/admin", adminRouter);
 
   if (process.env.NODE_ENV !== "production") {
