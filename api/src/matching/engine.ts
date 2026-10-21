@@ -171,7 +171,7 @@ export async function matchRequest(requestId: string): Promise<string | null> {
 }
 
 // Like matchRequest, but never throws: a matching bug shouldn't fail the request that triggered
-// it. The 10-minute sweep will try again.
+// it. The 30-minute sweep will try again.
 export async function tryMatchRequest(requestId: string): Promise<string | null> {
   try {
     return await matchRequest(requestId);
@@ -246,7 +246,7 @@ export async function deleteOldChats(now = new Date()): Promise<number> {
   return deleted.length;
 }
 
-// The safety net, run every 10 minutes: delete old chats, expire stale matches, then try every
+// The safety net, run every 30 minutes: delete old chats, expire stale matches, then try every
 // open request, oldest first.
 export async function runSweep(now = new Date()): Promise<void> {
   await deleteOldChats(now);

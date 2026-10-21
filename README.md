@@ -21,7 +21,7 @@ Section swaps happen in Reddit threads and Discord servers today. Posts get buri
 ## Features
 
 - **TMU-only, passwordless login.** A 6-digit code sent to an `@torontomu.ca` address. Codes are HMAC-hashed, expire in 10 minutes, allow 5 attempts, and are limited to 3 per hour.
-- **Automatic matching.** Direct swaps first, then 3-way cycles, oldest requests first. Runs the moment a request is posted, plus a safety sweep every 10 minutes.
+- **Automatic matching.** Direct swaps first, then 3-way cycles, oldest requests first. Runs the moment a request is posted, plus a safety sweep every 30 minutes.
 - **Accept within 24 hours**, or the match expires and everyone else goes back into the pool.
 - **Real-time chat** per match over WebSockets, with typing indicators.
 - **Shared countdown.** It starts only when everyone has pressed Start, using the server's clock, so every phone says "Go!" at the same moment. It's paused during MyServiceHub's nightly maintenance (11:45 pm to 1:15 am).
@@ -99,6 +99,8 @@ e2e/   Playwright end-to-end tests
 ```
 
 ## Admin
+
+**Stats:** accounts listed in the `ADMIN_LOGINS` environment variable (comma-separated `@torontomu.ca` emails) get a **Stats** page at `/admin`: sign-ups, requests, matches and completed swaps, all time and for the last 14 days. It only shows counts, never who. Sign-ups and requests are recorded as anonymous events, so the totals don't drop when someone deletes their account. To try it locally, start the API with `$env:ADMIN_LOGINS="you@torontomu.ca"` set in the same PowerShell window.
 
 Reports and money alerts are emailed to the admin. To act on one, run SQL in the Neon console.
 

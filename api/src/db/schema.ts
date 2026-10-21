@@ -207,4 +207,15 @@ export const reports = pgTable("reports", {
   resolvedAt: time("resolved_at"),
 });
 
+export const analyticsEventType = pgEnum("analytics_event_type", ["signed_up", "request_posted"]);
+
+// Anonymous counts for the admin stats page: what happened and when, never who. Rows stay when
+// an account is deleted, so totals don't shrink. Matches are never deleted, so they're counted
+// straight from the matches table instead.
+export const analyticsEvents = pgTable("analytics_events", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  type: analyticsEventType("type").notNull(),
+  createdAt: createdAt(),
+});
+
 export type User = typeof users.$inferSelect;

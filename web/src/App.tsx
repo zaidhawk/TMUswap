@@ -8,6 +8,7 @@ import { NewRequest } from "./NewRequest";
 import { MatchPage } from "./MatchPage";
 import { Account } from "./Account";
 import { Rules } from "./Rules";
+import { Stats } from "./Stats";
 import { disconnectSocket, getSocket } from "./socket";
 
 type Auth =
@@ -93,6 +94,7 @@ export function App() {
             </NavLink>
             <NavLink to="/new">New request</NavLink>
             <NavLink to="/account">Account</NavLink>
+            {auth.status === "loggedIn" && auth.user.isAdmin && <NavLink to="/admin">Stats</NavLink>}
           </nav>
         )}
       </header>
@@ -115,6 +117,7 @@ export function App() {
               element={<Account user={auth.user} onUpdated={loggedIn} onLogout={logout} onDeleted={signedOut} />}
             />
             <Route path="/rules" element={<Rules />} />
+            {auth.user.isAdmin && <Route path="/admin" element={<Stats />} />}
             <Route path="*" element={<NotFound />} />
           </Routes>
         ) : (

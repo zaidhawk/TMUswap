@@ -359,3 +359,37 @@ select {
 .rules {
   gap: 10px;
 }
+
+/* Admin stats: label on the left, numbers lined up on the right. */
+table.stats {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+table.stats th,
+table.stats td {
+  padding: 6px 5px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+table.stats th {
+  text-align: left;
+  font-weight: normal;
+}
+
+table.stats thead th {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
+table.stats td,
+table.stats thead th:not(:first-child) {
+  text-align: right;
+}
+
+/* Lets the 5-column table scroll sideways on narrow phones instead of squashing. */
+.table-scroll {
+  overflow-x: auto;
+}

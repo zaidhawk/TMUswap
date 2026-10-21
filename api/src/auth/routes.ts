@@ -2,7 +2,7 @@ import { Router } from "express";
 import { and, count, desc, eq, gt, isNull, lt, sql } from "drizzle-orm";
 import { z } from "zod";
 import { db } from "../db/index.js";
-import { loginCodes, sessions, users } from "../db/schema.js";
+import { analyticsEvents, loginCodes, sessions, users } from "../db/schema.js";
 import { sendLoginCode } from "../email.js";
 import { parseBody } from "../validate.js";
 import {
@@ -141,8 +141,15 @@ authRouter.post("/verify", async (req, res) => {
     return;
   }
 
-  // First login creates the account.
-  await db.insert(users).values({ email }).onConflictDoNothing();
+  // First login creates the account, and counts as a sign-up.
+  await db.transaction(async (tx) => {
+    const [created] = await tx
+      .insert(users)
+      .values({ email })
+      .onConflictDoNothing()
+      .returning({ id: users.id });
+    if (created) await tx.insert(analyticsEvents).values({ type: "signed_up" });
+  });
   const [user] = await db.select().from(users).where(eq(users.email, email));
   if (!user) throw new Error(`User ${email} missing after insert`);
   if (user.isBanned) {
