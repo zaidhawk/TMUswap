@@ -52,7 +52,11 @@ describe("seeding", () => {
     const count = await seedCoursesFromFile("2027W", "data/courses-2027W.csv");
 
     expect(count).toBeGreaterThan(10);
-    expect(await db.select().from(courses)).toHaveLength(count);
+    const rows = await db.select().from(courses);
+    expect(rows).toHaveLength(count);
+    // Computer science and engineering students are both covered.
+    const codes = rows.map((r) => r.code);
+    expect(codes).toEqual(expect.arrayContaining(["CPS 109", "MEC 222", "MTH 140", "CEN 100"]));
   });
 });
 
