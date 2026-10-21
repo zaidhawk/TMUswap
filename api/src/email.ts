@@ -48,6 +48,11 @@ export async function sendMatchFound(email: string, courseCode: string, matchUrl
   });
 }
 
+// Something for the admin to review: a report, or a chat that mentions money.
+export async function sendAdminAlert(subject: string, text: string): Promise<void> {
+  await sendEmail({ to: config.adminEmail, subject: `[TMU Swap admin] ${subject}`, text });
+}
+
 // The newest login code sent to an address (dev and tests only).
 export function lastCodeSentTo(email: string): string | undefined {
   const last = devOutbox.findLast((e) => e.to === email && e.subject.endsWith("is your TMU Swap code"));

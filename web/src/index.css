@@ -234,11 +234,23 @@ button.result:hover {
 }
 
 .banner {
-  max-width: 560px;
+  box-sizing: border-box;
+  /* Same width as the page content, with a 16px gutter on phones. */
+  width: min(528px, calc(100% - 32px));
   margin: 12px auto 0;
   padding: 10px 14px;
   border: 1px solid var(--accent);
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.banner .dismiss {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 1.2em;
+  line-height: 1;
 }
 
 .chat {
@@ -309,4 +321,41 @@ button.result:hover {
   font-size: 2.5em;
   font-weight: 700;
   text-align: center;
+}
+
+.brand {
+  color: inherit;
+  text-decoration: none;
+}
+
+.banner.warning {
+  border-color: var(--error);
+}
+
+footer {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+textarea,
+select {
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+}
+
+.report-link {
+  align-self: flex-start;
+  font-size: 0.9em;
+  margin-top: 8px;
+}
+
+.rules {
+  gap: 10px;
 }

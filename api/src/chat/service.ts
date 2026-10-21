@@ -1,10 +1,16 @@
 import { and, count, desc, eq, gt, lt, or } from "drizzle-orm";
 import { z } from "zod";
 import { db } from "../db/index.js";
-import { matches, matchMembers, messages, swapRequests, users, type User } from "../db/schema.js";
+import { courses, matches, matchMembers, messages, sections, swapRequests, users, type User } from "../db/schema.js";
+import { sendAdminAlert } from "../email.js";
 
 export const MAX_MESSAGES_PER_MINUTE = 30;
 export const PAGE_SIZE = 50;
+
+// Selling seats is against the rules (and TMU's), so the first chat message in a match that
+// mentions money is emailed to the admin to review. It's a nudge for a human, not a block.
+export const MONEY_PATTERN =
+  /\$\s?\d|\d+\s?(dollars|bucks)|e-?transfer|interac|paypal|venmo|cash\s?app|\b(cash|money|pay|paid|paying|payment|sell|selling|buy|buying)\b/i;
 
 // Chat opens once everyone has accepted, and stays readable after the swap.
 const CHAT_OPEN = new Set(["accepted", "counting_down", "completed", "failed"]);
@@ -59,10 +65,46 @@ export async function sendMessage(user: User, matchId: string, rawBody: unknown)
     .insert(messages)
     .values({ matchId, senderId: user.id, body: body.data })
     .returning();
+  if (MONEY_PATTERN.test(body.data)) {
+    flagMoneyMention(user, matchId, saved!.id).catch((err) => console.error("Money flag failed:", err));
+  }
   return {
     ok: true,
     message: { ...saved!, senderName: user.displayName },
   };
+}
+
+// Emails the admin the first time money comes up in a match's chat (later mentions in the
+// same chat don't send more emails).
+async function flagMoneyMention(user: User, matchId: string, messageId: string) {
+  const earlier = await db
+    .select({ id: messages.id, body: messages.body })
+    .from(messages)
+    .where(eq(messages.matchId, matchId));
+  if (earlier.some((m) => m.id !== messageId && MONEY_PATTERN.test(m.body))) return;
+
+  const recent = await loadMessages(matchId);
+  await sendAdminAlert(
+    `Money mentioned in a ${(await matchCourseCode(matchId)) ?? ""} chat`,
+    [
+      `${user.displayName} (${user.email}) mentioned money in match ${matchId}.`,
+      "",
+      "Recent messages:",
+      ...recent.slice(-15).map((m) => `  ${m.senderName}: ${m.body}`),
+    ].join("\n"),
+  );
+}
+
+// The course code of a match, for admin emails.
+export async function matchCourseCode(matchId: string): Promise<string | undefined> {
+  const [row] = await db
+    .select({ code: courses.code })
+    .from(matchMembers)
+    .innerJoin(sections, eq(sections.id, matchMembers.givesSectionId))
+    .innerJoin(courses, eq(courses.id, sections.courseId))
+    .where(eq(matchMembers.matchId, matchId))
+    .limit(1);
+  return row?.code;
 }
 
 // One page of chat history, oldest first. Pass the id of the oldest message you already have

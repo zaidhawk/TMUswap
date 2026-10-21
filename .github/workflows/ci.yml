@@ -5,11 +5,28 @@ on:
     branches: [main]
   pull_request:
 
-jobs:
-  check:
-    runs-on: ubuntu-latest
+# A newer push to the same branch cancels the older, now-pointless run.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
-    # A throwaway Postgres for the API tests, same version as docker-compose.yml.
+jobs:
+  checks:
+    name: Lint and type-check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+
+  tests:
+    name: Unit and API tests
+    runs-on: ubuntu-latest
     services:
       db:
         image: postgres:16
@@ -24,22 +41,58 @@ jobs:
           --health-interval 2s
           --health-timeout 5s
           --health-retries 10
-
     env:
       DATABASE_URL: postgres://tmuswap:tmuswap@localhost:5432/tmuswap
       TEST_DATABASE_URL: postgres://tmuswap:tmuswap@localhost:5432/tmuswap_test
-
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
-
       - run: npm ci
-      - run: npm run lint
-      - run: npm run typecheck
       - run: npm run db:migrate -w api
-      - run: npm test
-      - run: npm run build --workspaces --if-present
+      - run: npm run test:coverage -w api
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: api/coverage/lcov.info
+          fail_ci_if_error: false
+
+  e2e:
+    name: End-to-end tests
+    runs-on: ubuntu-latest
+    services:
+      db:
+        image: postgres:16
+        env:
+          POSTGRES_USER: tmuswap
+          POSTGRES_PASSWORD: tmuswap
+          POSTGRES_DB: tmuswap
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U tmuswap"
+          --health-interval 2s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      E2E_DATABASE_URL: postgres://tmuswap:tmuswap@localhost:5432/tmuswap_e2e
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+        working-directory: e2e
+      - run: npm run e2e
+      # On failure, keep the report with screenshots and step-by-step traces to see what went wrong.
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: e2e/playwright-report
+          retention-days: 7

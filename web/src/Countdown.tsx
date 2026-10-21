@@ -32,7 +32,9 @@ export function Countdown({ match, clockOffset, busy, onPress, onChooseFirst, on
     return () => clearInterval(timer);
   }, [startsAt, clockOffset]);
 
-  const secondsLeft = startsAt === null ? null : Math.ceil((startsAt - now) / 1000);
+  // Capped at 10: our estimate of the server's clock can run a little behind (by the network
+  // delay), which would otherwise briefly show 11.
+  const secondsLeft = startsAt === null ? null : Math.min(10, Math.ceil((startsAt - now) / 1000));
   const closed = match.status === "completed" || match.status === "failed";
 
   return (

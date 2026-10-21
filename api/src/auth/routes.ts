@@ -14,6 +14,7 @@ import {
   hashCode,
 } from "./codes.js";
 import { currentUser, requireAuth, toPublicUser } from "./middleware.js";
+import { deleteAccount } from "./delete-account.js";
 import {
   SESSION_COOKIE,
   SESSION_TTL_MS,
@@ -168,6 +169,19 @@ authRouter.patch("/me", requireAuth, async (req, res) => {
     .where(eq(users.id, currentUser(res).id))
     .returning();
   res.json({ user: toPublicUser(user!) });
+});
+
+const deleteBody = z.object({
+  confirm: z.literal(true, { error: "Confirm that you want to delete your account" }),
+});
+
+// Deletes your account and all your data. There's no undo.
+authRouter.delete("/me", requireAuth, async (req, res) => {
+  if (!parseBody(deleteBody, req.body, res)) return;
+
+  await deleteAccount(currentUser(res));
+  res.clearCookie(SESSION_COOKIE, sessionCookieOptions);
+  res.json({ ok: true });
 });
 
 authRouter.post("/logout", async (req, res) => {

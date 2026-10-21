@@ -13,7 +13,8 @@
   "scripts": {
     "lint": "eslint .",
     "typecheck": "npm run typecheck --workspaces --if-present",
-    "test": "npm run test --workspaces --if-present"
+    "test": "npm run test --workspaces --if-present",
+    "e2e": "npm run test -w e2e"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
