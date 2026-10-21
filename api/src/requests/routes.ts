@@ -3,7 +3,15 @@ import { and, count, desc, eq, gt, inArray } from "drizzle-orm";
 import { z } from "zod";
 import { config } from "../config.js";
 import { db } from "../db/index.js";
-import { courses, matches, matchMembers, sections, swapRequests, swapWants } from "../db/schema.js";
+import {
+  analyticsEvents,
+  courses,
+  matches,
+  matchMembers,
+  sections,
+  swapRequests,
+  swapWants,
+} from "../db/schema.js";
 import { currentUser, requireAuth } from "../auth/middleware.js";
 import { parseBody } from "../validate.js";
 import { isUniqueViolation } from "../db/errors.js";
@@ -158,6 +166,7 @@ requestsRouter.post("/", async (req, res) => {
       await tx
         .insert(swapWants)
         .values(body.wants.map((label) => ({ requestId: created!.id, sectionId: ids.get(label)! })));
+      await tx.insert(analyticsEvents).values({ type: "request_posted" });
       return created!.id;
     });
   } catch (err) {

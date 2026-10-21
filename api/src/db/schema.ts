@@ -207,4 +207,27 @@ export const reports = pgTable("reports", {
   resolvedAt: time("resolved_at"),
 });
 
+// Bug reports and suggestions sent from the Feedback page. Each one is also emailed to the admin.
+export const feedback = pgTable("feedback", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  userId: uuid("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  message: text("message").notNull(),
+  // The page they came from, to help reproduce a bug.
+  page: text("page"),
+  createdAt: createdAt(),
+});
+
+export const analyticsEventType = pgEnum("analytics_event_type", ["signed_up", "request_posted"]);
+
+// Anonymous counts for the admin stats page: what happened and when, never who. Rows stay when
+// an account is deleted, so totals don't shrink. Matches are never deleted, so they're counted
+// straight from the matches table instead.
+export const analyticsEvents = pgTable("analytics_events", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  type: analyticsEventType("type").notNull(),
+  createdAt: createdAt(),
+});
+
 export type User = typeof users.$inferSelect;

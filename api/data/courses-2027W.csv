@@ -1,24 +1,524 @@
 code,title
+AER 150,Aerospace History
+AER 222,Engineering Design and Graphical Communication
+AER 309,Basic Thermodynamics
+AER 316,Fluid Mechanics
+AER 318,Dynamics
+AER 320,Statics and Intro to Strength of Materials
+AER 403,Mechanisms and Vibrations
+AER 404,Intro to Aerospace Engineering Design
+AER 416,Flight Mechanics
+AER 423,Thermodynamics and Heat Transfer
+AER 504,Aerodynamics
+AER 507,Materials and Manufacturing
+AER 509,Control Systems
+AER 520,Stress Analysis
+AER 606,Component Design and Material Selection
+AER 615,Aircraft Performance
+AER 621,Aerospace Structural Design
+AER 622,Gas Dynamics
+AER 626,Applied Finite Elements
+AER 627,Introduction to Space Robotics
+AER 699,Aerospace Sensors
+AER 710,Propulsion
+AER 715,Avionics and Systems
+AER 716,Aircraft Stability and Control
+AER 721,Orbital Dynamics
+AER 722,Aeroelasticity
+AER 723,Introduction to Space Systems Design
+AER 813,Space Systems Design Project
+AER 814,Aircraft Design Project
+AER 817,Systems Engineering
+AER 818,Manufacturing Management
+AER 821,Spacecraft Attitude Dynamics and Control
+AER 822,Avionics Design Project
+AER 827,Composite Materials
+AER 850,Introduction to Machine Learning
+AER 870,Aerospace Engineering Thesis
+BME 100,Introduction to Biomedical Engineering
+BME 229,Biomedical Physics
+BME 323,Statics and Mechanics of Materials
+BME 328,Digital Systems
+BME 406,Biomechanics
+BME 423,Biomaterials
+BME 434,"Circuits, Devices, and Sensors"
+BME 501,Bioinformatics
+BME 506,Introduction to Software
+BME 516,Fluid Mechanics
+BME 532,Signals and Systems I
+BME 538,Microprocessor Systems
+BME 632,Signals and Systems II
+BME 634,Electrical Machines and Actuators
+BME 639,Control Systems and Bio-Robotics
+BME 674,Biomedical Instrumentation
+BME 703,Tissue Engineering
+BME 704,Radiation Therapy Devices
+BME 705,Rehabilitation Engineering
+BME 714,Medical Robotics
+BME 772,Biomedical Signal Analysis
+BME 777,Emerging Topics in Biomedical Engineering
+BME 802,Human-Computer Interaction
+BME 803,Cardiovascular Biomechanics
+BME 804,Design of Bio-MEMS
+BME 808,Computations in Genetic Engineering
+BME 809,Biomedical Systems Modelling
+BME 872,Biomedical Image Analysis
+CEN 100,Introduction to Engineering
+CEN 199,Writing Skills
+CEN 699,Research Placement
+CEN 800,Law and Ethics in Engineering Practice
+CEN 810,Selected Topics in Engineering
+CHE 200,Chemical Engineering Fundamentals
+CHE 204,Thermodynamics I
+CHE 214,Thermodynamics II
+CHE 215,Process Measurements
+CHE 217,Fluid Mechanics
+CHE 220,Heat Transfer
+CHE 307,Chemical Engineering Materials
+CHE 308,Mass Transfer
+CHE 309,Introductory Bioengineering
+CHE 312,Chemical Reaction Engineering
+CHE 315,Unit Operations Laboratory I
+CHE 318,Separation Processes
+CHE 319,Process Modeling and Simulation
+CHE 331,Engineering Statistics and Probabilities
+CHE 338,Chemical Engineering Computations
+CHE 402,Natural Gas Processing
+CHE 403,Petroleum Refining Processes
+CHE 404,Enhanced Oil Recovery
+CHE 413,Chemical Engineering Equipment Design
+CHE 414,Rate Processes in Chemical Engineering
+CHE 415,Unit Operations Laboratory II
+CHE 420,Particulate Engineering
+CHE 422,Biochemical Engineering
+CHE 424,Food Process Engineering
+CHE 425,Process and Engineering Optimization
+CHE 426,Transport Phenomena
+CHE 427,Fluidization Engineering
+CHE 430,Process Control
+CHE 435,Hydrogen and Fuel Cell Technologies
+CHE 450,Introduction to AI in Chem Eng
+CHE 451,Plastics Technology
+CHE 454,Polymer Science
+CHE 460,Design and Charact of Mixing in Pharma Ind
+CHE 461,Biopharmaceutical Processes and Design
+CHE 462,Computer Process Control
+CHE 471,Thesis/Research and Design Project
+CHE 473,Sustainable Energy Technologies
+CHE 474,Nanotechnology and Its Applications
+CHE 480,Microfluidic Systems
+CHE 490,Resource Recovery from Waste and Circ Econ
+CHE 615,Air Pollution and Control
+CHE 616,Water and Wastewater Treatment
+CHE 617,Chemical Process Safety Loss Prevention
+CHE 618,Solid Waste Treatment
+CHE 714,Pharmaceutical Technology and Processing
+CHE 715,Membrane Technology
+CHY 102,General Chemistry
+CHY 103,General Chemistry I
+CHY 104,General Chemistry
+CHY 113,General Chemistry II
+CHY 123,General Chemistry
+CHY 142,Organic Chemistry I
+CHY 152,Introductory Organic Chemistry
+CHY 182,Chemistry Applications to Living Systems
+CHY 183,Introduction to Forensic Sciences
+CHY 200,Organic Chemistry
+CHY 203,Instrumental Methods of Analysis
+CHY 211,General Chemistry Laboratory
+CHY 213,Analytical Chemistry I
+CHY 223,Analytical Chemistry II
+CHY 224,Organic Chemistry
+CHY 242,Organic Chemistry II
+CHY 249,Structure and Bonding
+CHY 307,Chemistry Laboratory Research Project
+CHY 310,Commercial Chemistry
+CHY 330,Atomic and Molecular Spectroscopy
+CHY 331,Basic Chromatography
+CHY 339,Characterization of Organic Compounds
+CHY 344,Inorganic Chemistry
+CHY 381,Physical Chemistry I
+CHY 382,Physical Chemistry II
+CHY 399,Property-Directed Integrated Laboratory
+CHY 422,Environmental Chemistry
+CHY 423,Environmental Science
+CHY 434,Analytical Chemistry of Complex Samples
+CHY 435,Advanced Chemical Instrumentation
+CHY 436,Pharmaceutical Chemistry
+CHY 437,Organic Chemistry
+CHY 445,Materials Chemistry
+CHY 447,Solid State Chemistry
+CHY 449,Inorganic Chemistry II
+CHY 482,Selected Topics in Chemistry
+CHY 500,Directed Studies
+CHY 501,Polymer Chemistry
+CHY 502,Organometallic Chemistry
+CHY 547,Food Chemistry
+CHY 583,Alternative Energies
+CHY 599,The Business of Chemistry and Biology
+CHY 600,Organic Reaction Mechanisms
+CHY 706,Computational and Quantum Chemistry
+COE 318,Software Systems
+COE 328,Digital Systems
+COE 428,Engineering Algorithms and Data Structures
+COE 501,Electromagnetism: Theory and Effects
+COE 528,Object Oriented Eng Analysis and Design
+COE 538,Microprocessor Systems
+COE 608,Computer Organization and Architecture
+COE 628,Operating Systems
+COE 691,Software Requirements Analysis and SPEC
+COE 692,Software Design and Architecture
+COE 718,Embedded Systems Design
+COE 758,Digital Systems Engineering
+COE 768,Computer Networks
+COE 817,Network Security
+COE 818,Advanced Computer Architecture
+COE 838,Systems-on-Chip Design
+COE 848,Fundamentals of Data Engineering
+COE 865,Advanced Computer Networks
+COE 891,Software Testing and Quality Assurance
+COE 892,Distributed and Cloud Computing
+CPS 101,Introduction to App Development
+CPS 106,Introduction to Multimedia Computation
 CPS 109,Computer Science I
+CPS 118,Introductory Programming for Scientists
+CPS 125,Digital Computation and Programming
+CPS 171,Introduction to Cyber-Secure Coding
+CPS 188,Computer Programming Fundamentals
 CPS 209,Computer Science II
 CPS 213,Computer Organization I
+CPS 270,Data Access and Management
 CPS 305,Data Structures
 CPS 310,Computer Organization II
+CPS 371,Introduction to Security Protocols
 CPS 393,"Introduction to UNIX, C and C++"
+CPS 406,Introduction to Software Engineering
+CPS 412,"Social Issues, Ethics and Professionalism"
 CPS 420,Discrete Structures
+CPS 471,Software Security Fundamentals
+CPS 501,Bioinformatics
 CPS 506,Comparative Programming Languages
 CPS 510,Database Systems I
+CPS 511,Computer Graphics
+CPS 521,Introduction to Data Science
 CPS 530,Web Systems Development
+CPS 571,Introduction to Cyber-Security
 CPS 590,Operating Systems I
+CPS 606,Advanced Computer Organization
+CPS 607,Autonomous Mobile Robotics
+CPS 610,Database Systems II
 CPS 613,Human-Computer Interaction
+CPS 615,Theory of Computation
 CPS 616,Algorithms
+CPS 621,Introduction to Multimedia Systems
+CPS 630,Web Applications
 CPS 633,Computer Security
+CPS 643,Virtual Reality
+CPS 650,Computational Thinking in Our World
+CPS 688,Advanced Algorithms
 CPS 706,Computer Networks I
+CPS 707,Software Verification and Validation
+CPS 710,Compilers and Interpreters
+CPS 713,Applied Cryptography
 CPS 714,Software Project Management
+CPS 716,Computer Networks II
 CPS 721,Artificial Intelligence I
+CPS 730,Web Technology and Performance Measurement
 CPS 731,Software Engineering I
+CPS 752,Parallel Computer Systems
+CPS 775,Mobile Applications in Engineering
+CPS 801,Operating Systems II
 CPS 803,Machine Learning
+CPS 811,Distributed Systems and Networks
+CPS 813,Human Robot Interaction
+CPS 815,Topics in Algorithms
+CPS 822,Artificial Intelligence II
+CPS 824,Reinforcement Learning
+CPS 831,Software Engineering II
+CPS 832,Mainframe Systems
+CPS 840,Selected Topics in Computer Science
+CPS 841,Advanced Topics in Computer Science
 CPS 842,Information Retrieval and Web Search
+CPS 843,Introduction to Computer Vision
+CPS 844,Data Mining
+CPS 845,Extreme Programming and Agile Processes
+CPS 847,Software Tools for Startups
+CPS 853,Creating Big Data Systems
+CPS 865,Model-Driven Software Engineering
+CPS 870,Applied Natural Language Processing
+CPS 888,Software Engineering
+CVL 207,Graphics
+CVL 300,Environmental Science and Impact Assess
+CVL 312,Computer Aided Structural Analysis
+CVL 313,Structural Analysis
+CVL 316,Transportation Engineering
+CVL 320,Strength of Materials I
+CVL 323,Fundamentals of Surveying
+CVL 352,Geomatics Measurement Techniques
+CVL 354,Remote Sensing and Image Analysis
+CVL 400,Hydrology and Water Resources
+CVL 405,Probability and Statistics for Engineers
+CVL 407,Structures III
+CVL 410,Structural Concrete Design I
+CVL 411,Structural Steel Design
+CVL 420,Strength of Materials II
+CVL 423,Geology for Engineers
+CVL 434,Geotechnical Properties of Soils
+CVL 500,Introduction to Structural Design
+CVL 501,Fluid Mechanics and Hydraulics
+CVL 502,Hydraulic Engineering
+CVL 533,Concrete Materials
+CVL 600,Foundation Engineering
+CVL 601,Wastewater Engineering
+CVL 602,Municipal Engineering
+CVL 609,Civil Engineering Systems
+CVL 633,Highway Materials
+CVL 650,Satellite Positioning for Civil Engineers
+CVL 735,Highway Design
+CVL 736,Geospatial Information Systems
+CVL 742,Project Management
+CVL 900,Pavement Design and Management
+CVL 901,Municipal Solid Waste Management
+CVL 902,Traffic Operations and Management
+CVL 903,Water Resources Engineering
+CVL 904,Structural Concrete Design II
+CVL 905,Bridge Design and Construction
+CVL 906,Renovation/Repair of Existing Structures
+CVL 908,Structural Building Systems
+CVL 910,Transportation Planning
+CVL 913,Water Supply Engineering
+CVL 914,Pavement Materials and Design
+CVL 920,Water and Wastewater Treatment Engineering
+EES 508,Digital Systems
+EES 512,Electric Circuits
+EES 612,Electric Machines and Actuators
+ELE 202,Electric Circuit Analysis
+ELE 302,Electric Networks
+ELE 401,Electric and Magnetic Fields
+ELE 404,Electronic Circuits I
+ELE 504,Electronic Circuits II
+ELE 531,Electromagnetics
+ELE 532,Signals and Systems I
+ELE 632,Signals and Systems II
+ELE 635,Communication Systems
+ELE 637,Energy Conversion
+ELE 639,Control Systems
+ELE 707,Sensors and Measurement
+ELE 709,Real-Time Computer Control Systems
+ELE 714,System Testing and Design-for-Testability
+ELE 719,Fundamentals of Robotics
+ELE 727,CMOS Analog Integrated Circuits
+ELE 734,Low Power Digital Integrated Circuits
+ELE 745,Digital Communication Systems
+ELE 746,Power Systems Analysis
+ELE 747,Advanced Electric Drives
+ELE 754,Power Electronics
+ELE 792,Digital Signal Processing
+ELE 801,Electric Vehicles
+ELE 804,Radio-Frequency Circuits and Systems
+ELE 806,Alternative Energy Systems
+ELE 809,Digital Control System Design
+ELE 815,Wireless Communications
+ELE 819,Control of Robotic Manipulators
+ELE 827,CMOS Mixed-Signal Circuits and Systems
+ELE 829,System Models and Identification
+ELE 846,Power Systems Protection and Control
+ELE 861,Microwave Engineering
+ELE 863,VLSI Circuits for Data Communications
+ELE 882,Intro to Digital Image Processing
+ELE 884,Photonics
+ELE 885,Optical Communication Systems
+ELE 888,Intelligent Systems
+ELE 900,AI: Sociotechnical Perspective
+IND 108,Data Analytics for Non-Data Analysts
+IND 110,Data Organization for Data Analysts
+IND 119,Introduction to Big Data
+IND 123,Data Analytics: Basic Methods
+IND 300,Introduction to Management
+IND 303,"Work Measurement, Analysis and Design"
+IND 400,Facilities Design
+IND 405,Introduction to Data Science and Analytics
+IND 508,Operations Research I
+IND 600,Systems Modeling and Simulation
+IND 604,Operations Research II
+IND 605,Experimental Design and Quality Assurance
+IND 708,Information Systems
+IND 710,Production and Inventory Systems
+IND 712,Industrial Ergonomics
+IND 713,Project Management
+IND 719,Big Data Analytics Tools
+IND 810,Flexible Manufacturing Systems
+IND 816,Service Operations Management
+IND 820,Big Data Analytics Project
+IND 830,Python Programming Data Science
+IND 832,Reliability and Decision Analysis
+IND 833,Financial Engineering
+IND 840,Practical Approaches in Machine Learning
+IND 850,Practical Deep Learning
+IND 860,Advanced Data Analytics Project
+MEC 110,Energy and the Environment
+MEC 222,Engineering Graphical Communication
+MEC 309,Basic Thermodynamics
+MEC 311,Dynamics
+MEC 322,Manufacturing Fundamentals
+MEC 323,Statics and Mechanics of Materials
+MEC 325,Introduction to Engineering Design
+MEC 411,Mechanics of Machines
+MEC 430,Solid Mechanics I
+MEC 431,Advanced Manufacturing
+MEC 511,Thermodynamics and Fluids
+MEC 514,Applied Thermodynamics
+MEC 516,Fluid Mechanics I
+MEC 522,Fluid Mechanics
+MEC 531,Solid Mechanics II
+MEC 613,Machine Design I
+MEC 616,Fluid Mechanics II
+MEC 617,Manufacturing System Control
+MEC 626,Applied Finite Elements
+MEC 701,Heat Transfer
+MEC 709,Control Systems
+MEC 713,Project Management
+MEC 721,Vibrations
+MEC 722,Thermal Systems Design
+MEC 723,Mechanical Systems Design
+MEC 733,Microprocessor Systems
+MEC 734,Design for Manufacturing
+MEC 740,Environmental Control in Buildings
+MEC 751,"Measurements, Sensors and Instruments"
+MEC 809,Integrated Manufacturing
+MEC 810,Thermal Power Generation
+MEC 811,Machine Design II
+MEC 813,Flexible Manufacturing Systems
+MEC 816,Topics in Manufacturing Engineering
+MEC 817,Combustion Engineering
+MEC 825,Mechanical Design
+MEC 830,Mechatronics Systems Design
+MEC 832,Reliability and Decision Analysis
+MEC 850,Environmental Impact of Thermal Systems
+MTE 301,Programming for Mechatronics Engineering
+MTE 401,Analysis of Electric Circuits
+MTE 501,Signals and Systems for Mechatronics Eng
+MTE 502,Microprocessor Systems
+MTE 601,Machine Mechanics and Design
+MTE 602,Introduction to Robotics
+MTE 603,Computer Structures and Real-Time Systems
+MTE 604,Electromech System Modelling and Design
+MTE 701,Real-Time Digital Control Systems Design
+MTE 711,Fundamentals of Microelectromechanical Systems
+MTE 712,Sensor Fusion
+MTE 751,"Measurements, Sensors and Instruments"
+MTE 792,Digital Signal Processing
+MTE 801,Hardware in the Loop and RCP
+MTE 811,Design of Modern Control Systems
+MTE 812,Autonomous Robots and Vehicles
+MTE 819,Control of Robotic Manipulators
+MTE 829,System Models and Identification
+MTE 882,Introduction to Digital Image Processing
+MTE 888,Intelligent Systems
+MTH 108,Linear Algebra
 MTH 110,Discrete Mathematics I
+MTH 131,Modern Mathematics I
+MTH 140,Calculus I
+MTH 141,Linear Algebra
+MTH 160,Mathematical Principles for Cyber Science
 MTH 207,Calculus and Computational Methods I
-MTH 304,Probability and Statistics I
+MTH 210,Discrete Mathematics II
+MTH 231,Modern Mathematics II
+MTH 240,Calculus II
+MTH 260,Introduction to Mathematical Inquiry
+MTH 304,Probability
+MTH 310,Calculus and Computational Methods II
+MTH 312,Differential Equations and Vector Calculus
+MTH 314,Discrete Mathematics for Engineers
+MTH 322,"Chaos, Fractals and Dynamics"
+MTH 330,Calculus and Geometry
+MTH 350,Multivariate and Vector Calculus and Geo
+MTH 380,Probability and Statistics I
+MTH 404,Statistics
+MTH 410,Statistics
+MTH 425,Differential Equations and Vector Calculus
+MTH 430,Dynamic Systems Differential Equations
+MTH 480,Probability and Statistics II
+MTH 500,Introduction to Stochastic Processes
+MTH 501,Numerical Analysis I
+MTH 503,Intro Linear Programming and Applications
+MTH 510,Numerical Analysis
+MTH 511,Limitations of Measurement
+MTH 514,Probability and Stochastic Processes
+MTH 525,Analysis
+MTH 540,Geometry
+MTH 560,Problem Solving
+MTH 599,Foundations of Mathematical Thought
+MTH 600,Computational Methods in Mathematics
+MTH 601,Numerical Analysis II
+MTH 603,Non-Linear Programming and Applications
+MTH 607,Graph Theory
+MTH 609,Number Theory
+MTH 617,Algebra
+MTH 630,Mathematical Biology
+MTH 640,Complex Analysis
+MTH 642,Data Analytics: Advanced Methods
+MTH 655,Machine Learning in Business
+MTH 660,Fixed Income Modelling
+MTH 665,Mathematical Game Theory
+MTH 700,Financial Mathematics I
+MTH 707,Modelling and Searching Networks
+MTH 710,Fourier Analysis
+MTH 712,Partial Differential Equations
+MTH 714,Logic and Computability
+MTH 718,Design and Codes
+MTH 719,Applied Linear Algebra
+MTH 732,Introduction to Fluid Dynamics
+MTH 800,Financial Mathematics II
+MTH 810,Selected Topics in Mathematics
+MTH 814,Computational Complexity
+MTH 816,Cryptography
+MTH 817,Combinatorics
+MTH 818,Topics in Algebra
+MTH 820,Image Analysis
+MTH 825,Topics in Analysis
+MTL 200,Materials Science Fundamentals
+MTL 300,Materials Science II
+MTL 700,Materials Selection for Engineering Design
+PCS 102,Physics Answers to Everyday Questions
+PCS 106,Physics for the Health Sciences
+PCS 107,The Natural Context
+PCS 110,Physics
+PCS 111,Physics in the News
+PCS 120,Physics I
+PCS 125,Physics: Waves and Fields
+PCS 130,Physics II
+PCS 181,Introduction to Astronomy
+PCS 182,Life in the Milky Way Galaxy
+PCS 211,Physics: Mechanics
+PCS 213,Physics: Light and Modern Physics
+PCS 224,Solid State Physics
+PCS 227,Biophysics
+PCS 228,Electricity and Magnetism
+PCS 229,Introduction to Medical Physics
+PCS 230,Photonics and Optical Devices
+PCS 300,Modern Physics
+PCS 335,Thermodynamics and Statistical Physics
+PCS 350,Computational Methods in Medical Physics
+PCS 352,Nuclear Physics/Radiation Protection
+PCS 354,Radiation Biology
+PCS 358,Mechanics
+PCS 400,Quantum Physics I
+PCS 401,Quantum Mechanics I
+PCS 405,Medical Imaging
+PCS 406,Radiation Protection/Health Physics
+PCS 407,Radiation Therapy
+PCS 450,Directed Project I
+PCS 510,Fundamentals of Astrophysics
+PCS 520,Nanophysics
+PCS 521,Mathematical Physics
+PCS 530,Cellular Biophysics
+PCS 550,Directed Project II
+PCS 581,Advanced Topics in Astronomy
+PCS 622,Mathematical Methods in Medical Physics
+PCS 623,Biostatistics
+PCS 624,Electromagnetism II
+PCS 700,Quantum Mechanics II
+PCS 724,Condensed Matter Physics/Materials
+PCS 800,Dynamical Systems
+PCS 810,Complex Networks and Applications

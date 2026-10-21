@@ -4,7 +4,9 @@ import { runSweep } from "./matching/engine.js";
 import { attachRealtime } from "./realtime/io.js";
 
 const port = Number(process.env.PORT ?? 3000);
-const SWEEP_INTERVAL_MS = 10 * 60 * 1000;
+// Every sweep wakes the database, and Neon's free plan only includes so many compute hours a
+// month. Every 30 minutes keeps it asleep most of the time, even with the API kept awake.
+const SWEEP_INTERVAL_MS = 30 * 60 * 1000;
 
 // One HTTP server for both the REST API (Express) and live updates (Socket.IO), on one port.
 const server = createServer(createApp());
@@ -13,7 +15,7 @@ server.listen(port, () => {
   console.log(`API listening on http://localhost:${port}`);
 });
 
-// Safety net for matching: expire stale matches and retry open requests every 10 minutes.
+// Safety net for matching: expire stale matches and retry open requests every 30 minutes.
 async function sweep() {
   try {
     await runSweep();

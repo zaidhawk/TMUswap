@@ -1,6 +1,6 @@
 export const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
 
-export type User = { id: string; email: string; displayName: string | null };
+export type User = { id: string; email: string; displayName: string | null; isAdmin: boolean };
 
 export type Course = { id: string; code: string; title: string };
 
@@ -63,6 +63,22 @@ export type ChatMessage = {
   senderName: string;
   body: string;
   createdAt: string;
+};
+
+export type Stats = {
+  totals: {
+    signUps: number;
+    accounts: number;
+    requestsPosted: number;
+    openRequests: number;
+    matches: number;
+    threeWayMatches: number;
+    acceptedMatches: number;
+    completedSwaps: number;
+    failedSwaps: number;
+    studentsSwapped: number;
+  };
+  days: { date: string; signUps: number; requestsPosted: number; matches: number; completedSwaps: number }[];
 };
 
 // Where students report a course that isn't listed yet.

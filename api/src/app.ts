@@ -7,6 +7,8 @@ import { coursesRouter } from "./courses/routes.js";
 import { requestsRouter } from "./requests/routes.js";
 import { matchesRouter } from "./matching/routes.js";
 import { reportsRouter } from "./reports/routes.js";
+import { feedbackRouter } from "./feedback/routes.js";
+import { adminRouter } from "./admin/routes.js";
 import { testRouter } from "./test-routes.js";
 
 // Builds the Express app without starting it, so tests can use it directly.
@@ -25,6 +27,8 @@ export function createApp() {
   app.use("/requests", requestsRouter);
   app.use("/matches", matchesRouter);
   app.use("/reports", reportsRouter);
+  app.use("/feedback", feedbackRouter);
+  app.use("/admin", adminRouter);
 
   if (process.env.NODE_ENV !== "production") {
     app.use("/test", testRouter);

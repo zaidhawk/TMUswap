@@ -1,5 +1,6 @@
 import type { RequestHandler, Response } from "express";
 import { eq } from "drizzle-orm";
+import { config } from "../config.js";
 import { db } from "../db/index.js";
 import { sessions, users, type User } from "../db/schema.js";
 import { SESSION_COOKIE, hashToken } from "./sessions.js";
@@ -39,7 +40,20 @@ export function currentUser(res: Response): User {
   return user;
 }
 
+export function isAdmin(user: User): boolean {
+  return config.adminLogins.includes(user.email);
+}
+
+// Admin-only routes. Other logged-in users get a 404, as if the route didn't exist. Use after requireAuth.
+export const requireAdmin: RequestHandler = (_req, res, next) => {
+  if (!isAdmin(currentUser(res))) {
+    res.status(404).json({ error: "Not found" });
+    return;
+  }
+  next();
+};
+
 // What a user may see about themselves. Other users will only ever see displayName.
 export function toPublicUser(user: User) {
-  return { id: user.id, email: user.email, displayName: user.displayName };
+  return { id: user.id, email: user.email, displayName: user.displayName, isAdmin: isAdmin(user) };
 }
