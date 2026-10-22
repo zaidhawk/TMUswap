@@ -1,4 +1,49 @@
 code,title
+ACC 100,Introductory Financial Accounting
+ACC 110,Financial Accounting
+ACC 333,Core Concepts of Accounting
+ACC 340,Financial Management
+ACC 406,Introductory Management Accounting
+ACC 410,Management Accounting
+ACC 414,Intermediate Accounting I
+ACC 450,Intermediate Financial Accounting I
+ACC 504,Accounting Cases and Concepts I
+ACC 507,Accounting for Managers
+ACC 514,Intermediate Accounting II
+ACC 521,Auditing
+ACC 522,Taxation for Managers and Financial Planners
+ACC 550,Intermediate Financial Accounting II
+ACC 605,Public Sector Accounting
+ACC 607,Accounting for Small Business
+ACC 621,Internal Auditing
+ACC 696,Information Systems Audit + Data Analytics
+ACC 703,Advanced Financial Accounting
+ACC 706,Accounting Theory
+ACC 742,Canadian Business Taxation I
+ACC 750,Taxation
+ACC 801,Intermediate Cost and Management Accounting
+ACC 803,Advanced Management Accounting
+ACC 821,Advanced Auditing
+ACC 842,Canadian Business Taxation II
+ACS 100,Canadian Cultural Perspectives
+ACS 103,Introduction to Interdisciplinary Studies
+ACS 104,Ideas that Shape the World
+ACS 106,Introduction to Language
+ACS 201,Conflict Resolution
+ACS 210,Ideas: Antiquity
+ACS 220,Ideas that Shape the World: Middle Ages
+ACS 300,Ideas That Shape the World: Early Modern
+ACS 302,Introduction to Culture Studies
+ACS 310,Introduction to Digital Technologies
+ACS 400,Ideas That Shape the World: Modernity
+ACS 401,Introduction to Research and Statistics
+ACS 402,Introduction to Global Studies
+ACS 403,Introduction to Diversity and Equity
+ACS 500,Global Cultural Perspectives
+ACS 800,Senior Group Project
+ACS 900,Senior Seminar
+ACS 910,Fellowship Practicum
+ACS 950,Directed Research Course
 AER 150,Aerospace History
 AER 222,Engineering Design and Graphical Communication
 AER 309,Basic Thermodynamics
@@ -35,6 +80,183 @@ AER 822,Avionics Design Project
 AER 827,Composite Materials
 AER 850,Introduction to Machine Learning
 AER 870,Aerospace Engineering Thesis
+AFA 100,Introductory Financial Accounting
+AFA 200,Introductory Management Accounting
+AFA 300,Intermediate Financial Accounting I
+AFA 350,Accounting for Finance Professionals
+AFA 400,Intermediate Financial Accounting II
+AFA 500,Intermediate Financial Accounting III
+AFA 511,Ethics and Sustainability in Accounting
+AFA 517,Taxation for Managers and Financial Planners
+AFA 518,Auditing
+AFA 615,Public Sector and Nonprofit Accounting
+AFA 619,Intermediate Management Accounting
+AFA 620,Data Analytics and Info Systems
+AFA 706,Financial Accounting Theory
+AFA 708,Forensic Accounting and Internal Audit
+AFA 716,Advanced Financial Acct. and Disclosure
+AFA 717,Canadian Income Taxation I
+AFA 817,Canadian Income Taxation II
+AFA 819,Advanced Management Accounting
+AFF 210,Principles of Finance I
+AFF 310,Principles of Finance II
+AFF 410,Derivative Securities
+AFF 420,Principles of Finance III
+AFF 501,Investment Analysis
+AFF 502,Personal Financial Planning
+AFF 505,Islamic Finance
+AFF 512,Risk Management and Insurance
+AFF 514,Financial Modeling I
+AFF 604,Ethics in Finance
+AFF 611,Fixed Income Securities
+AFF 621,"Market Microstructure, Algorithm Trading"
+AFF 624,International Finance
+AFF 704,Financial Intermediation
+AFF 711,Advanced Portfolio Management
+AFF 713,Advanced Corporate Finance
+AFF 714,Financial Modeling II
+AFF 811,Financial Risk Management
+AFF 813,Mergers and Acquisitions
+AFF 823,Private Equity
+ANT 100,Introduction to Anthropology
+ANT 200,Decoding Culture
+ANT 306,"Language, Culture, and Power"
+ANT 900,Anthropology Capstone
+ARB 101,Introductory Arabic I
+ARB 201,Introductory Arabic II
+ARB 300,Principles in Arabic Writing
+ARB 301,Intermediate Arabic I
+ARB 401,Intermediate Arabic II
+ARB 402,Arabic Conversation and Pronunciation
+ARB 501,Advanced Arabic I
+ARB 601,Advanced Arabic II
+ARC 721,Theorizing Technology in Architecture
+ARC 821,The Architect in Society
+ARC 920,Advanced Architecture Studio
+ASC 101,Communications Studio
+ASC 102,The Built World
+ASC 103,The Built Context
+ASC 120,Introduction to Architecture
+ASC 121,Sustainable Architecture
+ASC 200,Sustainable Practices
+ASC 201,Design Studio I
+ASC 202,The Building Project
+ASC 203,Structures I
+ASC 205,Collaborative Exercise I
+ASC 206,"Ideas, Tech and Precedents I"
+ASC 301,Design Studio II
+ASC 302,Envelope Systems
+ASC 303,Structures II
+ASC 304,The Construction Project
+ASC 306,"Ideas, Tech and Precedents II"
+ASC 401,Design Studio III
+ASC 402,Bodily Comfort Systems
+ASC 403,Site Development and Planning
+ASC 406,"Ideas, Tech and Precedents III"
+ASC 520,Integration Studio I
+ASC 521,Light/Sound in Architecture
+ASC 522,Project Economics
+ASC 523,Theories of Urbanism
+ASC 605,Collaborative Exercise II
+ASC 620,Integration Studio II
+ASC 621,Tectonics and Materiality
+ASC 622,Documentation and Construction Contract
+ASC 623,Principles of Detailing
+ASC 704,Independent Study
+ASC 730,Construction Case Studies Advanced
+ASC 731,The Architecture of Urban Housing
+ASC 733,Canadian Architecture Since 1945
+ASC 734,Advanced Digital Design
+ASC 735,Heritage Conservation Theory and Practice
+ASC 736,Architectural Representation
+ASC 737,Designing the Productive City
+ASC 738,Architecture Research Excursions
+ASC 750,Architecture and Public Policy
+ASC 751,Architectural Writing
+ASC 752,Business Practices in the AEC Industry
+ASC 755,Digital Tools
+ASC 756,Fire Safety in the Built Environment
+ASC 853,"Landscape Design, Theory and Application"
+ASC 855,Sustainable Ratings Systems
+ASC 856,The Small Building
+ASC 857,Glass in Architecture
+ASC 900,Selected Topics in Architectural Science
+ASL 101,Introductory American Sign Language I
+ASL 201,Introductory American Sign Language II
+ASL 301,Intermediate American Sign Language I
+ASL 306,ASL for Healthcare Professionals
+ASL 401,Intermediate American Sign Language II
+ASL 501,Advanced American Sign Language I
+ASL 601,Advanced American Sign Language II
+BCH 261,Biochemistry
+BCH 361,Advanced Biochemistry I
+BCH 461,Biochemistry of Disease
+BCH 463,Advanced Biochemistry II
+BCH 501,Protein Biochem and Proteomics
+BCH 550,Glycobiology
+BCH 560,Protein Structure and Function
+BCH 580,Cell Signalling
+BCH 880,Advanced Biochemistry Laboratory
+BLG 101,Anatomy and Physiology I
+BLG 111,Anatomy and Physiology II
+BLG 131,Microbiology for Nursing
+BLG 133,Fundamentals of Biological Anthropology I
+BLG 143,Biology I
+BLG 144,Biology II
+BLG 151,Microbiology I
+BLG 181,Biology of a Living City
+BLG 230,Botany
+BLG 233,Biological Anthropology II
+BLG 251,Microbiology II
+BLG 307,Molecular Biology
+BLG 311,Cell Biology
+BLG 312,Invertebrate Zoology
+BLG 315,Evolution
+BLG 316,Zoology
+BLG 340,Environmental Biology
+BLG 351,Applied Microbiology
+BLG 400,Genetics
+BLG 401,Ecotoxicology
+BLG 402,Limnology
+BLG 408,Viruses
+BLG 409,Biometry
+BLG 411,Cell Biology II
+BLG 481,Biology and Chemistry Project Laboratory
+BLG 508,Conservation Biology
+BLG 567,Ecology
+BLG 578,Pharmacology
+BLG 586,Molecular Diagnostics
+BLG 599,Biology Facts in Pop Media Sci-Fiction
+BLG 600,Physiology
+BLG 601,Physiology
+BLG 605,Science and Government Policy Development
+BLG 606,Intro to Clinical Research and Trials
+BLG 607,Intellectual Property in Science
+BLG 610,Data Science for Biology
+BLG 630,Population Biology
+BLG 655,Viruses Among Us
+BLG 667,Disease Ecology
+BLG 678,Current Topics in Biology
+BLG 699,Social Factors in Drug Development
+BLG 700,Anatomy
+BLG 701,Anatomy
+BLG 702,Genomics and its Applications
+BLG 707,Entomology
+BLG 720,Urban Field Biology - Water Ecosystems
+BLG 721,Inter-University Field Course
+BLG 777,Organismal Biodiversity Lab
+BLG 785,Developmental Biology
+BLG 788,Current Topics in Biotechnology
+BLG 800,Genomics and Proteomics
+BLG 802,Plant Diversity
+BLG 803,Ecosystem Processes
+BLG 804,Water Quality and Environmental Management
+BLG 805,Behavioural Ecology
+BLG 806,Tropical Field Ecology
+BLG 810,Advanced Techniques in Plant Biology
+BLG 850,What is Cancer?
+BLG 856,Immunology
+BLG 888,Molecular Biology Laboratory
 BME 100,Introduction to Biomedical Engineering
 BME 229,Biomedical Physics
 BME 323,Statics and Mechanics of Materials
@@ -63,6 +285,62 @@ BME 804,Design of Bio-MEMS
 BME 808,Computations in Genetic Engineering
 BME 809,Biomedical Systems Modelling
 BME 872,Biomedical Image Analysis
+BMS 110,Biomedical Science in Society
+BMS 150,Introduction to the Human Genome
+BMS 280,Biomedical Science Orientation II
+BMS 451,Medical Microbiology
+BMS 500,Human Genetics
+BMS 600,Human Anatomy and Physiology I
+BMS 605,Advanced Physiology
+BMS 607,Molecular Genetics and Epigenetics
+BMS 650,Experimental Design
+BMS 700,Human Anatomy and Physiology II
+BMS 750,Systems Biology
+BMS 760,Critical Thinking in Biomedical Sciences
+BMS 770,Medical Epidemiology
+BMS 850,Cancer Biology
+BMS 857,Advanced Immunology
+BMS 858,Host-Pathogen Interactions
+BMS 860,Stem Cell Biology
+BMS 865,Model Organisms
+BMS 870,Neurobiology
+BPM 101,Modern Music Fundamentals I
+BPM 102,Modern Music Fundamentals II
+BPM 183,"Rhythm, Beat and Groove"
+BPM 201,Digital Music Production I
+BPM 202,Digital Music Production II
+BPM 301,Performance Production I
+BPM 302,Performance Production II
+BPM 401,Capstone Project
+BPM 402,Masterclass
+BPM 406,Chinese Instrumental Music
+BPM 410,Special Topics Creative Practice in Music
+BPM 415,Special Topics: Business of Music
+BPM 420,Global Music Experience
+BPM 441,Music and Film of India
+BPM 474,Christian Music: Songs of Hope
+BPM 484,Music of the African Diaspora
+BPM 530,The Music of East Asia
+BPM 905,History and Culture of Popular Music
+BPM 927,Business of Music I
+BPM 937,Business of Music II
+BSC 720,Building Performance Assessment Studio
+BSC 721,Existing Building Forensics
+BSC 722,Sustainable Environmental Control Systems
+BSC 820,Building Science Detail Design Studio
+BSC 821,Sustainable Detail Design
+BSC 822,Advanced Envelopes/Components
+BSM 100,The New Business: From Idea to Reality
+BSM 200,The Growing Business: Breaking Even
+BSM 600,The Mature Business
+BUS 221,Business Decision-Making
+BUS 223,Ethics in Commerce
+BUS 600,Intro to Contemporary Business Strategy
+BUS 720,Independent Research
+BUS 777,Business Research Methods
+BUS 800,Strategic Management
+BUS 850,Strategy Development in Uncertain Times
+CAF 199,Communication Skills
 CEN 100,Introduction to Engineering
 CEN 199,Writing Skills
 CEN 699,Research Placement
@@ -114,6 +392,19 @@ CHE 617,Chemical Process Safety Loss Prevention
 CHE 618,Solid Waste Treatment
 CHE 714,Pharmaceutical Technology and Processing
 CHE 715,Membrane Technology
+CHN 101,Introductory Chinese I
+CHN 201,Introductory Chinese II
+CHN 301,Intermediate Chinese I
+CHN 401,Intermediate Chinese II
+CHN 402,Chinese Conversation and Pronunciation
+CHN 501,Advanced Chinese I
+CHN 502,Communication Business Chinese
+CHN 515,Introduction to Business Chinese
+CHN 601,Advanced Chinese II
+CHN 602,Chinese Business in Practice
+CHS 503,Chinese Literary Traditions
+CHS 504,Chinese Cultural Traditions
+CHS 505,Modern Chinese Culture
 CHY 102,General Chemistry
 CHY 103,General Chemistry I
 CHY 104,General Chemistry
@@ -158,6 +449,105 @@ CHY 583,Alternative Energies
 CHY 599,The Business of Chemistry and Biology
 CHY 600,Organic Reaction Mechanisms
 CHY 706,Computational and Quantum Chemistry
+CLD 101,Human Development I
+CLD 102,Observation/ELC
+CLD 103,Human Development II
+CLD 111,Curriculum I: Environments
+CLD 161,Field Education I
+CLD 204,Children’s Bodies and Movement
+CLD 205,Children's Social/Emotional Well-Being
+CLD 206,Language Development
+CLD 212,Curriculum II: Program Planning
+CLD 213,History and Philosophy of ECE
+CLD 215,Creative Arts I
+CLD 231,Families in Canadian Context I
+CLD 241,Children with Disabilities
+CLD 251,Interpersonal Communication
+CLD 262,Field Education II
+CLD 307,Children's Thinking and Learning
+CLD 314,Literacy in the Early Years
+CLD 315,Creative Arts II
+CLD 317,Concept Development in Math
+CLD 322,Research I: Methods
+CLD 323,Research II: Applications
+CLD 332,Families in Canadian Context II
+CLD 342,Assessment for Programming
+CLD 363,Field Education III
+CLD 417,Children and STEM in the Environment
+CLD 421,Childhood Bilingualism
+CLD 435,Theory and Practice of Family Support
+CLD 442,Infant Mental Health
+CLD 444,Therapies for Young Children
+CLD 445,Inclusion and Consultation
+CLD 446,Children and Chronic Illness
+CLD 447,Equity Issues in Ontario ECE
+CLD 448,Childhood in a Global Context
+CLD 449,Research in ECE Lab Schools
+CLD 450,Indigenous Early Learning
+CLD 454,Policy in ECEC
+CLD 464,Field Education IV
+CLD 466,International/National Placement
+CLD 467,Work Placement
+CLD 500,A Caring World for Children
+CLD 540,Black Childhoods in Canada
+CLD 570,Indigenous Childhoods
+CMN 100,Professional Health Communication
+CMN 114,Short Management Reports
+CMN 130,Introduction to Theories of Communication
+CMN 200,Introduction to Professional Writing
+CMN 210,"Text, Image and Sound"
+CMN 211,Language and Power
+CMN 215,"Messages, Modalities and Media"
+CMN 216,Communication Revolutions
+CMN 222,Digital Discourse and Design
+CMN 225,Communication in Place
+CMN 230,Trans Studies and Communication
+CMN 231,Communicating with Comics
+CMN 240,Co-op Preparation in The Creative School
+CMN 255,Fashion and Communication
+CMN 269,Countercultural Communication
+CMN 279,Introduction to Professional Communication
+CMN 288,Communication and Social Media
+CMN 300,Communication in the Computer Industry
+CMN 304,Career Advancement Communication
+CMN 305,Strategic Public Relations In ProCom
+CMN 306,Risk and Crisis Communication
+CMN 310,Communication with Colour
+CMN 313,Organizational Report Writing
+CMN 314,Professional Presentations
+CMN 315,Organizational Communication
+CMN 316,Questioning Data
+CMN 317,"Information, Technology, and Control"
+CMN 321,Knowledge Translation
+CMN 323,Professional Practice
+CMN 324,Strategic Storytelling in Industry
+CMN 325,Communication and the Digital Enterprise
+CMN 330,Advanced Professional Writing
+CMN 340,Climate Change Communication
+CMN 376,ProCom Internship
+CMN 380,Spectacle and the City
+CMN 390,Communicating with Comics
+CMN 402,Theorizing Communication
+CMN 406,Storytelling in an Indigenous Context
+CMN 408,Proposal and Grant Writing
+CMN 411,Special Topics in ProCom
+CMN 413,Corporate Communications
+CMN 414,Interpersonal Communication
+CMN 415,Intersectional Approaches to Advocacy
+CMN 425,Directed Studies in ProCom
+CMN 432,Communication in the Engineering Professions
+CMN 443,Contemporary Intercultural Communication
+CMN 447,Communication and Law
+CMN 448,Visual Communication
+CMN 450,Participatory Media and Communication
+CMN 453,Communication and Social Change
+CMN 460,"Food, Communication and Culture"
+CMN 462,Critical Health Communication
+CMN 472,Political Communication and Race
+CMN 480,Applied Research Methods I
+CMN 490,Professional Communication Capstone
+CMN 600,"Science, Communication and Society"
+CMN 601,Visual Communication: A Critical Approach
 COE 318,Software Systems
 COE 328,Digital Systems
 COE 428,Engineering Algorithms and Data Structures
@@ -247,6 +637,99 @@ CPS 853,Creating Big Data Systems
 CPS 865,Model-Driven Software Engineering
 CPS 870,Applied Natural Language Processing
 CPS 888,Software Engineering
+CRB 100,Introduction to the Caribbean
+CRB 500,Families in the Caribbean
+CRB 501,Racism and Caribbean Peoples in Canada
+CRB 502,Cultural Traditions in the Caribbean
+CRB 600,Postcolonial Caribbean Society
+CRB 603,Special Topics in Caribbean Studies
+CRB 605,Caribbean Tourism: Impacts and Resistance
+CRB 614,Caribbean Critical Thought
+CRI 100,Creative Industries Overview
+CRI 111,Indigenous Cultures of Creativity
+CRI 200,IP Issues in the Digital Age
+CRI 300,Digital Design Studio
+CRI 410,"Beggars, Choosers: C.I Advocacy"
+CRI 420,Book Publishing and Marketing
+CRI 430,Canadian Media Entertainment Industries
+CRI 450,Appreciating Creativity in Practice
+CRI 460,Financial Management for Creatives
+CRI 500,Project Management
+CRI 510,Art and Business of Gaming
+CRI 520,Design Management
+CRI 530,Talent Management
+CRI 540,Marketing the Creative Industries
+CRI 560,Topics in Creative Industries
+CRI 570,Creative Industries: International Lab
+CRI 590,Storying Indigenous People
+CRI 620,Concert and Festival Management
+CRI 630,Advertising Theory and Practice
+CRI 670,Music and Brands
+CRI 680,Celebrity
+CRI 700,Human Resources in Creative Industries
+CRI 720,Media Regulation and Communication Policy
+CRI 730,Strategic Leadership in Cr. Industries
+CRI 750,Emerging Media and Business Models
+CRI 760,Diversity in Creative Industries
+CRI 770,Trendwatching
+CRI 780,Your Creative Self
+CRI 800,Managing Creative Enterprises
+CRI 810,Studies in Creative Collaboration
+CRI 820,Global Licensing/Distribution Agreements
+CRI 830,Youth Cultural Production
+CRI 840,Experience Innovation
+CRI 850,Directed Reading Course
+CRI 860,The Big Night
+CRM 100,Introduction to Canadian Criminal Justice
+CRM 101,Understanding Crime in Canadian Society
+CRM 102,Introduction to Criminology
+CRM 200,Criminal Law
+CRM 201,Making Public Order in Canada
+CRM 202,Victims and the Criminal Process
+CRM 204,Criminal Justice Research and Statistics
+CRM 205,"Gender, Sexuality and the Law"
+CRM 206,"Race, Ethnicity and Justice"
+CRM 225,The Experience of Incarceration
+CRM 250,Criminalizing Blackness
+CRM 285,Green Criminology and Climate Justice
+CRM 300,Policing in Canada
+CRM 302,Criminological Theories
+CRM 303,Immigration and Refugee Protection in CJS
+CRM 304,Youth Justice in Canada
+CRM 306,Corrections in Canada
+CRM 308,Criminal Courts in Canada
+CRM 310,Advanced Qualitative Research Methods
+CRM 311,Regulating Public Space
+CRM 312,Representing Crime
+CRM 314,Criminal Justice and the Charter
+CRM 315,Advanced Quantitative Research Methods
+CRM 316,International Perspectives
+CRM 317,Special Topics in Criminology/Law
+CRM 318,Violence and Communities
+CRM 319,Criminalizing Indigenous Sovereignty
+CRM 322,Ethics in Criminal Justice
+CRM 324,Security Threats
+CRM 335,History and Politics of Abolition
+CRM 340,Theories of Crime and Society
+CRM 350,Cyber Criminology
+CRM 360,Criminalizing Global Migration
+CRM 365,CrimJust Voluntary Sector
+CRM 370,Health and Imprisonment
+CRM 375,State Violence and Resistance
+CRM 400,Indigenous Governance/Justice
+CRM 402,Criminal Justice and Social Inequality
+CRM 404,Debates In Justice Policy
+CRM 406,Seminar in Criminal Justice
+CRM 500,Drug Criminalization and Control
+CRM 515,Gendering Justice
+CRM 601,Violence in Society
+CSE 100,Wicked Problems and Creative Intervention
+CSE 200,Creative Strategic Foresight
+CSE 201,Social Justice in Design
+CSE 300,Creative Global Masterclass
+CSE 310,International Context
+CSE 400,Special Projects Placement
+CSE 410,Creative Capstone Enrichment
 CVL 207,Graphics
 CVL 300,Environmental Science and Impact Assess
 CVL 312,Computer Aided Structural Analysis
@@ -289,9 +772,163 @@ CVL 910,Transportation Planning
 CVL 913,Water Supply Engineering
 CVL 914,Pavement Materials and Design
 CVL 920,Water and Wastewater Treatment Engineering
+CYC 101,Intro to Child and Youth Care
+CYC 102,Ready for Practice
+CYC 110,Professional Issues and Communication
+CYC 201,Child Abuse and Neglect
+CYC 220,"Children, Youth and Mental Health"
+CYC 301,Interpersonal Communications
+CYC 302,Therapeutic Recreational Programming
+CYC 303,Internship I
+CYC 310,Therapeutic Assessment and Healing
+CYC 320,Roots and Resistance to ABR
+CYC 347,Professional Issues
+CYC 402,Group Work with Children and Youth
+CYC 405,Therapeutic Foundations
+CYC 406,Therapeutic Life-Space
+CYC 409,Social Research and Evaluation I
+CYC 410,Centring Resistance - Advanced Praxis
+CYC 500,Youth Living on the Edge
+CYC 505,Management in Human Service Organizations
+CYC 510,Anti-Oppressive Relational Practice
+CYC 515,Cyber Technology and Communication
+CYC 517,CYC Practice in Developmental Services
+CYC 518,Special Topics
+CYC 519,Independent Reading
+CYC 550,Foundations of Social Innovation
+CYC 560,Social Innovation in Practice
+CYC 570,Social Innovation in Action
+CYC 602,Children's Rights
+CYC 604,Social Research and Evaluation II
+CYC 607,Therapeutic Assessment
+CYC 608,Therapeutic Intervention
+CYC 610,Research and Evaluation III
+CYC 650,Roots and Resistance to Anti-Black Racism
+CYC 800,Intensive In-Home Family Support
+CYC 801,CYC Practice in Education
+CYC 803,Advocacy in Child and Youth Services
+CYC 805,Special Issues: Program Development
+CYC 806,Advanced Placement
+CYC 807,Advanced Group Work
+CYC 808,Residential Care Techniques
+CYC 809,Trauma-Informed Practice
+CYC 819,Practice with Families
+CYC 822,Professional Practice and Identity
+CYC 825,Independent Studies
+CYC 830,Independent Studies I
+CYC 840,Independent Studies II
+CYC 900,Diversity Issues for Children and Youth
+CYC 905,An Indigenous Perspective on CYC
+CYS 111,The Cyber World: Components and Roles
+CYS 119,Found of Software Design and Development
+CYS 122,Evidence-Based Security
+CYS 151,Introduction to Cybersecurity
+CYS 211,Networked Systems Security
+CYS 213,Computer Organization I
+CYS 229,Secure Software Development
+CYS 231,Introduction to Security Protocols
+CYS 344,Cybersecurity and Society
+CYS 393,Linux Operations for Cybersecurity
+CYS 414,Computer Organization II
+CYS 473,Applied Cryptography
+CYS 512,Cybersecurity Strategy and Policy
+CYS 711,Incident Response
+CYS 713,Vulnerability Analysis and Auditing
+CYS 715,Database Security and Auditing
+CYS 716,Software Security Engineering
+CYS 717,Internet of Things (IoT) Security
+CYS 718,Cybersecurity Analytics
+CYS 731,Malware Analysis
+CYS 741,Digital Forensics
+CYS 790,Operating Systems Hardening
+CYS 800,Cyber Clinic
+DST 300,Whose Lives Matter?
+DST 500,A History of Madness
+DST 501,Rethinking Disability
+DST 502,Disability and the State
+DST 503,Current Topics in Disability I
+DST 504,Mad People's History
+DST 506,Principles and Practices of Accessibility
+DST 507,"Disability, Justice and Good Human Life"
+DST 508,Cripping the Arts in Canada
+DST 509,Disability Arts and Culture
+DST 510,Death and Everyday Life
+DST 525,Disability and Representation
+DST 601,Mad Poetics
+DST 603,Law and Disability
+DST 604,Current Topics in Disability II
+DST 605,"Sexuality, Desire and Disability"
+DST 613,Strategies for Community Building
+DST 614,"Community, Access and Technology"
+DST 620,Disability Studies in Education
+DST 630,Mad Studies: Contemporary Perspectives
+DST 640,Madness and Childhood
+DST 725,The Politics and Practice of Interventions
+DST 727,Leadership Practices for Changing Times
+DST 880,Foundations: Disability Studies Research
+DST 881,Disability Studies Research in Action
+DST 990,Applied Community or Research Project
+DST 991,Independent Research Thesis
+ECN 104,Introductory Microeconomics
+ECN 109,Basic Mathematics for Economics
+ECN 110,The Economy and Society
+ECN 129,Statistics for Economics I
+ECN 189,Mathematics for Economics I
+ECN 204,Introductory Macroeconomics
+ECN 210,Understanding Economics
+ECN 220,Evolution of the Global Economy
+ECN 230,Mathematics for Economics II
+ECN 301,Intermediate Macroeconomics I
+ECN 320,Introduction to Financial Economics
+ECN 321,Introduction to Law and Economics
+ECN 329,Statistics for Economics II
+ECN 340,The Economics of Human Behaviour
+ECN 440,Economic Issues in Financial Markets
+ECN 501,Industrial Organization
+ECN 502,Economics of Energy and Natural Resources
+ECN 503,Economic Development
+ECN 504,Intermediate Microeconomics I
+ECN 506,Money and Banking
+ECN 507,Ethics and Justice in Economics
+ECN 509,Economic Issues in Money and Banking
+ECN 510,Environmental Economics
+ECN 511,Economy and Environment
+ECN 512,The Economics of Sex
+ECN 600,Intermediate Macroeconomics II
+ECN 601,Economics of Information
+ECN 605,Labour Economics
+ECN 606,International Monetary Economics
+ECN 610,The History of Economic Thought
+ECN 614,An Introduction to Game Theory
+ECN 620,Applied Economic Analysis
+ECN 627,Econometrics I
+ECN 630,Economic History
+ECN 640,Economics of Immigration
+ECN 700,Intermediate Microeconomics II
+ECN 702,Econometrics II
+ECN 703,Public Sector Economics
+ECN 707,Economics of International Trade
+ECN 715,Advanced Microeconomics
+ECN 722,Economic Issues in Professional Sports
+ECN 723,Applied Research Methods
+ECN 724,Advanced Econometrics
+ECN 725,Financial Econometrics
+ECN 726,Economics of Developing Countries
+ECN 729,Sports Economics
+ECN 801,Principles of Engineering Economics
+ECN 808,Economic Growth and Technological Change
+ECN 815,Advanced Macroeconomics
+ECN 820,Thesis
+ECN 900,Internship
+ECN 910,Internship
 EES 508,Digital Systems
 EES 512,Electric Circuits
 EES 612,Electric Machines and Actuators
+EID 100,Digital Skills and Innovation
+EIE 201,Start-up of Technology Ventures
+EIE 301,Practicum I: New Venture Identification
+EIE 401,Practicum II: Market and Tech Development
+EIE 501,Practicum III: Bus Dev and Mkt Readiness
 ELE 202,Electric Circuit Analysis
 ELE 302,Electric Networks
 ELE 401,Electric and Magnetic Fields
@@ -330,6 +967,929 @@ ELE 884,Photonics
 ELE 885,Optical Communication Systems
 ELE 888,Intelligent Systems
 ELE 900,AI: Sociotechnical Perspective
+EMS 201,Entrepreneurship and Innovation Management
+EMS 202,Operations Management
+EMS 203,Investment Analysis
+EMS 204,Organization Design and Dynamics
+EMS 301,Management Information Systems
+EMS 302,Operations Research
+EMS 303,Managerial Accounting
+EMS 304,Project Management
+ENG 101,Laughter and Tears: Comedy and Tragedy
+ENG 104,The Short Story
+ENG 110,Literatures Across Borders
+ENG 112,"Zap, Pow, Bang: Pop Lit"
+ENG 142,"Black Arts, Black Power"
+ENG 200,Writing as a Cultural Act
+ENG 201,Myth and Literature
+ENG 203,The Literature of Indigenous Peoples
+ENG 208,Introduction to Non-Fiction
+ENG 212,Cultures in Crisis
+ENG 222,Fairy Tales and Fantasies
+ENG 223,Literatures of Exile and Migration
+ENG 224,Children's Literature
+ENG 230,"Creativity, Writing, and Everyday Life"
+ENG 240,Contours of Creativity
+ENG 302,Practicum: Writing for Magazines
+ENG 304,Practicum: Making Digital Work
+ENG 306,Practicum: Writing Poetry
+ENG 307,Practicum: Writing Fiction
+ENG 308,Practicum: Grammar Principles for Editors
+ENG 340,Practicum: Making Little Magazines
+ENG 390,Practicum: Open Topics
+ENG 400,Literary and Cultural Theory
+ENG 402,Comics
+ENG 406,Visionary Poetics
+ENG 407,Writing Short Stories
+ENG 409,Literatures of the City
+ENG 413,"Literature, Empire, and Colonization"
+ENG 416,American Literatures
+ENG 417,Special Topics in American Literatures
+ENG 421,16C Literature and Culture
+ENG 422,17C Literature and Culture
+ENG 430,The History of Reading
+ENG 503,Science Fiction
+ENG 505,Creative Writing
+ENG 510,Gothic Horror
+ENG 511,The Art of Writing Life
+ENG 515,Madness in Fiction
+ENG 517,Techniques and Topics in Creative Writing
+ENG 520,The Language of Persuasion
+ENG 522,Crime Fiction
+ENG 527,Digital Media and Story
+ENG 529,Controversies in Public Discourse
+ENG 530,Literary Non-Fiction
+ENG 531,18C Literature and Culture
+ENG 540,The Novel
+ENG 548,"Parenting, Media, and Culture"
+ENG 550,Drama
+ENG 560,Poetry and Poetics
+ENG 570,Auto/Biography
+ENG 577,Getting the Word Out: Publishing
+ENG 580,The Gothic
+ENG 590,Studies in Word and Image
+ENG 602,Women's Writing
+ENG 610,"The Language of Love, Sex and Gender"
+ENG 611,Film and Literature
+ENG 620,Literatures of the Caribbean
+ENG 621,"Women's Texts, Global Contexts"
+ENG 623,"Film/Literature: Middle East,North Africa"
+ENG 624,20C Literature and Culture
+ENG 632,19C Literature and Culture
+ENG 634,Romantic Explorations
+ENG 635,Modernism
+ENG 640,Literatures of Asia and its Diasporas
+ENG 647,Afrofuturism: Black 2 the Future
+ENG 650,Indigenous World Views
+ENG 653,Black Literatures and Cultures
+ENG 662,Shiny Writing: The Editing Process
+ENG 680,The Art of Oral Storytelling
+ENG 701,Canadian Literatures
+ENG 703,Popular Literatures
+ENG 705,Studies in Visual Cultures
+ENG 706,Shakespeare and Performance
+ENG 707,Shakespeare and His World
+ENG 710,Special Topics in Canadian Literatures
+ENG 730,Cultures of the Book
+ENG 810,Approaches to English Research
+ENG 820,Open Topics in Literature and Culture
+ENG 904,Independent Research Paper
+ENG 907,Independent Research Project
+ENG 910,English Capstone Seminar
+ENG 911,Creative Writing Capstone
+ENG 921,Storytelling in the Algorithmic Age
+ENG 941,Gender and Sex in Literature and Culture
+ENG 942,Decolonizing Literature
+ENG 960,Internship
+ENH 121,Environmental Health Law
+ENH 122,Epidemiology
+ENH 220,Pathophysiology
+ENH 222,Foundations of Aetiology
+ENH 324,Wastewater Treatment Systems
+ENH 325,Housing and Built Environments
+ENH 333,Food Hygiene
+ENH 422,Epidemiology: Communicable Diseases II
+ENH 424,Water Quality
+ENH 429,International Health
+ENH 433,Food Hygiene: Safe Food Handling
+ENH 440,Biostatistics
+ENH 505,Infection Control
+ENH 522,Research Methods
+ENH 524,Pollution and Waste Management
+ENH 610,Parasitology and Pest Control
+ENH 617,Applied Ecology
+ENH 712,Health Education
+ENH 721,Public Health Law
+ENH 733,Food Hygiene: Food Pathogens
+ENH 766,Research Project I
+ENH 809,Seminars
+ENH 816,Health Promotion: Planning and Evaluation
+ENH 821,Health Administration
+ENH 825,Risk Assessment
+ENH 866,Research Project II
+ENH 911,Emergency Measures and Planning
+ENT 100,Applied Entrepreneurship
+ENT 101,Building an Entrepreneurial Mindset
+ENT 401,Design Thinking Experience
+ENT 500,New Venture Startup
+ENT 501,Family Business in Canada
+ENT 502,Case Studies in Family Business
+ENT 505,Small-Business Management
+ENT 511,Funding New Ventures
+ENT 524,The Practice of Entrepreneurship
+ENT 526,Entrepreneurial Behaviour and Strategy
+ENT 527,Theories in Entrepreneurship
+ENT 528,New Venture Development
+ENT 555,Managing Small and Medium Enterprises
+ENT 570,Entrepreneurial Self-Development Part I
+ENT 577,Entrepreneurial Selling
+ENT 580,Entrepreneur Self-Development Part II
+ENT 601,Identifying Opportunities
+ENT 620,Current Issues in Innovation and Entrepreneurship
+ENT 627,Social Entrepreneurship and Changemaking
+ENT 630,Leveraging the Crowd
+ENT 710,Making a Prototype
+ENT 725,Management of Innovation
+ENT 726,Creating a Business Plan
+ENT 727,Applied Research in Entrepreneurship
+ENT 777,"Intrapreneurship, Spinouts and Innovation"
+ENT 801,Entrepreneurial Career and Life Design
+EUS 102,Environment and Sustainability
+EUS 180,Global Water Issues
+EUS 202,Sustaining the City's Environments
+EUS 301,Reading Neighbourhood Environments
+EUS 401,Patterns of Demography and Environment
+EUS 402,Research and Statistics
+EUS 450,Responses to Climate Change
+EUS 501,Ecological Processes in the Cdn Landscape
+EUS 550,Sustainable Cities: Politics and Equity
+EUS 601,Nature in Fragments
+EUS 650,Waste and Waste Management
+EUS 701,Field Studies in Urban Environmental Sci
+EUS 702,Senior Field Project
+EUS 750,Energy and Transportation Transitions
+EUS 760,Cities at Risk
+EUS 799,Special Topics in Env. Urban Sust
+EUS 801,Senior Professional Project
+EUS 850,Sustainability in Organizations
+EUS 860,Measuring Sustainability
+EUS 870,Ecological Restoration
+EUS 880,Field Studies
+EUS 900,EUS Internship Placement I
+EUS 901,EUS Internship Placement II
+FCD 121,Design Literacy I
+FCD 210,"Text, Image and Sound"
+FCD 222,Coding for Creatives
+FCD 230,Topics in Communication and Design
+FCD 240,History of Art and Design: Global Survey
+FCD 309,Design for Sustainability
+FCD 316,The Global Stage
+FCD 362,Introduction to UX/UI Design
+FCD 540,Marketing for Creatives
+FCD 551,Digital Media and Networked Cultures
+FCD 558,Intro to Design Thinking
+FCD 700,Cortona Experience: Design Intensive
+FCD 710,London Experience: Creative Technology
+FCD 720,New York Experience: Creative Enterprise
+FCD 730,Dubai Experience: Creative Strategies
+FCD 760,Diversity: Creative Work
+FCD 800,Foundations of Research Methods
+FCD 810,Immersion in Communication and Design
+FCD 815,Design Solutions Supercourse I
+FCD 816,Global Campus Studio Supercourse I
+FCD 817,Live Event Supercourse I
+FCD 825,Design Solutions Supercourse II
+FCD 826,Global Campus Studio Supercourse II
+FCD 827,Live Event Supercourse II
+FCD 912,Researching Media Audiences
+FCD 918,Media Ethics
+FCD 920,Visual Story Production
+FCD 962,Designing Interactions
+FCS 100,Working Toward a Just Society
+FCS 101,Social Justice and Mental Health
+FCS 120,Equity in the Future of Health Care
+FCS 200,Indigenous Relations in Practice
+FCS 400,Indigenous Sovereignty in Practice
+FDL 140,Managing Fashion Enterprises
+FDL 150,Fashion Project Management
+FDL 240,New Fashion Business Models
+FDL 340,Strategic Communications in Fashion
+FDL 540,Strategic Leadership in Fashion
+FDL 610,Ethical and Sustainable Fashion Leadership
+FDL 620,Special Topics in Design Leadership
+FDL 640,Fashion Futures
+FDL 850,Social Innovation in Fashion
+FFC 100,Image Making and Media
+FFC 200,Fashion Photography
+FFC 224,Illustration: The Fashioned Body
+FFC 300,Art Direction for Fashion
+FFC 301,Packaging Design
+FFC 303,Communication Design I
+FFC 324,Lifestyle and Product Illustration
+FFC 400,Communication and Emerging Media
+FFC 403,Communication Design II
+FFC 405,Web Design
+FFC 503,Digital Illustration and Product Development
+FFC 552,Typography and Graphic Design
+FFC 603,Advertising Design
+FFC 605,Product Development
+FFC 620,Special Topics in Communication
+FFC 652,Publication Design
+FFC 705,Interdisciplinary Image Making
+FFC 750,Collaborative Studio
+FFD 113,Fashion Design I
+FFD 200,Textiles II
+FFD 213,Fashion Design II
+FFD 300,Digital Patternmaking for Fashion Design
+FFD 303,Digital Illustration for Fashion
+FFD 313,Intermediate Fashion Design I
+FFD 324,Illustration for Fashion Design
+FFD 400,3D Digital Fashion
+FFD 403,Integrated Visual Communication II
+FFD 405,Grading Techniques
+FFD 410,Draping I
+FFD 413,Intermediate Fashion Design II
+FFD 501,Contour Design
+FFD 502,Fur Design
+FFD 503,Knitwear Design
+FFD 504,Block Development I
+FFD 513,Advanced Fashion Design I
+FFD 520,Block Development II
+FFD 530,3D Digital Fashion Visualization
+FFD 605,Digital Knit Technology
+FFD 610,Draping II
+FFD 613,Advanced Fashion Design II
+FFD 617,Collection Creative Direction
+FFD 620,Special Topics in Fashion Design
+FFD 650,Responsible Fashion Design
+FFD 780,Couture Traditions
+FFD 790,Bespoke Tailoring
+FFD 802,Strategic Production Management
+FFS 102,"Dress, The Body, and Identity"
+FFS 110,Art and Historical Change
+FFS 120,Fashion and Race
+FFS 200,Textile Histories
+FFS 400,Embodying Textiles
+FFS 402,Fashion and Modernity
+FFS 511,Fashion and Material Culture
+FFS 610,Topics in Fashion Studies
+FFS 625,Mobilizing Fashion Studies
+FFS 702,Fashion and the Abject Body
+FFS 710,Post-Colonial Perspectives
+FIN 205,Islamic Finance
+FIN 300,Managerial Finance I
+FIN 401,Managerial Finance II
+FIN 501,Investment Analysis
+FIN 502,Personal Financial Planning
+FIN 510,Small Business Finance
+FIN 512,Risk Management and Insurance
+FIN 521,Advanced Investment Management
+FIN 562,Personal Finance
+FIN 601,Derivatives
+FIN 610,Short-Term Financial Management
+FIN 611,Fixed Income Securities
+FIN 612,Retirement and Estate Planning
+FIN 621,International Finance
+FIN 631,Financial Modeling I
+FIN 650,Applied Investment Management I
+FIN 699,Introduction to FinTech
+FIN 701,Financial Intermediation
+FIN 710,Advanced Corporate Finance
+FIN 711,Advanced Portfolio Management
+FIN 731,Financial Modeling II
+FIN 750,Applied Investment Management II
+FIN 800,Ethics in Finance
+FIN 801,Financial Risk Management
+FIN 810,Corporate Financial Analysis
+FIN 812,Advanced Personal Financial Planning
+FMF 130,Material Sensibilities
+FMF 230,Creative Process: Motif to Textile
+FMF 235,Jewellery Design
+FMF 240,Indigenous Craft Practices
+FMF 330,Prototyping and Modelling
+FMF 335,Millinery Design
+FMF 530,Wearable Technologies
+FMF 545,Natural Dye Workshop
+FMF 601,Textile Development
+FMF 620,Special Topics in Textiles and Material Practices
+FMF 630,Bio Textile Design
+FMF 635,Advanced Jewellery Design
+FMF 640,Bespoke Trims and Embellishments
+FMF 702,Leather Design
+FMG 901,Foundations of Marketing
+FMG 902,Foundations of Management
+FMG 903,Foundations of Quantitative Methods
+FMG 904,Foundations of Accounting
+FMG 905,Foundations of Economics
+FMG 906,Foundations of Finance
+FND 100,Food Science I
+FND 300,Food Science II
+FND 301,Product Development
+FND 401,Social and Cultural Dimensions of Food
+FNF 100,Families and Health
+FNF 400,The Social Context of Human Sexuality
+FNF 520,Contemporary Family Relations
+FNN 100,Nutrition and Health
+FNN 111,Nutrition for your Health
+FNN 200,Nutrition and Metabolism
+FNN 201,Nutrition Through the Lifespan
+FNN 202,Public Health Nutrition
+FNN 301,Intro to Nutrition Management of Human Disease
+FNN 302,Advanced Nutrition and Metabolism
+FNN 400,Advanced Nutrition for Health Promotion
+FNN 401,Advanced Nutrition Management of Human Disease
+FNN 403,Advanced Nutritional Science
+FNP 100,Introduction to Professional Practice
+FNP 250,"Markets, Food Systems/Food Policy"
+FNP 300,Nutrition Communication: Theory/Practice
+FNP 350,Interpersonal Comm/Counselling Nutrition
+FNP 400,Interprofessional Placement
+FNP 500,Advanced Issues in Nutrition
+FNP 550,Introduction to Dietetics Practice
+FNR 100,Introduction to Research and Statistics
+FNR 201,Research Methods and Statistics
+FNR 310,Senior Quantitative Research Project
+FNR 320,Foundations of Qualitative Research
+FNR 400,Independent Research Study I
+FNR 401,Independent Research Study II
+FNS 200,Quantity Food Management
+FNS 250,Introduction to Food Systems
+FNS 400,Food Service Systems Management
+FNU 100,Canadian Cuisine: Historical Roots
+FNU 101,Food Practices and Policy
+FNY 400,Selected Topics in Food Security
+FNY 403,Food Security Concepts and Principles
+FNY 404,Food Policy and Programs for Food Security
+FNY 405,Applied Research Methods and Evaluation
+FNY 406,Food Prices and Food Security
+FNY 407,Community Development and Food Security
+FNY 408,Urban Food Security
+FNY 409,Gender and Food Security
+FNY 510,Indigenous Food Systems in Canada
+FPN 201,The Moving Image in Performance II
+FPN 323,Sound Design for Visual Media I
+FPN 330,Photography and Creativity
+FPN 340,Analogue Photography: Film and Darkroom
+FPN 501,Scenography I: Art Direction
+FPN 502,Directing Screen Performance - Basic Principles
+FPN 503,Screenwriting I
+FPN 506,New Approaches to Documentary Photography
+FPN 512,Microcinema
+FPN 513,Creative Coding
+FPN 531,Cinematography and Lighting Design I
+FPN 532,Studio Lighting: Portrait and Fashion
+FPN 533,Sound Design for Visual Media II
+FPN 534,Graphic Design
+FPN 535,User Experience Design
+FPN 536,Media Business Practices
+FPN 537,Immersive Imaging
+FPN 538,Visual Storytelling on the Web
+FPN 539,The Human Figure
+FPN 541,Animation Practices
+FPN 542,Design for Mobile Devices
+FPN 543,Historical Processes Workshops
+FPN 544,Experimental Film Processes
+FPN 545,Hybrid Media Workshop
+FPN 546,Curation and Exhibition
+FPN 547,Co-Operative Internship
+FPN 550,Creative Editing
+FPN 560,Advanced Sound Design and Mixing
+FPN 565,Art Direction for Film
+FPN 570,Advanced Screenwriting
+FPN 575,Advanced Picture Editing
+FPN 580,Visual Effects for Film
+FPN 585,Production Design for Film
+FPN 600,Visual Effects for Film I
+FPN 601,Scenography II - Production Design
+FPN 602,Directing Screen Performance - Advanced
+FPN 603,Screenwriting II
+FPN 631,Cinematography and Lighting Design II
+FPN 632,Studio Lighting: Still Life and Product
+FPN 633,Topics in Contemporary Art
+FPN 634,Graphic Design: Identity and Influence
+FPN 710,IMA International
+FPN 720,Virtual Cameras: Intro to 3D production
+FPN 735,Directed Field Study I
+FPN 835,Directed Field Study II
+FRE 101,Introductory French I
+FRE 201,Introductory French II
+FRE 301,Intermediate French I
+FRE 302,"French Food, Wine and Hospitality"
+FRE 303,French and Fashion
+FRE 401,Intermediate French II
+FRE 402,French Conversation and Pronunciation
+FRE 501,Speaking and Writing French I
+FRE 502,Communication and Business French
+FRE 503,Middle Ages to Classicism
+FRE 504,French Audiovisual Translation
+FRE 505,French Language and Culture
+FRE 507,English-French Translation I
+FRE 510,Effective Writing
+FRE 515,Introduction to Business French
+FRE 601,Speaking and Writing French II
+FRE 602,Business French in Practice
+FRE 603,Enlightenment to La Belle Époque
+FRE 604,French for Healthcare
+FRE 605,Francophone Language and Culture
+FRE 607,English-French Translation II
+FRE 608,Contemporary French Literature
+FRE 609,Franco-Canadian Literature
+FRE 610,Cultural Context of Writing
+FRE 701,French for Today
+FRE 702,French Gastronomy and Culture
+FRE 704,Franco-Canadian Culture
+FRE 706,The Life and Times of the French Language
+FRE 707,Introduction to French-English Translation
+FRE 709,Children's Literature in French
+FRE 801,French and New Media
+FRE 805,French Language Teaching Methodologies
+FRE 900,Senior French Seminar
+FRE 901,Francophone Women Writers
+FRE 903,The Francophone Short Story
+FRS 502,Feminism and French Literature
+FRS 602,French Caribbean Literature and Culture
+FSN 101,Discovering Textiles
+FSN 105,Fashion Systems I
+FSN 120,Fashion Design I
+FSN 122,Illustration I
+FSN 123,Intro to Fashion
+FSN 124,Illustration: Fundamentals Figure Drawing
+FSN 132,History of Art I
+FSN 199,Fashion: The Industry
+FSN 203,History of Design
+FSN 205,Fashion Systems II
+FSN 209,Digital Textile Design
+FSN 220,Fashion Design II
+FSN 221,Design Literacy II
+FSN 222,Illustration II
+FSN 223,Fashion Theory
+FSN 224,Refashioning History
+FSN 232,History of Art II
+FSN 302,Fashion Histories: Ancient to Pre-modern
+FSN 303,"Design Thinking, Process and Methods"
+FSN 304,Fashion Journalism and Copywriting
+FSN 400,Fashion in International Markets
+FSN 402,Internship
+FSN 500,Accessories Design I
+FSN 501,Advanced Colour Theory
+FSN 502,Small Goods: Leather and Fur Design
+FSN 503,Critical Issues in Design
+FSN 504,Fashioning Feminism
+FSN 505,Textile Design II
+FSN 506,Surface Design
+FSN 507,Digital Product Management
+FSN 508,World Fashion: Contemporary Perspectives
+FSN 509,Topics in Fashion History and Theory
+FSN 510,"Fashion Film, Cinema and New Media"
+FSN 520,Land and Fashion
+FSN 525,Indigenous Fashion
+FSN 555,History of Fashion Images
+FSN 556,Design and Cultural Diversity
+FSN 557,Design and art writing
+FSN 598,Special Topics I
+FSN 599,Special Topics II
+FSN 600,Design Justice
+FSN 605,Fashioning Queer Futures
+FSN 610,Carnival Arts
+FSN 620,Black Fashion
+FSN 631,Fashion and Popular Culture in East Asia
+FSN 660,Compassionate Couture
+FSN 698,Special Topics III
+FSN 699,Special Topics IV
+FSN 700,Advanced Illustration
+FSN 703,Visual Merchandising and Display
+FSN 704,Dress-Cultural Transformation
+FSN 706,Fashion Event Planning
+FSN 707,Research Methods in Fashion
+FSN 709,Professional Aspects of Fashion
+FSN 710,Human Centred Design
+FSN 711,Curation and Exhibition
+FSN 712,Creative Design
+FSN 715,Fashion Illustration and Diversity
+FSN 720,Illustration and Fashion Activism
+GCM 110,Introduction to Graphic Communications
+GCM 111,Graphic Communication Technologies
+GCM 120,Graphic Communications Processes 1
+GCM 121,Graphic Communications Processes 2
+GCM 130,Design and Layout
+GCM 210,Introduction to Packaging
+GCM 220,Graphic Communications Processes 3
+GCM 230,Typography
+GCM 240,Material Science for Print
+GCM 250,Binding and Finishing
+GCM 260,Digital Premedia Workflows
+GCM 320,Digital Printing Technologies
+GCM 350,Estimating for Graphic Communications
+GCM 360,Colour Management for Graphic Communications
+GCM 362,Introduction to UX/UI Design
+GCM 370,Management Studies
+GCM 372,Operations and Process Management
+GCM 375,Project Management for Graphic Communications
+GCM 420,Advanced Print Production Processes
+GCM 460,Asset Management for Graphic Communications
+GCM 461,Workflow Automation
+GCM 470,Business Plan
+GCM 490,Thesis
+GCM 710,The Art of the Book
+GCM 712,Making an Impact: The Letterpress Revival
+GCM 720,Magazine Production and Publishing
+GCM 722,Book Production and Publishing
+GCM 730,"Fulfillment: Signed, Sealed and Delivered"
+GCM 738,Photoshopped! The Art of Image Retouching
+GCM 740,Accessibility for Graphic Communications
+GCM 746,Sustainability in Print and Packaging
+GCM 750,3D Printing
+GCM 754,Sign and Display Graphics
+GCM 765,Digital Signage
+GCM 800,Flexo for Creative Packaging
+GCM 802,EBook Production and Publishing
+GCM 804,Non-traditional Printing Applications
+GCM 806,Advanced Typography
+GCM 808,Outside the box: Package Prototyping
+GCM 810,"Creativity, Clients and Design"
+GCM 812,Advanced Binding and Book Arts
+GCM 816,Sales and Customer Relationship Mgmt GCM
+GCM 818,Press Troubleshooting Simulation
+GCM 822,Packaging and Distribution
+GCM 824,Digital Package Prototyping
+GCM 826,Plastics and Packaging
+GCM 830,Digital Client Communications Management
+GCM 840,Advanced Graphic Technologies
+GCM 850,Special Topics I
+GCM 852,Special Topics II
+GCM 854,Advanced Material Science
+GCM 856,Colour Theory and Measurement
+GCM 858,Advanced Workflows
+GCM 860,Advanced Variable Data Printing
+GCM 871,Research Design and Methods
+GEO 106,Geographies of Everyday Life
+GEO 108,Geography of the Global Village
+GEO 110,The Physical Environment
+GEO 131,"Energy, Earth and Ecosystems"
+GEO 141,Geography and GIS
+GEO 151,"Location, Location, Location"
+GEO 161,Introductory Analytical Techniques
+GEO 171,Professional Geography
+GEO 206,"Regions, Nations and the Global Community"
+GEO 208,Geography of the Global Economy
+GEO 210,Geography of Hazards
+GEO 221,Location Analysis
+GEO 231,Principles of Demography
+GEO 241,Cartographic Principles and Practice
+GEO 281,How to Lie with Maps
+GEO 301,Marketing Geography
+GEO 302,Retail Location
+GEO 311,Indigenous Geographies
+GEO 312,Viva Las Vegas!
+GEO 313,Weather and Climate
+GEO 322,A Critical Geography of South Asia
+GEO 351,Internal Structure of the City
+GEO 361,Inferential Statistics in Geography
+GEO 411,Resource and Environmental Planning
+GEO 419,"Retailing, GIS and Geodemographics"
+GEO 421,Geography of Retailing
+GEO 431,Recreation Analysis
+GEO 441,Geographic Information Science
+GEO 446,Introduction to Drone Flight and Imagery
+GEO 505,Regional Analysis of Canada
+GEO 507,Explorations of the Urban Environment
+GEO 509,"Food, Place and Identity"
+GEO 513,Physical Geography in Decision Support
+GEO 514,Resource Management in Northern Canada
+GEO 520,Global Political Geography
+GEO 521,Geodemographics
+GEO 522,Geography of the Middle East
+GEO 527,Inequalities in Urban Neighbourhoods
+GEO 530,Urban Economic Geography
+GEO 541,GIS Programming
+GEO 542,Introduction to Remote Sensing
+GEO 546,Advanced Drone Operations and Analysis
+GEO 551,Urbanization and Regional Development
+GEO 553,Studies in Rural Geography
+GEO 555,Colonial Infrastructures in North America
+GEO 561,Multivariate Analytical Techniques
+GEO 570,Neolithic Geographies
+GEO 575,Hydrology in a Changing World
+GEO 581,"GIS, Geographic Data and Mapping"
+GEO 605,The Geography of the Canadian North
+GEO 607,Cities and the Canadian Economic Landscape
+GEO 609,cyberspace@geography.ca
+GEO 612,Environmental Decision Making
+GEO 620,Political Geog of Nations and Localities
+GEO 621,Location Analysis of Commercial Activity
+GEO 627,Accessibility of Urban Social Services
+GEO 631,Exploration in Travel and Tourism
+GEO 641,GIS and Decision Support
+GEO 642,Advanced Remote Sensing and GIS
+GEO 643,Field Methods for Geospatial Data
+GEO 644,Spatial Databases
+GEO 645,Place and Population Health
+GEO 652,Urban Transportation Systems
+GEO 655,Queer Geographies
+GEO 671,Developmental and Environmental Law
+GEO 681,GIS and Geographic Analysis
+GEO 691,Canadian Immigration: Patterns and Place
+GEO 702,Technology and the Contemporary Environment
+GEO 705,Environment and Society in the Caribbean
+GEO 711,An Indigenous Guide to the Apocalypse
+GEO 716,Geographies of Health
+GEO 719,GIS in Business: Strategic Mgmt Decisions
+GEO 720,The Inner Landscape of Culture
+GEO 771,Practicum
+GEO 772,Individual Research Paper
+GEO 773,Field Studies
+GEO 793,The Geography of Toronto
+GEO 799,Special Topics in Geographic Analysis
+GEO 802,The Geography of Recreation and Leisure
+GEO 803,Recreation and Tourism Analysis
+GEO 811,Global Environmental Issues
+GEO 820,The Outer Landscape of Culture
+GEO 871,The Professional Geographer
+GEO 873,Geographic Entrepreneurship and Consulting
+GER 298,"Ability, Disability and Aging"
+GMS 200,Introduction to Global Management
+GMS 400,The Global Business Environment
+GMS 401,Operations Management
+GMS 402,Introduction to Managerial Economics
+GMS 410,Management-Large Corporation
+GMS 422,Quality Management
+GMS 450,Project Management
+GMS 455,Project Planning and Delivery
+GMS 502,Management Control
+GMS 510,Global Circular Economy
+GMS 520,International Business
+GMS 522,International Marketing
+GMS 528,Issues in Operations Management
+GMS 530,Managing Sustainably Internationally
+GMS 550,Business-to-Business e-Commerce
+GMS 601,International Economics
+GMS 614,Special Topics in Global Management
+GMS 630,Case Experiences
+GMS 690,The North American Business Environment
+GMS 691,The Asian Business Environment
+GMS 692,The European Business Environment
+GMS 693,The Latin American and Caribbean Bus Environ
+GMS 694,The African Business Environment
+GMS 695,The Middle Eastern Business Environment
+GMS 701,Purchasing and Supply Management I
+GMS 723,International Trade
+GMS 724,Management of International Enterprise
+GMS 730,Global Mgmt and Sustainable Investment
+GMS 750,Consulting to Management
+GMS 801,Purchasing and Supply Management II
+GMS 802,Ethics and Regulation of Int'l Bus
+GMS 803,Principles of Transportation
+GMS 804,Studies in Global Supply Chain Management
+GMS 805,Manufacturing Management
+GMS 807,Supply Management for the Manufacturing Sector
+GMS 850,Global Management Strategy
+GRK 100,Introduction to Attic Greek
+HAU 100,Haudenosaunee Cultural Perspective
+HAU 400,Haudenosaunee Leaders and Writers
+HIM 300,Managing Health Information Services
+HIM 301,Healthcare Information Analysis
+HIM 302,Health Information Systems Management
+HIM 303,Intro to Health Coding Classification
+HIM 305,Introduction to Health Informatics
+HIM 306,Healthcare Interoperability
+HIM 307,Human-Computer Interfaces in Healthcare
+HIM 403,Managerial Accounting and Finance
+HIM 404,Introduction to Health Economics
+HIM 405,Issues in Health Information Management
+HIM 406,Practicum Seminar
+HIM 407,Practicum
+HIM 408,Statistics for Health Services Managers
+HIS 101,What Is History?
+HIS 104,Ten Days That Shook The World
+HIS 105,Inventing Popular Culture
+HIS 106,"Technology, Warfare and Social Change"
+HIS 107,"Colonization, Colonialism and Independence"
+HIS 265,Asia: Foundations and Modern Nations
+HIS 275,Ancient Greece and Rome
+HIS 277,"Mediaeval Europe, 400-1350"
+HIS 316,Evolutions in Science from 1700
+HIS 348,American History from 1877
+HIS 350,The Fight for Rights in North America
+HIS 392,African Canadian History
+HIS 400,"Reading, Writing and Using History"
+HIS 401,"Hearing, Seeing and Speaking History"
+HIS 461,Cradle of Civilization: Ancient Near East
+HIS 462,Introduction to the Islamic World
+HIS 475,Human Rights in Global History
+HIS 490,International Relations from 1945
+HIS 500,Digital History
+HIS 501,Archaeology and Material Culture
+HIS 502,Life Stories: Oral History
+HIS 505,Locating The Past: Archival Research
+HIS 510,Museology and Public History
+HIS 541,Canada and the First World War
+HIS 556,Colonial Africa
+HIS 559,The World of Ancient Egypt
+HIS 560,History of Ancient Egypt
+HIS 561,The Ottoman Empire
+HIS 590,Modern International Relations
+HIS 610,Curating the Past
+HIS 615,"Film, Television and 20th C History"
+HIS 620,Imperial Russia
+HIS 630,The Soviet Union
+HIS 656,Post-Colonial Africa
+HIS 661,The Middle East from 1908
+HIS 662,"The Mughal Empire, 1526-1764"
+HIS 677,"Society in the High Middle Ages, 1000-1500"
+HIS 678,The Renaissance in Europe
+HIS 696,The History of Terrorism
+HIS 710,Museum and Heritage Management
+HIS 742,Canadian Cultural Industries
+HIS 755,Themes in Material Culture
+HIS 760,The African Diaspora
+HIS 762,"The Making of Modern South Asia, 1757-1947"
+HIS 790,Modern Germany
+HIS 826,Science and World Exploration
+HIS 828,"Science, Corporations and the Environment"
+HIS 830,Settler Colonialism
+HIS 845,Canada in the International Sphere
+HIS 854,African-American History
+HIS 886,The British Empire and the World
+HIS 898,A History of International Organizations
+HIS 900,Experiential Learning I
+HIS 901,Experiential Learning II
+HIS 902,Thesis Course
+HIS 903,Senior Seminar I: Cross-Field Study
+HIS 916,"Senior Seminar II: Science, Technology and Medicine"
+HIS 931,Senior Seminar III: Americas
+HIS 956,Senior Seminar IV: Africa
+HIS 957,Senior Seminar V: Middle East
+HIS 958,Senior Seminar VI: Asia
+HIS 976,Senior Seminar VII: Europe
+HIS 990,Senior Seminar VIII: International Relations
+HSM 301,The Healthcare Systems
+HSM 305,The Management Cycle
+HSM 306,Management Leadership and Decision-Making
+HSM 307,Principles of Long Term Care Service Del
+HSM 308,Project Management - Long Term Care
+HSM 309,Trends in Long Term Care Service Delivery
+HSM 310,Institutional Structure
+HSM 330,Managerial Epidemiology for Healthcare
+HSM 407,Healthcare Financial Management
+HSM 408,Program Planning and Evaluation
+HSM 417,Research Methodology
+HSM 418,Practicum Seminar
+HSM 419,Practicum
+HSM 437,Human Resources Management in Healthcare
+HST 110,U.S. History: Colonial Era to 1877
+HST 111,World Turned Upside Down: Europe 1350-1789
+HST 112,East Meets West: Asia in the World
+HST 118,The City in History
+HST 119,Rise of Empires: History Through Film
+HST 130,The History of Death
+HST 207,Introduction to Ancient Greece and Rome
+HST 210,U.S. History: 1877 to the Present
+HST 211,Century of Revolution: Europe 1789-1914
+HST 219,Decolonization: History Through Film
+HST 222,The History of The Caribbean
+HST 307,Canada to 1885: Creating a Nation
+HST 325,History of Science and Technology I
+HST 375,LGBTQ2S+ Histories
+HST 407,Canada Since 1885: Defining a Nation
+HST 430,Food History
+HST 488,Britain since 1815
+HST 501,The American Civil War
+HST 503,Crime and Punishment in Modern Canada
+HST 504,War to War: World Conflict 1900-45
+HST 506,The Ancient Egyptian World
+HST 510,The United States after 1945
+HST 522,The Middle East: 1908 to the Present
+HST 523,"Colonial South Asia, 1757-1947"
+HST 526,Women and Gender in U.S. History
+HST 527,Toronto: Wilderness to Metropolis
+HST 532,Elizabethan England
+HST 533,Africa Before 1850
+HST 540,Espionage: A Modern History
+HST 555,"Late Qing and Republican China, 1839-1949"
+HST 570,African American History
+HST 580,Indigenous History: An Introduction
+HST 602,Propaganda!
+HST 603,The Third Reich
+HST 604,"The Uneasy Peace: The Cold War, 1945-90"
+HST 610,The Rise of the American Empire
+HST 627,Transgender Histories
+HST 632,England in the 17th Century
+HST 633,Modern Africa
+HST 641,"Wine, Women, Warriors, Saviours, Sinners"
+HST 655,"People's Republic of China, 1949-Present"
+HST 658,Sex in the City
+HST 680,"Treaties, Land and Indigenous Governance"
+HST 701,Scientific Technology and Modern Society
+HST 702,The First World War
+HST 711,Canada and the United States
+HST 712,The American City
+HST 777,Medicine from Antiquity to 1500 CE
+HST 786,Science in Middle Eastern History
+HST 787,Astronomy vs Astrology
+HST 788,The Archaeology of Water
+HST 802,The Second World War
+HST 807,The Canadian Revolution: Canada 1968-2000
+HST 811,The Holocaust
+HTA 402,Management Accounting for HTM
+HTA 602,Financial Management for Hosp/Tourism
+HTA 708,Revenue Management for Hosp/Tourism
+HTD 500,Hotel Feasibility and Valuation Studies
+HTF 210,Restaurant Culture and Innovation
+HTF 505,Restaurants from Concept to Operations
+HTF 506,Food and Beverage Operations
+HTF 601,The Business of Beverages
+HTF 700,"Food, Society, Trends and Influence"
+HTH 100,Introduction to Business of Hospitality
+HTH 501,Advanced Service Management Systems
+HTH 503,Human Resources Management
+HTH 601,Organizational Behaviour
+HTH 700,Professional Ethics in Hosp/Tourism
+HTH 706,Management Placement and Experience
+HTH 810,Luxury Management
+HTH 895,Hospitality/Tourism Work Experience
+HTH 901,Management Career Strategies
+HTI 404,Hospitality Information Systems
+HTI 746,Digital Marketing for Hosp/Tourism
+HTL 503,Meeting and Convention Management
+HTL 510,Hotel Real Estate Management
+HTL 701,The Power of Branding in Hosp/Tourism
+HTL 801,Hospitality Strategic Management
+HTM 302,Marketing Principles
+HTM 402,Strategic Marketing Planning
+HTM 604,Professional Selling and Communications
+HTM 621,Advertising and Promotion
+HTM 704,Advanced Professional Selling
+HTR 741,Hospitality and Tourism Research Concepts
+HTR 841,Research and Data Analysis
+HTR 900,Director's Special Project
+HTR 941,Strategy and Leadership
+HTT 100,Tourism Experiences Management
+HTT 501,Casino Resort Management
+HTT 509,Politics and Power in Tourism
+HTT 510,Sustainable Tourism Development
+HTT 600,Special Topics in Hospitality/Tourism
+HTT 605,Incentive Marketing
+HTT 607,Event Management
+HTT 610,Business of Events and Entertainment
+HTT 622,Destination Management and Marketing
+HTT 700,Current Issues in Hospitality/Tourism
+HTT 800,Field Studies in Hospitality and Tourism
+IDE 301,Furniture Design
+IDE 304,Set Design
+IDE 307,Colour and its Application
+IDE 309,Sustainable Design
+IDE 313,Textiles
+IDE 314,Digital Fabrication
+IDE 400,Africa and Beyond: Decolonizing Design Culture
+IDE 401,Exhibition Design
+IDE 402,Design in the Metaverse
+IDE 403,Material Innovations
+IDE 404,Emerging Representational Techniques
+IDE 405,Anti-racist and Postcolonial Design
+IDE 406,Design Activism
+IDE 407,Indigenous Design Practices
+IDE 408,Design and Othered Bodies
+IDE 409,Haunted Houses
+IDE 410,The Domestic Interior
+IDE 411,Emerging Topics in Interior Design
+IDE 412,Urban Interiors
+IDE 413,Theorizing Interior Surfaces
+IDE 414,Co-curricular Project
+IDE 415,Year-End Show Event Planning
+IDE 450,The Queer Interior
+IDE 500,Selected Topics in Interior Design
+IDE 501,Selected Topics in Interior Design
+IDF 100,Elements and Principles of Design
+IDF 200,Introduction to the World of Design
+IDF 201,Fundamentals of Design Theory
+IDF 250,Contemporary Art and Design
+IDF 300,Strategic Thinking and the Deep Dive
+IDF 400,Introduction to World Textile History
+IDF 500,Leaping Fences: New Directions in Design
+IDN 101,Design Communications I
+IDN 102,Fabrication I
+IDN 103,Materiality
+IDN 105,Introduction to the History of Design
+IDN 201,Design Communications II
+IDN 202,Fabrication II
+IDN 203,Sustainable Systems
+IDN 204,Design Theory II
+IDN 301,Interior Design Studio I
+IDN 303,Material Systems
+IDN 304,Interior Design Theory
+IDN 305,History of Modern Interior Design
+IDN 401,Interior Design Studio II
+IDN 403,Atmospheric Systems
+IDN 405,History of Pre-Modern Interior Design
+IDN 701,Design Practice
+IDN 901,Spatial Design Studio
+IDN 902,Spatial Design Studio
+IDN 903,Spatial Design Studio
+IDN 904,Spatial Design Studio
+IDN 911,Interior Design Advanced Studio
+IDN 912,Interior Design Advanced Studio
+IDN 913,Interior Design Advanced Studio
+IDN 914,Interior Design Advanced Studio
 IND 108,Data Analytics for Non-Data Analysts
 IND 110,Data Organization for Data Analysts
 IND 119,Introduction to Big Data
@@ -356,6 +1916,224 @@ IND 833,Financial Engineering
 IND 840,Practical Approaches in Machine Learning
 IND 850,Practical Deep Learning
 IND 860,Advanced Data Analytics Project
+INP 900,Understanding the Nonprofit Sector
+INP 901,Effective Nonprofit Organizations
+INP 902,Evaluation for Nonprofits
+INP 910,Strategic Planning for Nonprofits
+INP 911,Advocacy and Gov't Relations: Nonprofits
+INP 912,Marketing for Nonprofits
+INP 913,Leadership in Nonprofits
+INP 914,Diversity in Nonprofits
+INP 915,Financial Management for Nonprofits
+INP 916,Nonprofits on the Global Stage
+INP 920,Critical Issues in the Nonprofit Sector
+INT 555,Special Topics in Interdisciplinary Studies
+INT 900,Program Planning and Evaluation Strategies
+INT 901,Gerontology: Critical Issues and Future Trends
+INT 902,Disability Issues
+INT 904,Health Promotion and Community Development
+INT 905,Conflict Resolution in Community Services
+INT 906,Sexuality: Power and Pleasure
+INT 907,Team Work for Community Services
+INT 908,Homelessness in Canadian Society
+INT 910,"Indigenous Peoples, Pol and Reconciliation"
+INT 911,International Community Development
+INT 912,Community Development: International Field Experience
+INT 913,Issues of Migration
+INT 914,Settlement Experiences
+INT 915,Responses to Migration
+INT 916,Principles of Fundraising
+INT 917,Interprof. Ed. for Community Development
+INT 920,Community Collaborations
+INT 921,Writing Bodies Differently
+INT 922,Introduction to Indigenous Worldviews
+INT 923,Canada's Story: An Indigenous Perspective
+INT 930,Aging: From Cells to Society
+INT 935,Ethical/Legal Frameworks in Aging
+INT 940,Mobilizing Research for Change
+INT 945,Technology and Aging Populations
+INT 950,Practicum/Project in Gerontology
+INT 960,Leadership Framework for Community
+INT 962,Foundations of Student Affairs Practice I
+INT 965,"Sex, Drugs and Incarceration"
+IRC 112,Introduction to Digital Communication
+IRC 113,Introduction to Visual Communication
+IRC 312,Communications III
+IRC 412,Communications IV
+IRD 101,Design Dynamics Introduction
+IRD 200,Design Dynamics Studio II
+IRD 300,Design Dynamics Studio III
+IRD 400,Design Dynamics Studio IV
+IRH 101,History of Interior Design 1850 - Present
+IRH 110,Hist. of Art Arch. and Material Culture I
+IRH 115,"History of Art, Arch. Material Culture II"
+IRH 201,Evolution of Canadian Interiors
+IRH 401,Design Seminar
+IRL 100,Intro to World Art I: Pictorial Arts
+IRL 200,Introduction to World Textile History
+IRL 500,"Modern and Contemporary Art, Design"
+IRN 101,Interior Design Studio I
+IRN 201,Interior Design Studio II
+IRN 301,Interior Design Studio III
+IRN 401,Interior Design Studio IV
+IRN 501,Interior Design Studio V
+IRN 601,Interior Design Studio VI
+IRN 701,Interior Design Studio VII
+IRN 801,Interior Design Studio VIII
+IRP 701,Professional Practice
+IRP 801,Professional Practice
+IRT 101,Technology I
+IRT 211,Technology II
+IRT 301,Technology III
+IRT 401,Technology IV
+IRT 501,Technology V
+ITM 100,Foundations of Information Systems
+ITM 102,Business Information Systems
+ITM 107,Mathematics for Business Technology Mgt
+ITM 200,Fundamentals of Programming
+ITM 207,Fundamentals of Information Technology
+ITM 210,Introduction to Cybersecurity
+ITM 301,IT Infrastructure
+ITM 305,Systems Analysis and Design
+ITM 315,Network Administration
+ITM 330,Supply Chain Process Architecture
+ITM 350,Concepts of e-Business
+ITM 410,Business Process Design
+ITM 415,Business Process Management
+ITM 430,System Design and Implementation
+ITM 445,Multimedia in Business
+ITM 450,Foundations of DevOps
+ITM 500,Data and Information Management
+ITM 501,Prescriptive Analytics and Simulation
+ITM 550,Advanced e-Business
+ITM 610,"Database Design, Implemtn. and Administr"
+ITM 618,Business Intelligence and Analytics
+ITM 620,Privacy in the Digital Age
+ITM 703,Current Issues in Information Systems Management
+ITM 706,Enterprise Architecture
+ITM 707,"Strategy, Management and Acquisition"
+ITM 711,Cloud Computing
+ITM 733,Research in IT - Independent Study
+ITM 735,ICT and Diversity Management
+ITM 738,Advanced Case Analysis
+ITM 740,Artificial Intelligence in Business
+ITM 745,Generative AI in Business
+ITM 750,IS Project Management
+ITM 751,Natural Language Processing for Business
+ITM 752,Data Visualization
+ITM 760,Big Data Analytics
+ITM 775,ICT and Sustainability
+ITM 780,Web Design and Management
+ITM 795,Social Media Analytics
+ITM 820,Network Security
+ITM 825,Enterprise Information Security
+ITM 830,Blockchain in the Enterprise
+ITM 835,Cyber Risk and Threat Management
+ITM 900,Capstone Project
+JRN 103,Introduction to Journalism
+JRN 104,Intro to Journalism Tools and Techniques
+JRN 105,Multimedia News Reporting
+JRN 106,Visualizing Facts
+JRN 202,Copy Editing Essentials
+JRN 204,Data Journalism
+JRN 215,Photojournalism
+JRN 270,Producing the News
+JRN 271,Designing Journalism
+JRN 272,Feature Writing and Current Affairs
+JRN 273,Advanced Journalism Tools and Techniques
+JRN 302,Magazine Editing Workshop
+JRN 303,Feature Reporting Workshop
+JRN 305,Advanced Multimedia Reporting Workshop
+JRN 306,Radio and Podcast Workshop
+JRN 310,Video Production Techniques
+JRN 314,Reporting for TV Workshop
+JRN 315,Investigative Reporting
+JRN 317,Fact Checking and Accuracy
+JRN 318,Podcasting and Radio Basics
+JRN 319,Special Topics in Journalism Practice
+JRN 320,Innovation Workshop
+JRN 333,Reporting on Race
+JRN 344,"Law, Ethics and Evolving Journ. Standards"
+JRN 350,Reporting on Indigenous Issues
+JRN 400,Critical Issues in Journalism
+JRN 401,History of Journalism
+JRN 402,Theory in Journalism and Mass Communications
+JRN 403,Journalism and Ideas
+JRN 405,Special Topics in Journalism Theory
+JRN 406,Navigating Spin and PR
+JRN 412,Documentary Survey
+JRN 415,Queer Media
+JRN 500,Journalism and the Arts
+JRN 501,Sampling Beat Reporting
+JRN 502,Follow the Money: Business Journalism
+JRN 503,Critical and Opinion Writing
+JRN 504,Fashion Journalism
+JRN 505,Health and Science Journalism
+JRN 506,International Journalism
+JRN 507,Justice and the Courts
+JRN 508,Literary Journalism
+JRN 509,Journalism and the Political Arena
+JRN 510,Reporting Religion
+JRN 512,Reporting Sports
+JRN 525,News Media and The Gig Economy
+JRN 555,Live: Journalism on Stage
+JRN 800,TV and Video Documentary Production
+JRN 801,Advanced Podcasting and Radio Doc
+JRN 806,Advanced Feature Writing
+JRN 825,Magazine Masthead I - Review of Journalism
+JRN 826,Magazine Masthead II- Review of Journalism
+JRN 840,Journalism Capstone Project
+JRN 841,Advanced Multimedia Journalism
+JRN 842,Building Your Brand: The Freelance Career
+JRN 843,Reimagining the News
+JRN 850,Internship
+JRN 851,Newsroom masthead - On The Record
+LAT 100,Introduction to Latin
+LAT 200,Latin and the Roman World
+LAW 122,Business Law
+LAW 204,Legal Analysis in a Business Context
+LAW 321,The Law of Hospitality and Tourism
+LAW 326,Law for Health Managers
+LAW 401,Information Access and Privacy Protection
+LAW 402,Health Information Access and Privacy
+LAW 525,The Law of the Marketplace
+LAW 529,Employment and Labour Law
+LAW 533,Corporate Social Responsibility and the Law
+LAW 534,Government Regulation of Business
+LAW 535,Environmental Law and Business
+LAW 568,Cyber Crime and the Law
+LAW 573,Understanding the Ethical-Legal Nexus
+LAW 580,Corporations and Human Rights Law
+LAW 601,Intellectual Property Law
+LAW 602,White Collar Crime
+LAW 603,Advanced Business Law
+LAW 604,Legal Foundations of Corporate Governance
+LAW 605,Securities Law
+LAW 606,Advanced Issues in Labour and Employment Law
+LAW 607,Selected Topics in Law and Policy
+LAW 703,Real Estate Law
+LAW 722,Law and Canadian Business
+LAW 723,Issues in Information Technology Law
+LAW 724,Legal Aspects of International Business
+LAW 725,Visiting Professor Law Seminar
+LIR 100,Global Models in Intercultural Relations
+LIR 200,Critical Practices in Intercultural Relations
+LIR 203,Indigenous Oral Tradition
+LIR 204,African Studies and Beyond
+LIR 205,Greek and Latin Roots Across Disciplines
+LIR 206,Introduction to Phonetics
+LIR 207,Translation as a Cultural Bridge
+LIR 208,Skateboarding as a Cultural Bridge
+LIR 300,Intercultural Negotiations
+LIR 302,Food Language and Culture
+LIR 400,Ethnographic Practices
+LIR 800,Topics in Intercultural Relations
+LIR 901,Directed Readings (French)
+LIR 902,Directed Readings (Spanish)
+LNG 111,Language and Identity
+LNG 112,Spoken and Written Language
+LNG 113,Language and Public Life
+LNG 121,Language and Society
 MEC 110,Energy and the Environment
 MEC 222,Engineering Graphical Communication
 MEC 309,Basic Thermodynamics
@@ -395,6 +2173,117 @@ MEC 825,Mechanical Design
 MEC 830,Mechatronics Systems Design
 MEC 832,Reliability and Decision Analysis
 MEC 850,Environmental Impact of Thermal Systems
+MHK 101,Introductory Kanyen'kéha I
+MHK 201,Introductory Kanyen'kéha II
+MHR 405,Organizational Behaviour
+MHR 520,Industrial Relations Foundations
+MHR 522,Union Management Relations
+MHR 523,Human Resources Management
+MHR 600,Diversity and Inclusion in the Workplace
+MHR 623,Recruitment and Selection
+MHR 640,Leadership
+MHR 650,Management of Change
+MHR 670,Special Topics in Org Behav and HR Mgmt
+MHR 671,Human Resources Information Systems
+MHR 700,Cross-Cultural Dimensions of Organizational Behaviour
+MHR 711,Occupational Health and Safety
+MHR 721,Negotiation and Conflict Resolution
+MHR 733,Training and Development
+MHR 741,Managing Interpersonal Dynamics and Teams
+MHR 749,Compensation Management
+MHR 841,Organization Theory and Design
+MHR 849,Human Resources Planning
+MHR 850,"Coaching, Facilitation and Internal Consulting"
+MHR 901,Strategic Human Resources Management
+MKT 100,Principles of Marketing
+MKT 300,Marketing Metrics and Analysis
+MKT 310,Marketing Plans
+MKT 400,Understanding Consumers
+MKT 500,Marketing Research
+MKT 504,Effective Persuasion
+MKT 510,Strategic Brand Management
+MKT 535,Integrated Marketing Communications
+MKT 600,Integrated Case Analysis
+MKT 700,Marketing Analytics and Decision-Making
+MKT 702,Advanced Marketing Management
+MKT 723,Services Marketing
+MKT 730,Assessing/Managing Market Opportunities
+MKT 731,Competitive Intelligence
+MKT 802,Advanced Market Planning
+MKT 828,Sport Marketing Concepts and Strategy
+MKT 829,International Sport Marketing
+MKT 850,Applied Research Project
+MPC 101,Introduction to Compositional Design
+MPC 103,Reframing Art History
+MPC 125,Intro to Time-Based Media
+MPC 201,Contemporary Art: Concepts and Theories
+MPC 203,Modern Art and Theory
+MPC 210,Introduction to Visual Culture
+MPC 220,Forms of Storytelling
+MPC 225,Intro to Creative Technologies
+MPF 106,Film Production: Silent Film
+MPF 107,Intro to Cinematography
+MPF 110,Film Production I
+MPF 115,Introduction to Cinematography
+MPF 206,Film Production: Sound Film
+MPF 207,Introduction to Editing and Sound
+MPF 210,Film Production II
+MPF 215,Introduction to Picture Editing
+MPF 290,Introduction to Film Studies
+MPF 300,Film Technology IV
+MPF 301,Business of Film
+MPF 302,Business of Film II
+MPF 310,Physical Production
+MPF 320,Film History and Criticism I
+MPF 322,Film Prod. Directing for Camera
+MPF 324,Writing for Film I
+MPF 327,Film History and Criticism to 1960
+MPF 330,Film Production III: Documentary
+MPF 340,Writing for Film
+MPF 410,Film History and Criticism II
+MPF 415,Sound for Film
+MPF 420,Capstone Project I
+MPF 421,Film Production IV: Directing Actors
+MPF 422,Film Production
+MPF 423,Film Technology III
+MPF 427,Film History and Criticism since 1960
+MPF 430,Capstone Project II
+MPF 502,Film Production
+MPF 505,Film Theory
+MPF 510,Film Production V: Directing for Camera
+MPF 602,Film Production
+MPF 604,Film Technology V
+MPF 605,Film Theory II
+MPF 610,Special Topics in Film
+MPF 615,Film Production VI: Fiction
+MPF 620,Capstone Development
+MPF 700,Professional Practice
+MPF 801,Professional Practice
+MPI 501,Production I
+MPI 503,Creative Technologies: Screen Based
+MPI 601,Production II
+MPI 602,Media Languages: Old and New Vocabularies
+MPI 603,Creative Tech: 3D and Spatial
+MPS 106,Photography Media Arts: Production I
+MPS 107,Photography and Digital Imaging
+MPS 206,Photography Media Arts: Production II
+MPS 207,Photography and the Screen
+MPS 301,Histories of Photography
+MPS 306,The Idea of Photography
+MPS 307,The Photographic Print
+MPS 308,Photography Media Arts: Production III
+MPS 401,History of Photography and Media Art II
+MPS 406,Critical Debates in Photography
+MPS 407,The Photographic Studio
+MPS 408,Photography Media Arts: Production IV
+MPS 420,Photography Media Arts: Senior Project I
+MPS 430,Photography Media Arts: Senior Project II
+MPS 506,Photography Media Arts: Production V
+MPS 507,The Photographic Book
+MPS 606,Photography Media Arts: Production VI
+MPS 607,The Expanded Image
+MPS 701,Photography Now
+MPS 801,Professional Creative Practices
 MTE 301,Programming for Mechatronics Engineering
 MTE 401,Analysis of Electric Circuits
 MTE 501,Signals and Systems for Mechatronics Eng
@@ -480,6 +2369,247 @@ MTH 825,Topics in Analysis
 MTL 200,Materials Science Fundamentals
 MTL 300,Materials Science II
 MTL 700,Materials Selection for Engineering Design
+MUS 101,Intro to World and Early European Music
+MUS 105,Voices Without Borders: Global Chorus
+MUS 106,The Architecture of Music
+MUS 201,Introduction to Classical Music
+MUS 211,Music Cultures of the City
+MUS 220,Global Popular Music
+MUS 300,Musicology
+MUS 401,"Music, Myth, and Ecstasy"
+MUS 501,Music of World Cultures
+MUS 503,Social Issues in Popular Music
+MUS 505,The History of Pop Music
+MUS 507,Architecture of Music II
+MUS 520,Women in Popular Music
+MWF 108,Introduction to Indigenous Midwifery
+MWF 109,Critical Appraisal of Research Literature
+MWF 113,Life Sciences for Midwifery
+MWF 114,Pharmacotherapy
+MWF 115,Research Methods for Midwives
+MWF 121,Fundamentals in Midwifery Care I
+MWF 122,Fundamentals in Midwifery Care II
+MWF 123,Fundamentals in Midwifery Care III
+MWF 150,Introduction to Midwifery
+MWF 155,Social Justice in Midwifery
+MWF 190,Newborn Screening Dilemmas
+MWF 201,Reproductive Physiology
+MWF 210,Independent Studies
+MWF 215,Special Topics
+MWF 251,Clinical Skills I
+MWF 252,Clinical Skills II
+MWF 304,Principles and Methods of Research
+MWF 315,Midwifery Issues
+MWF 320,Midwifery: Complex Care I
+MWF 325,Birth and its Meanings
+MWF 344,Advanced Clinical Skills I
+MWF 345,Advanced Clinical Skills II
+MWF 370,Elective Placement
+MWF 410,Midwifery Care Clerkship
+MWF 420,Midwifery: Complex Care II
+MWF 508,Black Family Health: Decolonizing Systems
+MWF 510,Topics in African Mothering Traditions
+NAE 101,Socialization to Nursing
+NAE 102,Theoretical Foundations of Nursing I
+NAE 103,Health Assessment I
+NAE 104,Patho-therapeutics 1
+NAE 105,Clinical I - Lab
+NAE 106,Clinical I - Clinical
+NAE 201,Healthcare Systems
+NAE 202,Theoretical Foundations of Nursing II
+NAE 203,Mental Health and Addictions
+NAE 204,Clinical 2 - Lab
+NAE 205,Clinical 2 - Clinical
+NAE 301,Perinatal/Pediatric
+NAE 302,Community Nursing
+NAE 303,Qualitative/Quantitative Nursing Research
+NAE 304,Clinical 3 - Tertiary Perinatal/Pediatric
+NAE 401,Ethics and Leadership
+NAE 402,Quality Improvement and Patient Safety
+NAE 403,Patho-therapeutics 2
+NAE 404,Clinical 4 - Tertiary or Acute Care
+NAE 501,Clinical 5: Transition to Practice
+NCL 300,Practicum I
+NCL 400,Practicum II
+NMA 107,Creative Processes - New Media
+NMA 111,Introduction to New Media
+NMA 120,Video Games and Culture
+NMA 201,Video Art Production
+NMA 220,New Media Art History
+NMA 221,Experiential Media/Interdisciplinary Practice
+NMA 222,Intro to Computational Arts
+NMA 223,Designing Material Experiences
+NMA 320,Interactive Storytelling
+NMA 321,Intro to Tangible Media
+NMA 322,"Technology, Identity and Creativity"
+NMA 323,Contemporary Issues in New Media Art
+NMA 501,Studio Practice
+NMA 520,Art As Practice
+NMA 521,Media for Social Change
+NMA 807,Problem Solving Practices
+NMA 814,Problem Solving Studio
+NMA 818,"Ants, Agents and Automatons"
+NMA 820,Game Prototyping and Testing
+NMA 821,New Media Master Class
+NMA 822,Interfaces for Live Performance
+NMA 824,Net Zero
+NMA 825,Global Experiential Intensive - New Media
+NMA 828,Special Topics in Game Design
+NMA 830,Co-Lab
+NMA 832,Cybernetics and Body Centric Technologies
+NMA 835,Media and Museums
+NMA 838,Generative Processes
+NMA 842,Data as Material
+NMA 856,Speculative Design: Making Change
+NMA 867,Game Engines
+NMA 886,Intro to Studio Practice
+NMA 891,Games Industry and Trends
+NMA 925,Making Objects
+NMA 928,Introduction to Game Design
+NMA 933,"Hacking, DIY and Open Source Studio"
+NMA 934,Virtual Identities and Communities
+NMA 936,The Business of Art
+NMA 939,Indigenous Media
+NMA 940,Directed Study
+NMA 946,Issues in New Media Theory/History
+NMA 948,Interactive Spaces
+NMA 953,Mixed and Extended Realities
+NMA 954,Empathy Machines
+NMA 958,Networked Art
+NMA 962,Interaction Design
+NMA 965,Advanced New Media Topics
+NMA 997,Mechanics of Play
+NNS 101,Introduction to News Studies
+NNS 102,Understanding Multimedia Journalism
+NNS 103,Basics of Photojournalism
+NNS 204,Discovering Data Storytelling
+NNS 333,Covering Race
+NNS 344,"Law, Ethics and Evolving News Standards"
+NNS 350,Reporting on Indigenous Issues
+NNS 400,Critical Issues in Journalism
+NNS 401,History of Journalism
+NNS 402,Theory in Journalism and Mass Communication
+NNS 406,Navigating Spin and PR
+NNS 410,Queer Media
+NNS 412,Documentary Survey
+NNS 419,Journalism in Comedy
+NNS 500,Journalism and the Arts
+NNS 502,Follow the Money: Business Journalism
+NNS 504,Fashion Journalism
+NNS 505,Health and Science Journalism
+NNS 506,International Journalism
+NNS 507,Justice and the Courts
+NNS 508,Literary Journalism
+NNS 509,Journalism and the Political Arena
+NNS 510,Reporting Religion
+NNS 512,Reporting Sports
+NNS 525,The Business of Journalism
+NPF 188,From Page to Screen
+NPF 505,Independent Cinema
+NPF 510,Media and the Environment
+NPF 515,"Gender, Race, and Sexuality in Art"
+NPF 520,Queer Cinemas
+NPF 525,Photography in Canada
+NPF 530,Electronic and Digital Art
+NPF 549,History of Photojournalism
+NPF 554,Advanced Topics in Contemporary Art
+NPF 555,Experimental Media
+NPF 559,Advanced Topics in Curatorial Practices
+NPF 562,Media and Communication
+NPF 563,Directors and Composers
+NPF 564,Contemporary World Cinema
+NPF 565,Contemporary Canadian Cinema
+NPF 566,History of Animation
+NPF 567,Exhibition Practices in Contemporary Art
+NPF 568,Analogue as Meaning
+NPF 569,Disaster Images: Memory and Response
+NPF 570,Advertising and Consumer Culture
+NPF 571,Introduction to Museum and Gallery Studies
+NPF 572,Curatorial Practices in Toronto
+NPF 573,"Video Games: History, Theory, Culture"
+NPF 574,Indigenous Visual Culture in Canada
+NPF 605,History of Documentary Film
+NPF 700,Global Photographies
+NPF 705,Thinking Through Diversity
+NSE 101,Communication for the Nsg Professional
+NSE 103,Introduction to Health Assessment
+NSE 111,Foundations for Nursing Practice
+NSE 121,Clinical Practice I
+NSE 203,Advanced Health Assessment
+NSE 211,Clinical Practice II
+NSE 212,Nursing Research: Quantitative Methods
+NSE 221,Clinical Practice III
+NSE 222,Nursing Research: Qualitative Methods
+NSE 311,Clinical Practice IV
+NSE 321,Clinical Practice V
+NSE 411,Clinical Practice VI
+NSE 421,Clinical Practice VII
+NUR 100,Professional Practice I
+NUR 105,Professional Communication
+NUR 120,Health Assessment Over a Lifespan
+NUR 125,Theoretical Perspectives in Health
+NUR 130,Pathotherapeutics in a Lifespan
+NUR 200,Professional Practice II
+NUR 220,Quantitative Nursing Research
+NUR 225,Leading in Nursing Practice
+NUR 240,Community Health Nursing
+NUR 320,Qualitative Nursing Research
+NUR 336,Adult Health and Healthy Aging
+NUR 350,Mental Health and Addiction
+NUR 361,Family Maternal and Child Health
+NUR 375,Microbiology and Epidemiology
+NUR 810,Concepts in Contemporary Nursing Practice
+OHS 208,Occupational Health and Safety Law
+OHS 301,Biological Agents
+OHS 314,Physical Agents
+OHS 319,Health Effects of Radiation
+OHS 322,Introductory Toxicology
+OHS 323,Accident Theory
+OHS 421,Occupational Hygiene I
+OHS 422,Advanced Toxicology
+OHS 477,Disability Management
+OHS 508,Occupational Health and Safety
+OHS 509,Systems Safety
+OHS 516,Ergonomics
+OHS 523,Safety Evaluation Techniques
+OHS 608,Hazard Recognition and Control
+OHS 621,Occupational Hygiene II
+OHS 623,Safety Control Methods
+OHS 709,Fire and Radiation Safety
+OHS 718,Systems Management I
+OHS 723,Sectoral Applications I
+OHS 800,Sectoral Applications
+OHS 805,Independent Study
+OHS 806,Advanced Health and Safety Law
+OHS 810,Seminars
+OHS 811,OHSE Management Systems
+OHS 818,Systems Management II
+OHS 823,Sectoral Applications II
+OHS 833,Fire Safety Management
+OHS 840,OHS Leadership and Ethics
+PAI 103,Cdn Public Admin: Inst and Processes
+PAI 104,Foundations of Indigenous Governance
+PAI 105,"Indigenous Rights, Equity and the State"
+PAI 106,Canada’s Systems of Government
+PAI 107,Colonialism and Indigenous Governance
+PAI 122,Local Indigenous Government
+PAI 211,Public Policy
+PAI 303,Indigenous Fiscal Governance
+PAI 304,Dispute Resolution in Indigenous Context
+PAI 305,Indigenous App to Sustainable Development
+PAI 333,Research Methods in Public Administration
+PAI 335,Theories of Bureaucracy
+PAI 400,Comparative Indigenous Politics/Policies
+PAI 401,Indigenous-Industry Partnerships
+PAI 402,Revitalizing Indigenous Law
+PAI 403,e-Government
+PAI 404,Revitalizing Indigenous Governance
+PAI 406,Measuring Transformation
+PAI 411,Advanced Public Policy
+PAI 425,Nation to Nation Relationship
+PAT 201,Pathotherapeutics I
+PAT 202,Pathotherapeutics II
+PAT 401,Advanced Pathotherapeutics
 PCS 102,Physics Answers to Everyday Questions
 PCS 106,Physics for the Health Sciences
 PCS 107,The Natural Context
@@ -522,3 +2652,1071 @@ PCS 700,Quantum Mechanics II
 PCS 724,Condensed Matter Physics/Materials
 PCS 800,Dynamical Systems
 PCS 810,Complex Networks and Applications
+PFA 100,Foundations of Voice and Body
+PFA 101,Foundations of Voice and Body II
+PFA 110,Foundations of Scene Study
+PFA 111,Foundations of Scene Study II
+PFA 200,Expanding Voice and Body
+PFA 201,Expanding Voice and Body II
+PFA 210,Expanding Scene Study
+PFA 211,Expanding Scene Study II
+PFA 300,Integrating Voice and Body
+PFA 301,Integrating Voice and Body II
+PFA 310,Expanded Forms of Acting
+PFA 311,Expanded Forms of Acting II
+PFA 320,Case Study: Integrating Acting
+PFA 321,Case Study II: Applying Acting
+PFA 400,Applying Voice and Body
+PFA 401,Applying Voice and Body II
+PFA 410,Expanded Forms of Acting III
+PFA 411,Expanded Forms of Acting IV
+PFA 420,Performance Field Placement in Acting
+PFA 421,Acting Capstone Festival
+PFC 100,Global Performance History I
+PFC 101,Global Performance History II
+PFC 111,Performance Creation I
+PFC 112,Performance Creation II
+PFC 216,Playwriting
+PFC 221,Performance Creation III
+PFC 222,Performance Creation IV
+PFC 226,Directing for the Stage
+PFC 236,Intimacy for Stage and Screen
+PFC 246,Fight for Performers
+PFC 256,Improvisation for Filmmaking
+PFC 300,Wellness for the Performer
+PFC 312,Leadership Through Arts-Based Practice
+PFC 322,Branding and Identity for the Artist
+PFC 324,Special Topics: Acting
+PFC 334,Audio Production for Streaming
+PFC 340,Acting a Song
+PFC 402,Script Analysis
+PFC 417,Advanced Playwriting
+PFC 470,Black Creative Practices
+PFC 500,Dance on Film
+PFD 100,Dance: Building Foundations I
+PFD 101,Dance: Building Foundations II
+PFD 120,Music for Dancers: Introduction
+PFD 200,Dance: Integrating Technique I
+PFD 201,Dance: Integrating Technique II
+PFD 210,Anatomy of Movement and Lifestyle I
+PFD 300,Dance: Expanding Practice I
+PFD 301,Dance: Expanding Practice II
+PFD 310,Professional Preparation for Dancers
+PFD 331,Choreographic Practice
+PFD 400,Dance: Bridging to Profession I
+PFD 401,Dance: Bridging to Profession II
+PFD 404,Landmarks in Choreography
+PFD 800,Independent Study/Capstone
+PFZ 100,Performance Foundation I
+PFZ 101,Performance Foundation II
+PFZ 200,Process and Methods
+PFZ 201,Material Practice
+PFZ 202,Technological Practice
+PFZ 203,Foundations in Communication
+PFZ 210,Intro to Costume Design and Technique
+PFZ 220,Intro to Scenic Design and Technique
+PFZ 230,Intro to Lighting Design
+PFZ 240,Intro to Sound Design
+PFZ 250,Intro to Projection Design
+PFZ 260,Intro to Stage Management
+PFZ 261,Theatre Safety and Occupational Health
+PFZ 270,Creative Producing I
+PFZ 311,Costume Technique I
+PFZ 312,Make-Up and Special Effects
+PFZ 314,Costume Design
+PFZ 315,Corsetry: History and Construction
+PFZ 322,Props: Design and Construction
+PFZ 323,Puppetry Design and Technique
+PFZ 331,Lighting Design I
+PFZ 343,Sound Design and Technique II
+PFZ 351,Creative Technology in Performance
+PFZ 352,Show Systems Engineering
+PFZ 361,Stage Management for Live Events
+PFZ 362,Production Management for Performance
+PFZ 363,Technical Direction
+PFZ 370,Creative Producing II
+PFZ 371,Arts and Cultural Management
+PFZ 372,Tour and Company Management
+PFZ 381,Global Performance Studio (International)
+PFZ 400,Professional Aspects of Performance
+PFZ 401,Independent Study/Capstone Seminar
+PFZ 411,Costume Technique II
+PFZ 419,Special Topics: Costume
+PFZ 421,Scenography
+PFZ 422,Scenic Painting
+PFZ 429,Special Topics: Scenic Construction
+PFZ 441,Recording as Practice
+PFZ 449,Special Topics: Sound
+PFZ 471,Commercial Theatre
+PFZ 489,Special Topics: Production Innovation
+PHL 101,Plato and the Roots of Western Philosophy
+PHL 102,What is Philosophy?
+PHL 110,Philosophy of Religion I
+PHL 187,Classical Philosophy
+PHL 201,Problems in Philosophy
+PHL 202,Philosophy of Technology
+PHL 210,Introduction to Indian Philosophy
+PHL 212,Introductory Logic
+PHL 214,Critical Thinking
+PHL 220,Introduction to Africana Philosophy
+PHL 302,Ethics and Health Care
+PHL 306,"Freedom, Equality, Limits of Authority"
+PHL 307,Business Ethics
+PHL 320,Queer Theory
+PHL 333,Philosophy of Human Nature
+PHL 340,Trans Philosophy
+PHL 365,Philosophy of Beauty
+PHL 366,Existentialism and Art and Culture
+PHL 400,Human Rights and Justice
+PHL 401,Philosophy and Mass Culture
+PHL 402,Ancient Greek Philosophy
+PHL 403,Early Modern Philosophy
+PHL 404,Introduction to Ethics
+PHL 405,Introduction to Political Philosophy
+PHL 406,"Issues of Life, Death and Poverty"
+PHL 420,"Philosophy, Diversity and Recognition"
+PHL 430,Philosophy of Artificial Intelligence
+PHL 449,Philosophy of Punishment
+PHL 500,Philosophy of the Natural Environment
+PHL 501,Oppression and the Critique of Power
+PHL 502,Aristotle
+PHL 503,Ancient and Modern Ethics
+PHL 504,Philosophy of Art
+PHL 505,Hegel and Marx
+PHL 506,Early Modern Rationalism
+PHL 507,Ethics and Disability
+PHL 508,The Empiricists
+PHL 509,Bioethics
+PHL 511,Kant
+PHL 512,Philosophy of the Emotions
+PHL 513,Phenomenology
+PHL 514,Mind and Agency
+PHL 515,Seminar in Metaphysics and Epistemology
+PHL 516,Foundations of Analytic Philosophy
+PHL 517,Special Topics Seminar
+PHL 520,Social and Political Philosophy
+PHL 521,Personal Identity East and West
+PHL 522,Philosophy and Death
+PHL 535,Introduction to Indigenous Philosophy
+PHL 544,Feminist Philosophy
+PHL 547,Jewish Philosophy
+PHL 550,"Knowledge, Truth and Belief"
+PHL 551,Metaphysics
+PHL 552,Philosophy of Natural Science
+PHL 561,Philosophy of Social Science
+PHL 565,Topics in Indigenous Philosophy
+PHL 570,Black Political Thought
+PHL 580,Intermediate Logic
+PHL 585,Violent Conflict and Reconciliation
+PHL 600,Classic Readings in Analytic Philosophy
+PHL 601,Classic Readings Continental Philosophy
+PHL 603,The Nature of Ethics
+PHL 605,Existentialism
+PHL 606,Philosophy of Love and Sex
+PHL 607,Contemporary Continental Philosophy
+PHL 611,Philosophy of Mind
+PHL 612,Philosophy of Law
+PHL 614,Philosophy of Human Rights
+PHL 622,Classical Arabic Philosophy
+PHL 630,Metaethics
+PHL 639,Medieval Philosophy
+PHL 642,Psychoanalysis
+PHL 648,Philosophy and Literature
+PHL 650,Beyond Classical Logic
+PHL 661,"Marx, Nietzsche and Freud"
+PHL 675,Hannah Arendt
+PHL 680,Critical Theory
+PHL 690,Contemporary French Philosophy
+PHL 700,Meta-Philosophy
+PHL 707,Plato
+PHL 708,Early Modern Philosophy
+PHL 709,"Religion, Science and Philosophy"
+PHL 710,Philosophy and Film
+PHL 711,"Language, Meaning and Truth"
+PHL 714,Philosophy of Biology
+PHL 718,Seminar in Ethics
+PHL 732,Seminar in Political Philosophy
+PHL 752,German Idealism
+PHL 757,Major Figures in Western Philosophy
+PHL 758,Major Figures in Eastern Philosophy
+PHL 770,Law and Rights
+PHL 780,Continental Philosophy of Religion
+PHL 790,Decolonial Theory
+PHL 802,Project in Applied Philosophy
+PHL 803,Philosophy Engaging Communities
+PHL 810,Philosophy of Cinema
+PHL 900,Senior Philosophy Seminar
+PHL 910,Senior Philosophy Seminar
+PHL 923,Philosophy of Religion II
+PHL 950,Directed Research Course
+PLE 505,Cities and Technology: Foundations
+PLE 515,Environmental Planning
+PLE 525,Transportation Planning
+PLE 535,Housing
+PLE 545,History of City Development
+PLE 555,Site Planning I
+PLE 565,Social and Community Planning
+PLE 625,Transportation Policy
+PLE 635,Feasibility Analysis of Development
+PLE 655,Site Planning II
+PLE 665,Regional Planning Seminar
+PLE 675,Transportation and Urban Form
+PLE 685,Urban Analytics and Data Storytelling
+PLE 715,Environmental Assessment
+PLE 725,Planning and Design with Diversity
+PLE 735,Private Development Seminar
+PLE 745,Selected Topics in Planning
+PLE 755,Contemporary Urban Design
+PLE 765,International Development
+PLE 775,Independent Study
+PLE 780,Field Internship
+PLE 785,Field Placement
+PLE 795,Local Economic Development Fundamentals
+PLE 806,Senior Research Paper
+PLE 815,Facility Siting and Env. Risk Assessment
+PLE 825,Planning Design and Technology
+PLE 835,Ecological Design
+PLE 845,Selected Topics in Planning
+PLE 855,Strategic Planning
+PLE 865,Brownfields and Sustainable Redevelopment
+PLE 875,Independent Study
+PLE 885,International Field Camp
+PLE 895,Conflict Resolution and Dispute Negotiation
+PLE 935,New Natures and Urban Wilds
+PLE 995,Ecn Development and Business Improvement
+PLG 100,Intro to Urban and Regional Planning
+PLG 120,Understanding the Planning Process
+PLG 200,Planning Principles
+PLG 220,Planning Studio I
+PLG 240,Applied Urban Ecology
+PLG 300,Theories in Urban and Regional Planning
+PLG 310,Statistics for Planners
+PLG 320,Planning Studio II
+PLG 400,Introduction to Policy Planning
+PLG 410,Planning Analysis
+PLG 420,Land Use Planning Studio I
+PLG 500,Advanced Planning Theory
+PLG 510,Planning Law I
+PLG 520,Land Use Planning Studio II
+PLG 531,Field Research Project I
+PLG 532,Field Research Project II
+PLG 533,Field Research Project III
+PLG 534,Field Research Project IV
+PLG 535,Field Research Project V
+PLG 536,Field Research Project VI
+PLG 600,Planning Research Design
+PLG 610,Planning Law II
+PLG 620,Advanced Planning Studio I
+PLG 710,Municipal Finance for Planners
+PLG 720,Advanced Planning Studio II
+PLG 731,Advanced Field Research Project I
+PLG 732,Advanced Field Research Project II
+PLG 733,Advanced Field Research Project III
+PLG 734,Advanced Field Research Project IV
+PLG 735,Advanced Field Research Project V
+PLG 736,Advanced Field Research Project VI
+PLG 800,Planning Practice and Ethics
+PLG 810,Planning Administration and Implementation
+PLG 830,Policy Analysis and Program Evaluation
+PLN 103,Physiology I
+PLN 203,Physiology II
+PLN 303,Exercise Science and Physiology
+PLX 111,Imagining the Creative City
+PLX 333,City Building: Planning for Non-Planners
+PLX 599,Urban Development Processes
+PMT 720,Project Management Studio in Development
+PMT 721,Economics for Project Management
+PMT 722,Information Systems
+PMT 820,Project Management Studio in Procurement
+PMT 821,Construction Practices and Management
+PMT 822,Procurement and Construction Management
+POG 100,"People, Power and Politics"
+POG 110,Intro to Canadian Politics I
+POG 210,Intro to Canadian Politics II
+POG 214,Intro to Public Policy
+POG 225,Intro to Global Governance
+POG 230,Quantitative Methods in Political Science
+POG 231,Qualitative Methods in Political Science
+POG 235,Intro to Political Theory
+POG 240,Intro to Comparative Politics
+POG 301,Health Politics and Policy
+POG 303,"Race, Gender and Public Policy"
+POG 310,Provincial Politics
+POG 311,Indigenous Self-Determination
+POG 313,The Politics of Race and Ethnicity
+POG 315,Equity and Human Rights in Canada
+POG 316,Social Policy
+POG 317,Education Politics and Policy
+POG 318,Ontario Politics
+POG 320,Social Identity and Citizenship
+POG 323,The Politics of International Development
+POG 324,Global Political Economy
+POG 327,Non-State Actors and Global Security
+POG 328,Peace and Security in Asia
+POG 329,Against Security
+POG 331,Politics and Cinema
+POG 335,Political Communication
+POG 336,Decolonial Political Thought
+POG 338,Persuasion in Theory and Practice
+POG 341,US Politics
+POG 342,Politics in Africa
+POG 343,Politics in Latin America
+POG 350,Truth and Beauty: Data Visualization
+POG 353,Did it Work? Politics Experiments
+POG 360,Politics in Quebec and French Canada
+POG 362,Canadian Political Economy
+POG 365,The Canadian Constitution
+POG 370,Politics of Global Migration and Inequality
+POG 391,MP/MPP Office Placement
+POG 392,Washington DC: Seat of US Government
+POG 410,Canadian Urban Politics
+POG 411,Canadian Foreign Policy
+POG 412,Government and the Economy
+POG 415,Environmental Politics and Policy
+POG 416,The Politics of Canadian Federalism
+POG 417,Canadian-American Relations
+POG 421,European Union
+POG 423,Nationalism and Identity
+POG 424,Human Rights and Global Politics
+POG 425,Politics of Regional Economic Integration
+POG 426,Global Conflict and Peace
+POG 427,"Women, War, and Peace"
+POG 428,Theories of Global Politics
+POG 430,Contemporary Political Thought
+POG 431,"Power, Domination and Resistance"
+POG 432,Varieties of Democracy
+POG 440,Indigenous Governance/Justice
+POG 442,Women and Comparative Politics
+POG 443,Global Urban Politics
+POG 444,"Politics, Media and Technology"
+POG 445,The Exec. Branch in Democracy
+POG 446,"Voters, Elections, and Parties"
+POG 447,Courts and Constitutions
+POG 490,Politics and Governance Topics
+POG 494,Women in the House
+POG 498,Directed Research in Politics
+POG 499,Field Experience
+POH 100,Professional Practice
+POH 103,Data Management
+POH 105,Ounce of Prevention: Public Health Past
+POH 201,Determinants of Health
+POH 400,Global Health
+POH 407,Environment and Emergencies
+POH 410,Climate Change and Health
+POH 420,Addictions and Mental Health
+POH 430,"Rural, Remote, and Equity Health"
+POH 440,Chronic Disease and Injury Prevention
+POH 705,Health Promotion and Education
+POL 101,Canadian Political Institutions
+POL 102,Political Processes in Canada
+POL 106,The Politics of Human Needs
+POL 123,Urban Government in Canada
+POL 128,Politics and Film
+POL 129,Politics of Migration in Canada
+POL 203,Politics of the Environment
+POL 208,Global Politics
+POL 377,Urban Sustainability Policy
+POL 501,"Women, Power and Politics"
+POL 507,"Power, Change and Technology"
+POL 510,The Politics of Sexual Diversity
+POL 511,Well-being and Opportunity in Canada
+POL 540,Issues in Third World Politics
+POL 588,Neoliberalism and its Alternatives
+POL 601,Social Movements and Politics
+POL 607,Politics of Technology and Globalization
+POL 609,Global Justice
+POL 613,International Law for Human Protection
+POL 620,Sports and Politics
+POL 688,Colonialism and Imperialism
+POL 720,Canada in the Continent
+PPA 101,Cdn Public Administration I: Institutions
+PPA 102,Cdn Public Administration II: Processes
+PPA 120,Canadian Politics and Government
+PPA 121,Ontario Politics and Government
+PPA 122,Local Politics and Government
+PPA 124,Indigenous Politics and Governance
+PPA 125,"Rights, Equity and the State"
+PPA 211,Public Policy
+PPA 235,Theories of the State
+PPA 301,Administrative Law
+PPA 303,Public Budget Policy/Politics
+PPA 319,Politics of Work and Labour
+PPA 333,Research Methods in Public Administration
+PPA 335,Theories of Bureaucracy
+PPA 401,Collaborative Governance
+PPA 402,Program Planning and Evaluation
+PPA 403,e-Government
+PPA 404,Issues in Public Administration
+PPA 411,Advanced Public Policy
+PPA 414,Comparative Public Policy
+PPA 425,Intergovernmental Relations
+PPA 490,Public Administration Themes
+PPA 501,Public Sector Leadership
+PPN 101,Introduction to the Nursing Profession
+PPN 102,"Health, Wellness and Role of the Nurse"
+PPN 201,Living with Chronic Illness
+PPN 202,Acute and Life-Threatening Illness
+PPN 301,Promoting Perinatal and Child Health
+PPN 302,Promoting Community Health
+PPN 303,Promoting Mental Health
+PPN 401,Transition to the Profession
+PPN 402,Preparation for Independent Practice
+PSY 102,Introduction to Psychology I
+PSY 105,Foundations of Psychology
+PSY 124,Social Psychology
+PSY 202,Introduction to Psychology II
+PSY 209,Industrial Psychology
+PSY 214,Psychopharmacology
+PSY 215,Psychology of Addictions
+PSY 217,Psychology and Design
+PSY 300,Psychology and Law
+PSY 302,Child Development
+PSY 304,Psychology of Gender
+PSY 308,Psychology of Thinking
+PSY 324,Biological Psychology
+PSY 325,Psychological Disorders
+PSY 335,Clinical Psychology
+PSY 402,Adult Development
+PSY 411,Research Methods and Statistics I
+PSY 412,Human Brain Circuitry
+PSY 434,Brain and Behaviour
+PSY 502,Adolescence and Emerging Adulthood
+PSY 504,Social Psychology
+PSY 505,Personality Theory
+PSY 511,Research Methods and Statistics II
+PSY 514,Sensory and Perceptual Processes
+PSY 518,Environmental Psychology
+PSY 535,Gender Issues in Psychology
+PSY 544,Evolutionary Psychology
+PSY 550,Human Sexuality
+PSY 560,"Sport, Exercise, and Performance"
+PSY 602,Developmental Psychopathology
+PSY 605,Psychology of Health and Health Care
+PSY 606,Mental Health and Psychopathology
+PSY 607,Drugs and Human Behaviour
+PSY 612,Independent Study
+PSY 614,Psychology of Sport
+PSY 615,The Psychology of Belief and Skepticism
+PSY 620,Psychology of Immigration
+PSY 621,Psychology of Human Sexuality
+PSY 622,The Psychology of Criminal Behaviour
+PSY 654,Cognitive Psychology
+PSY 674,Indigenous Peoples and Psychology
+PSY 682,Sleep
+PSY 700,Research Practicum
+PSY 701,The Psychology of Music
+PSY 706,Positive Psychology
+PSY 707,Models of Stress and Adaptation
+PSY 712,Human Memory
+PSY 713,Psychology of Perception
+PSY 714,Visual Information Processing
+PSY 721,Psychological Testing
+PSY 731,History and Theory of Psychology
+PSY 751,Special Topics in Psychology
+PSY 802,"Death, Dying and Bereavement"
+PSY 805,"Adjustment, Stress and Coping"
+PSY 806,Behaviour Modification
+PSY 807,Psychology of Prejudice
+PSY 808,Community Psychology
+PSY 811,Advanced Statistical Methods
+PSY 813,Psychology of Art and Creativity
+PSY 904,Advanced Cognition Seminar
+PSY 905,Advanced Clinical Psychology Seminar
+PSY 908,Advanced Developmental Seminar
+PSY 914,Advanced Biopsychology Seminar
+PSY 915,Advanced Health Psychology Seminar
+PSY 918,Advanced Social Psychology Seminar
+PSY 940,Prejudice and Discrimination
+PSY 941,Cross Cultural Psychology
+PSY 961,Thesis Project I
+PSY 971,Thesis Project II
+PUB 301,Agents of Communicable Disease
+PUB 409,Water Quality I
+PUB 501,Communicable Disease Control
+PUB 508,Food Safety
+PUB 607,Air Quality
+PUB 609,Water Quality II
+PUB 800,Advanced Professional Practice
+PUB 808,Food Safety Management
+QMS 102,Business Statistics I
+QMS 110,Applied Mathematics for Business
+QMS 130,Quantitative Business Analysis
+QMS 202,Business Statistics II
+QMS 210,Applied Statistics for Business
+QMS 230,Statistics for Accounting and Finance
+QMS 442,Multiple Regression for Business
+QMS 521,Business Optimization
+QMS 522,Linear Algebra
+QMS 702,Calculus for Business
+QMS 703,Business Forecasting Techniques
+REL 100,Introduction to Religious Studies
+REL 101,Introduction to World Religions
+REL 200,Introduction to Hinduism and Buddhism
+REL 205,Introduction to Sikhism
+REL 210,Introduction to Chinese Religions
+REL 215,Introduction to Judaism
+REL 220,Introduction to Christianity
+REL 225,Introduction to Islam
+REM 300,Introduction to Real Estate Management
+REM 400,Real Estate Finance
+REM 420,Sustainability in Real Estate
+REM 500,Real Estate Development and Project Mgmt
+REM 520,Real Estate Economics
+REM 600,Housing and Construction Management
+REM 620,Real Estate Investment Analysis
+REM 660,Real Estate Strategic Management
+REM 680,Special Topics Real Estate Management
+REM 700,Real Estate Valuation
+REM 750,Real Estate Research Methods
+REM 770,Global Real Estate
+REM 800,Real Estate Project Capstone
+REM 805,Real Estate Management Research Project
+RMG 100,Issues and Innovations in Retailing I
+RMG 200,Introduction to Retail
+RMG 210,Shopping and Society
+RMG 300,Retail Information Systems
+RMG 301,Retail Operations Management
+RMG 302,Retail Consumer Insight
+RMG 303,Managing the Retail Workplace
+RMG 400,Merchandise Buying and Planning I
+RMG 434,Intro to Logistics and Supply Chain Mgmt
+RMG 452,Visual Merchandising and Space Planning
+RMG 500,Retail Strategy
+RMG 510,I Shop Therefore I Am
+RMG 700,Applied Retail Research
+RMG 800,Special Topics in Retailing
+RMG 801,Retail Career Strategies
+RMG 806,Retailer Perspectives on Category Management
+RMG 817,Digital Advertising in Retailing
+RMG 821,Research and Analytics in Social Media
+RMG 902,Franchising
+RMG 905,"Design, Commerce and Culture"
+RMG 906,International Retail Markets
+RMG 907,Relationship Marketing
+RMG 908,Issues and Innovations in Retailing II
+RMG 909,Merchandise Buying and Planning II
+RMG 910,Omni-Channel Retailing
+RMG 911,Retail Sales Management
+RMG 912,Sustainability and Social Change
+RMG 913,Retail Private Label
+RMG 914,Sector Studies
+RMG 916,Managing B2B Channels
+RMG 917,Experiential Learning - Travel Study
+RMG 918,Retail IT - Case Study of Best Practices
+RMG 919,Retail Data Analytics
+RMG 920,Running a Retail Business
+RMG 922,Social Media Marketing
+RMG 925,Leading in Retail Organizations
+RTA 101,Introduction to Media Theory and Practice
+RTA 102,Creative Process for Media Production
+RTA 103,Intro to Digital Media
+RTA 104,Introductory Audio Production
+RTA 105,Sport Media Literacy
+RTA 106,Introduction to Video Sport Production
+RTA 108,Sport Media Message Design
+RTA 180,Music and Film
+RTA 210,Media History
+RTA 211,Production Theory
+RTA 212,Media Writing
+RTA 213,Production: Introduction to Multi-Camera
+RTA 231,Sport Marketing and Promotion
+RTA 232,"Sport, Media and Society"
+RTA 233,Sport Journalism
+RTA 234,Intermediate Multi-Camera Sports
+RTA 235,Sport Media and Programming
+RTA 236,On-Air Sports Presentation
+RTA 243,Production: Introduction to Single Camera
+RTA 250,Media Literacy and Information
+RTA 261,Multi-Camera Sports - Intermediate
+RTA 310,Media Aesthetics and Culture
+RTA 311,Intermediate Audio Production
+RTA 312,Motion Graphics
+RTA 313,Production: Intermediate Multi-camera
+RTA 314,Production: Intermediate Single-Camera
+RTA 315,Business of Creative Media
+RTA 316,Concepts in Narrative
+RTA 317,Escape Rooms and Immersive Experiences
+RTA 330,Advanced Live Sport Production
+RTA 331,Advanced Transmedia Sports Marketing
+RTA 332,Legal and Business Aspects of Sport
+RTA 340,Intermediate Virtual Production
+RTA 430,Sport Media Capstone
+RTA 431,Sport Media Practicum
+RTA 433,Critical Issues in Sports
+RTA 440,Sport Media Internship
+RTA 503,Project Development - Media Production
+RTA 510,"Race, Ethnicity, Gender and Sport"
+RTA 701,Thesis: Production Project
+RTA 702,Thesis: Major Research Paper I
+RTA 703,Thesis: Media Writing Project I
+RTA 704,Thesis: Major Research Paper II
+RTA 705,Thesis: Media Writing Project II
+RTA 711,Master Class
+RTA 801,Discoverability and Distribution
+RTA 802,Production: Advanced Live Multi-Camera
+RTA 803,Production: Advanced Single Camera
+RTA 808,First Draft
+RTA 837,Live Audio Production
+RTA 840,Esports
+RTA 844,Sport in Film
+RTA 845,Producing the Olympics
+RTA 847,Artificial Intelligence - Music and Audio
+RTA 848,Esports and Online Streaming Production
+RTA 850,Long-Form Sports Feature Writing
+RTA 854,Live Radio Broadcasting
+RTA 855,The Athlete's Perspective
+RTA 858,Music Production
+RTA 860,Selected Topics in Sport Media
+RTA 863,Creative AI
+RTA 864,Immersive and Interactive Audio
+RTA 865,Exploring Virtual Environments
+RTA 870,Global Experiential Intensive - Sport Media
+RTA 875,Exploring Virtual Environments II
+RTA 880,Youth and Media
+RTA 885,RTA Media Producing Intensive
+RTA 888,Media Production Internship
+RTA 890,AI and Planetary Futures
+RTA 902,Social Media
+RTA 907,Sound Media
+RTA 908,Business of Producing I
+RTA 909,Business of Producing II
+RTA 910,Production Management
+RTA 911,Directing and Performance
+RTA 912,Media Audiences
+RTA 915,Legal Issues in Media
+RTA 918,Ethics in Media
+RTA 920,Visual Storytelling: Video Production
+RTA 921,Audio Technical Theory
+RTA 923,Videogame Narrative
+RTA 930,Social Practices in Hybrid Media Spaces
+RTA 938,Digital Popular Cultures
+RTA 941,Dramatic Writing
+RTA 943,Comedy Writing
+RTA 944,Writing for Animation
+RTA 945,Writing for Factual and Reality Programs
+RTA 949,Directed Study
+RTA 950,Selected Topics in Media
+RTA 951,Presentation I
+RTA 956,Children's Programming
+RTA 957,Documentary Production
+RTA 960,International Media Co-production
+RTA 963,Web Design
+RTA 969,Technical Producing (Visual Media)
+RTA 970,"Lighting, Grip and Effects Specialty"
+RTA 971,Audio Post Production and Sound Design
+RTA 972,Sound Synthesis
+RTA 973,Independent Production
+RTA 974,Radio Broadcasting
+RTA 975,Video Compositing and Visual Effects
+RTA 976,Broadcast Journalism
+RTA 978,Editing Specialty
+RTA 979,Colour Grading and Finishing
+RTA 985,Audio for Media Producers
+RTA 986,Media for International Development
+RTA 988,International Media Storytelling
+RTA 989,Emerging Media Markets/Entrepreneurship
+RTA 991,Sport Writing
+RTA 992,Social and Interactive Media for Sports
+RTA 993,Sport Graphics
+RTA 994,Advanced Sport Media and Documentary
+RTA 995,Embodied Digital Media: Research/Design
+RTA 996,The Art of Podcasting
+RTA 999,RTA in LA
+SCI 102,Chaos and Fractals
+SCI 130,Mobile Robotic Devices Embedded Systems
+SCI 180,Orientation
+SCI 200,Professionalism in Science
+SCI 222,Evidence-Based Security
+SCI 230,Emergency Management Practice
+SCI 232,Incident and Operations Management
+SCI 234,Analysis of Critical Incidents
+SCI 241,Planning for Emergency Management
+SCI 243,Continuity and Risk Management
+SCI 444,Cybersecurity and Society
+SCI 888,Evidence-based Innovation
+SCI 999,Research Practicum
+SEM 101,"Sign, Sense and Meaning"
+SEM 102,Introduction to Visual Semiotics
+SEM 301,"Body, Mind, and Imagination"
+SOC 103,How Society Works
+SOC 104,Understanding Society
+SOC 105,Introduction to Sociology
+SOC 107,Sociology of the Everyday
+SOC 108,Indigenous Peoples and Decolonization
+SOC 111,The Social World I
+SOC 112,The Social World II
+SOC 202,Popular Culture
+SOC 203,Social Class and Inequality
+SOC 221,The Hip Hop Lens on Society
+SOC 300,Sociology of Equity and Diversity
+SOC 305,Sociology of Deviance
+SOC 319,Sociological Perspectives on Crime
+SOC 320,Black Popular Culture
+SOC 330,Sociology of the Caribbean
+SOC 350,Queer Sociology
+SOC 402,The City and Social Problems
+SOC 411,Intro to Quantitative Data Analysis
+SOC 420,Social Class in Changing Times
+SOC 427,Indigenous Perspectives on Canada
+SOC 470,Toronto: The Changing City
+SOC 472,At Work in a Changing World
+SOC 473,Classical Sociological Theory
+SOC 474,"Immigration, Borders and Belonging"
+SOC 475,Contemporary Sociological Theory
+SOC 476,Sociology of Fear
+SOC 478,Sociology of Fun
+SOC 479,Social Networks and the World Wide Web
+SOC 481,Survey Design and Analysis
+SOC 482,Advanced Approaches to Media Analysis
+SOC 483,Statistical Modelling
+SOC 490,Capstone: Specializing Your Knowledge
+SOC 491,Independent Sociological Analysis
+SOC 492,Current Social Issue Focus
+SOC 493,Creating Social Change
+SOC 494,Career Integration
+SOC 500,Youth and Society
+SOC 501,Making a Living: Sociology of Work
+SOC 502,Violence and the Family
+SOC 503,Sociology of Education
+SOC 504,Children and Society
+SOC 505,Sociology of Sport
+SOC 506,Health and Society
+SOC 507,Understanding Racism in Canada
+SOC 525,Media and Images of Inequality
+SOC 530,Blackness and Freedom
+SOC 540,Special Topics in Indigenous Studies
+SOC 553,Indigenist Thought
+SOC 558,Sociology of Bodies
+SOC 576,Colonialism and Anti-Blackness
+SOC 580,Indigenous Feminisms
+SOC 595,Gender and Care Across Lifespan
+SOC 600,Globalization and Health
+SOC 601,Control and Resistance at Work
+SOC 603,Sociology of Gender
+SOC 605,Families: Difference and Diversity
+SOC 606,Families and Care Work
+SOC 608,"Women, Power and Change"
+SOC 609,Gender and Global Human Rights
+SOC 611,Future Worlds: Technology and Social Change
+SOC 633,"Sex, Gender Identities, and Sexualities"
+SOC 656,Fashion and Society
+SOC 700,Men and Masculinities in the 21st Century
+SOC 701,Social Change: Canadian Perspectives
+SOC 703,"Women, Power and the Global South"
+SOC 704,"Aging, Culture and Society"
+SOC 705,"Law, Justice, and Abolition"
+SOC 706,Globalized Labour and Consumption
+SOC 708,Environmental Sociology
+SOC 801,Global Power Relations
+SOC 803,International Community Engagement
+SOC 808,Sociology of Food and Eating
+SOC 880,Information Technology and Society
+SOC 885,"Women, Islam and Modernity"
+SOC 902,Hollywood and Society
+SOC 903,Media and Modern Fandom
+SOC 931,Waste and Consumerism
+SOC 932,The Entertainment Industry
+SOC 941,Colonialism and Racialization
+SOC 943,Poverty Issues
+SPN 101,Introductory Spanish I
+SPN 201,Introductory Spanish II
+SPN 301,Intermediate Spanish I
+SPN 302,Spanish for the Tourism Industry
+SPN 303,Spanish and Fashion
+SPN 401,Intermediate Spanish II
+SPN 402,Spanish Conversation and Pronunciation
+SPN 501,Advanced Spanish I
+SPN 504,Spanish Language and Culture through Films
+SPN 506,Spanish Audiovisual Translation
+SPN 507,English-Spanish Translation I
+SPN 510,Effective Writing
+SPN 515,Introduction to Business Spanish
+SPN 601,Advanced Spanish II
+SPN 607,English-Spanish Translation II
+SPN 610,Spanish Writing Composition
+SPN 702,Communication in Business Spanish
+SPN 704,Latin American Arts and Culture
+SPN 705,The Boom in Latin American Literature
+SPN 706,Spanish Graphic Novels
+SPN 707,Spanish-English Translation
+SPN 708,Contemporary Spanish Fiction
+SPN 710,History of the Spanish Language
+SPN 802,Spanish for Business Strategies
+SPN 803,Latin American Short Story
+SPN 804,Culture and Resistance in the Americas
+SPN 805,Spanish Language Teaching Methodologies
+SPN 810,Cultural Context of Writing
+SPN 900,Senior Spanish Seminar
+SPS 502,Spanish Caribbean Literature and Culture
+SPS 503,Sex in the Early Modern City
+SPS 512,Films for Change
+SSH 100,Inquiry and Problem-Solving
+SSH 102,Learning and Development Strategies
+SSH 104,Co-op Program Preparation
+SSH 105,Critical Thinking
+SSH 205,Academic Writing and Research
+SSH 301,Research Design and Qualitative Methods
+SSH 400,Special Topics in Social Ventures
+SSH 500,Peer Learning Experience
+SSH 502,Community Action Research
+SSH 505,Making the Future
+SWP 132,Critical Social Work Foundations
+SWP 201,Preparing for Social Work Practice
+SWP 301,Decolonizing and Anti-Oppression Practice
+SWP 302,Social Policy: Welfare and Programs
+SWP 331,Social Work Theories of Practice
+SWP 335,"Power, Resistance and Change"
+SWP 341,Transformative Social Work Practices
+SWP 402,Social Policy and Social Inclusion
+SWP 435,Indigenous Approaches to Social Work
+SWP 505,Critical Eq. and Movements of Resistance
+SWP 538,Social Work Research: Part I
+SWP 638,Social Work Research: Part II
+SWP 900,Race and Ethnicity
+SWP 901,Youth and Social Justice
+SWP 902,Gerontology
+SWP 903,Crisis Intervention
+SWP 905,Criticl. Appr. to Mental Health and Madness
+SWP 906,Gerontology: Social Policy and Soc Security
+SWP 907,"Inequality, Oppression and Health"
+SWP 908,Social Group Work
+SWP 909,Social Work and the Law: Children and Family
+SWP 910,Queer Theory and Identities
+SWP 914,Ethics and Values for Social Work
+SWP 915,Independent Study I
+SWP 916,Independent Study II
+SWP 917,Special Topics I
+SWP 918,Special Topics II
+SWP 919,Substance Use and Abuse
+SWP 920,Addressing Substance Use and Abuse
+SWP 921,Disability Issues Social Work Practice
+SWP 923,Family Violence
+SWP 924,Strategies for Addressing Conflict
+SWP 925,Strong Helpers' Teachings
+SWP 926,Critical Practice with Queer Populations
+SWP 927,Advocacy in Social Work
+SWP 928,International Social Work
+SWP 929,Working in Marginalized Communities
+SWP 930,Spirituality in the Helping Professions
+SWP 931,Human Rights for Social Workers
+SWP 932,Evaluating Social Work Practices
+SWP 933,Indigenous Health and Well Being
+SWP 934,Community Engagement Foundations
+SWP 935,Engaging Diverse Communities
+SWP 936,Community Engagement Practices
+SWP 937,Community Engagement Capstone
+SWP 938,Innovative Organizing in Precarious Times
+SWP 939,Art and Social Transformation
+SWP 950,Fat Studies and Fat Activism
+SWP 951,Critical Clinical Social Work
+TEC 210,Fundamentals of Project Management
+TEC 241,Energy Innovation
+TEC 264,Trends in Smart Grid
+TEC 269,Trends in Energy Conservation
+TEC 282,Public Policy in Energy
+THA 300,Performance Tech I: Acting
+THA 301,Performance Tech II: Acting
+THA 340,Improvisation
+THA 400,Adv Performance Tech I: Acting
+THA 401,Adv Performance Tech II: Acting
+THA 628,Acting Practicum II
+THD 151,Dance Master Class I
+THD 220,Latin American Dance Forms
+THD 251,Dance Master Class II
+THD 300,Performance Tech I: Dance
+THD 301,Performance Tech II: Dance
+THD 320,Western Dance Styles
+THD 400,Advanced Performance Tech I: Dance
+THD 401,Advanced Performance Tech II: Dance
+THF 300,Anatomy of Movement and Lifestyle II
+THF 310,Professional Preparation
+THF 311,Dance Styles: Historical Period
+THF 313,Special Topics
+THF 314,Musical Theatre Repertoire
+THF 315,Drama/Dance in Education: Elementary
+THF 317,Global Performance Studio
+THF 325,Musical Theatre
+THF 331,Creative Performance Studies V
+THF 332,Creative Performance Studies VI
+THF 340,Singing for Performers I
+THF 341,Singing for Performers II
+THF 400,Creative Performance Studies VII
+THF 401,Independent Study Seminars
+THF 402,Text Examination: Dramaturgy and Direction
+THF 405,Human Development in the Arts
+THF 408,Applications of Music in Performance
+THF 411,Dance Styles: Modern Social
+THF 415,Drama/Dance in Education: Secondary
+THF 416,20th Century Performance Methods/Styles
+THF 417,Advanced Playwriting
+THF 470,Black Creative Practices
+THF 500,Performing Arts in the Media
+THL 100,Theatre and the Canadian Identity
+THM 114,Advanced Stage Management
+THM 301,Technical Direction
+THM 303,Theatre Administration Special Topics
+THM 327,Theatre Administration
+THM 401,Production Management
+THM 503,Tour and Company Management
+THP 301,Production Technique V
+THP 302,Production Technique VI
+THP 312,Make-Up and Wiggery
+THP 315,Corsetry: History and Construction
+THP 325,Theatre Costume
+THP 328,Scenic Construction
+THP 333,Costume: Special Topics
+THP 337,Lighting Design
+THP 350,Projection Design
+THP 401,Production Technique VII
+THP 403,Production Technique VIII
+THP 404,Lighting Design Special Topics
+THP 422,Scenic Painting
+THP 500,Conceiving the Production
+THP 515,Theatre Safety and Occupational Health
+THP 538,Properties: Design and Construction
+THP 612,Fabric Dyeing and Costume Painting
+THP 648,Scenic Construction: Special Topics
+THP 660,Projection Design: Special Topics
+THP 683,Production Innovation
+THP 800,Independent Study
+THP 843,Pyrotechnics
+THP 845,Costume III
+THT 318,Set Design
+THT 319,Costume Design I
+THT 383,Sound Design
+THT 419,Costume Design II
+THT 500,Structure for Performing Arts
+THT 582,Show Systems Engineering
+THT 893,Sound Special Topics
+UWC 200,The Life of Freshwater
+UWC 600,"Canadian Water Issues, Law and Policy"
+WKT 100,Work Term I - TRSM
+WKT 103,Work Term I - Computer Science
+WKT 104,Work Term I - Retail Management
+WKT 106,Work Term I - Architectural Science
+WKT 107,Work Term 1 – Urban and Regional Planning
+WKT 110,Work Term I - Occupational and Public Health
+WKT 112,Work Term I - Hospitality and Tourism
+WKT 117,Work Term I - Real Estate Management
+WKT 118,Work Term I - Aerospace Engineering
+WKT 119,Work Term I - Biomedical Engineering
+WKT 120,Work Term I - Human Resources Management
+WKT 121,Work Term I - Civil Engineering
+WKT 122,Work Term I - Computer Engineering
+WKT 123,Work Term I - Electrical Engineering
+WKT 124,Work Term I - Entrepreneurship
+WKT 125,Work Term I - Economics and Management Science
+WKT 126,Work Term I - Industrial Engineering
+WKT 127,Work Term I - Mechanical Engineering
+WKT 128,Work Term I - Mechatronics Engineering
+WKT 131,Work Term I - Law and Business
+WKT 135,Work Term I - Marketing
+WKT 143,Work Term I - Accounting and Finance
+WKT 147,Work Term I - Global Management Studies
+WKT 150,Work Term I - Arts
+WKT 160,Work Term I - Accounting
+WKT 170,Work Term I - Interior Design
+WKT 180,Work Term 1 - Professional Communication
+WKT 200,Work Term II - TRSM
+WKT 203,Work Term II - Computer Science
+WKT 204,Work Term II - Retail Management
+WKT 206,Work Term II - Architectural Science
+WKT 207,Work Term 2 – Urban and Regional Planning
+WKT 210,Work Term II - Occupational and Public Health
+WKT 212,Work Term II - Hospitality and Tourism
+WKT 217,Work Term II - Real Estate Management
+WKT 218,Work Term II - Aerospace Engineering
+WKT 219,Work Term II - Biomedical Engineering
+WKT 220,Work Term II - Human Resources Management
+WKT 221,Work Term II - Civil Engineering
+WKT 222,Work Term II - Computer Engineering
+WKT 223,Work Term II - Electrical Engineering
+WKT 224,Work Term II - Entrepreneurship
+WKT 225,Work Term II - Economics and Management Science
+WKT 226,Work Term II - Industrial Engineering
+WKT 227,Work Term II - Mechanical Engineering
+WKT 228,Work Term II - Mechatronics Engineering
+WKT 231,Work Term II - Law and Business
+WKT 235,Work Term II - Marketing
+WKT 243,Work Term II - Accounting and Finance
+WKT 247,Work Term II - Global Management Studies
+WKT 250,Work Term II - Arts
+WKT 260,Work Term II - Accounting
+WKT 270,Work Term II - Interior Design
+WKT 280,Work Term 2 - Professional Communication
+WKT 291,Double Work Term - Civil Engineering
+WKT 292,Double Work Term - Computer Engineering
+WKT 293,Double Work Term - Electrical Engineering
+WKT 294,Work Term V - Mechatronics Engineering
+WKT 296,Double Work Term - Industrial Engineering
+WKT 297,Double Work Term - Mechanical Engineering
+WKT 298,Double Work Term - Aerospace Engineering
+WKT 299,Double Work Term - Biomedical Engineering
+WKT 300,Work Term III - TRSM
+WKT 303,Work Term III - Computer Science
+WKT 304,Work Term III - Retail Management
+WKT 306,Work Term III - Architectural Science
+WKT 307,Work Term 3 – Urban and Regional Planning
+WKT 310,Work Term III - Occupational and Public Health
+WKT 312,Work Term III - Hospitality and Tourism
+WKT 317,Work Term III - Real Estate Management
+WKT 318,Work Term III - Aerospace Engineering
+WKT 319,Work Term III - Biomedical Engineering
+WKT 320,Work Term III - Human Resources Management
+WKT 321,Work Term III - Civil Engineering
+WKT 322,Work Term III - Computer Engineering
+WKT 323,Work Term III - Electrical Engineering
+WKT 324,Work Term III - Entrepreneurship
+WKT 325,Work Term III - Economics and Management Science
+WKT 326,Work Term III - Industrial Engineering
+WKT 327,Work Term III - Mechanical Engineering
+WKT 328,Work Term III - Mechatronics Engineering
+WKT 331,Work Term III - Law and Business
+WKT 335,Work Term III - Marketing
+WKT 343,Work Term III - Accounting and Finance
+WKT 347,Work Term III - Global Management Studies
+WKT 350,Work Term III - Arts
+WKT 360,Work Term III - Accounting
+WKT 370,Work Term III - Interior Design
+WKT 380,Work Term 3 - Professional Communication
+WKT 400,Work Term IV - TRSM
+WKT 401,Work Term I - Chemical Engineering
+WKT 403,Work Term IV - Computer Science
+WKT 404,Work Term IV - Retail Management
+WKT 405,Work Term I - Science
+WKT 406,Work Term IV - Architectural Science
+WKT 407,Work Term 4 – Urban and Regional Planning
+WKT 410,Work Term IV - Occupational and Public Health
+WKT 412,Work Term IV - Hospitality and Tourism
+WKT 417,Work Term IV - Real Estate Management
+WKT 418,Work Term IV - Aerospace Engineering
+WKT 419,Work Term IV - Biomedical Engineering
+WKT 420,Work Term IV - Human Resources Management
+WKT 421,Work Term IV - Civil Engineering
+WKT 422,Work Term IV - Computer Engineering
+WKT 423,Work Term IV - Electrical Engineering
+WKT 424,Work Term IV - Entrepreneurship
+WKT 425,Work Term IV - Economics and Management Science
+WKT 426,Work Term IV - Industrial Engineering
+WKT 427,Work Term IV - Mechanical Engineering
+WKT 428,Work Term IV - Mechatronics Engineering
+WKT 431,Work Term IV - Law and Business
+WKT 435,Work Term IV - Marketing
+WKT 443,Work Term IV - Accounting and Finance
+WKT 447,Work Term IV - Global Management Studies
+WKT 450,Work Term IV - Arts (Optional)
+WKT 460,Work Term IV - Accounting
+WKT 470,Work Term IV - Interior Design
+WKT 480,Work Term 4 - Professional Communication
+WKT 500,Work Term II - Chemical Engineering
+WKT 501,Work Term III - Chemical Engineering
+WKT 502,Work Term V - TRSM
+WKT 503,Work Term V - Computer Science
+WKT 505,Work Term II - Science
+WKT 506,Work Term III - Science
+WKT 510,Work Term V - Occupational and Public Health
+WKT 601,Work Term IV - Chemical Engineering
+WKT 602,Work Term V - Chemical Engineering
+WKT 605,Work Term IV - Science
+WKT 606,Work Term V - Science
+WKT 608,GCM Internship
