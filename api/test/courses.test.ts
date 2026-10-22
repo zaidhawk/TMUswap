@@ -54,9 +54,11 @@ describe("seeding", () => {
     expect(count).toBeGreaterThan(10);
     const rows = await db.select().from(courses);
     expect(rows).toHaveLength(count);
-    // Computer science and engineering students are both covered.
+    // Every faculty is covered, not just computer science.
     const codes = rows.map((r) => r.code);
-    expect(codes).toEqual(expect.arrayContaining(["CPS 109", "MEC 222", "MTH 140", "CEN 100"]));
+    expect(codes).toEqual(
+      expect.arrayContaining(["CPS 109", "MEC 222", "MTH 140", "CEN 100", "NMA 111", "BLG 143", "NSE 111", "ACC 100"]),
+    );
   });
 });
 

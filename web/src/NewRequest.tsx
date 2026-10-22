@@ -137,6 +137,8 @@ function CoursePicker({ onPick }: { onPick: (course: Course) => void }) {
         </button>
       ))}
       {results?.length === 0 && <p className="hint">No courses found.</p>}
+      {/* The API sends at most 20 matches. */}
+      {results?.length === 20 && <p className="hint">Showing the first 20 matches. Type more to narrow it down.</p>}
       <p className="hint">
         Can't find your course?{" "}
         <a href={`mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent("Add a course to TMU Swap")}`}>Email us</a> and
