@@ -162,7 +162,7 @@ function Footer() {
   return (
     <footer>
       <Link to="/rules">Rules</Link> · <Link to="/feedback" state={{ from: pathname }}>Feedback</Link> · Not
-      affiliated with TMU. We never ask for your TMU password.
+      affiliated with TMU.
     </footer>
   );
 }
