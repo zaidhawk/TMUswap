@@ -8,10 +8,10 @@ A section-swap platform for Toronto Metropolitan University students. Post the s
 **Live:** [swap.zaidhaque.ca](https://swap.zaidhaque.ca)
 
 <p>
-  <img src="docs/screenshots/1-login.png" width="200" alt="Log in with a TMU email" />
-  <img src="docs/screenshots/2-new-request.png" width="200" alt="Posting a swap request" />
-  <img src="docs/screenshots/3-matched.png" width="200" alt="A match found, shown live" />
-  <img src="docs/screenshots/4-countdown.png" width="200" alt="Chat, swap steps and the shared countdown" />
+  <img src="docs/screenshots/1-login.png" width="200" align="top" alt="Log in with a TMU email" />
+  <img src="docs/screenshots/2-new-request.png" width="200" align="top" alt="Posting a swap request" />
+  <img src="docs/screenshots/3-matched.png" width="200" align="top" alt="A match found, shown live" />
+  <img src="docs/screenshots/4-countdown.png" width="200" align="top" alt="Chat, swap steps and the shared countdown" />
 </p>
 
 ## Why
