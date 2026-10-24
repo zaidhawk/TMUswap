@@ -73,6 +73,7 @@ test("a student offers a different section from the Board, and the poster accept
   await gus.getByRole("navigation").getByRole("link", { name: "Board" }).click();
   await gus.getByLabel("Search courses").fill("cps 510");
   const card = gus.locator("article", { hasText: "Has 031" });
+  await expect(card.getByText(/Posted by Fay/)).toBeVisible();
   await card.getByRole("button", { name: "Offer a swap" }).click();
   await card.getByLabel("Your tutorial section").fill("033");
   await card.getByLabel("Neither section has a wait list.").check();

@@ -21,9 +21,10 @@ export type SwapRequest = {
   matchId: string | null;
 };
 
-// Someone's open request as it appears on the Board. Who posted it stays hidden until a match.
+// Someone's open request as it appears on the Board, with the poster's display name.
 export type BoardRequest = {
   id: string;
+  postedBy: string;
   createdAt: string;
   courseCode: string;
   courseTitle: string;

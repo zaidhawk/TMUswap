@@ -68,7 +68,7 @@ describe("GET /board", () => {
     await request(app).get("/board").expect(401);
   });
 
-  it("lists open requests newest first, without saying who posted them", async () => {
+  it("lists open requests newest first, with the poster's display name but never their email", async () => {
     const ann = await student("ann");
     const bob = await student("bob");
     await post(ann, "011", ["012", "15"]);
@@ -76,11 +76,18 @@ describe("GET /board", () => {
 
     const res = await ann.get("/board").expect(200);
     expect(res.body.requests).toMatchObject([
-      { courseCode: "MEC 309", courseTitle: "Basic Thermodynamics", kind: "lab", have: "021", wants: ["022"] },
-      { courseCode: "CPS 109", kind: "lecture", have: "011", wants: ["012", "015"] },
+      {
+        courseCode: "MEC 309",
+        courseTitle: "Basic Thermodynamics",
+        kind: "lab",
+        have: "021",
+        wants: ["022"],
+        postedBy: "Student bob",
+      },
+      { courseCode: "CPS 109", kind: "lecture", have: "011", wants: ["012", "015"], postedBy: "Student ann" },
     ]);
     const text = JSON.stringify(res.body);
-    expect(text).not.toMatch(/bob@|Student bob|userId/);
+    expect(text).not.toMatch(/@torontomu|userId/);
   });
 
   it("marks your own requests so you can't offer on them", async () => {
