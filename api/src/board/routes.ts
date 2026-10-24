@@ -48,7 +48,7 @@ const notFound = { status: 404, error: "Offer not found" };
 
 // ---------------------------------------------------------------------------------------------
 // The Board: everyone's open requests, so students can browse a course and offer a swap even
-// when their sections don't line up exactly. Posters stay anonymous until they're matched.
+// when their sections don't line up exactly. Posters are shown by display name, never by email.
 // ---------------------------------------------------------------------------------------------
 
 export const boardRouter = Router();
@@ -64,6 +64,7 @@ boardRouter.get("/", async (req, res) => {
     .select({
       id: swapRequests.id,
       userId: swapRequests.userId,
+      postedBy: users.displayName,
       createdAt: swapRequests.createdAt,
       courseCode: courses.code,
       courseTitle: courses.title,

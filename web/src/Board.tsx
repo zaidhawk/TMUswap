@@ -102,7 +102,9 @@ function BoardCard({ request: r, onOffered }: { request: BoardRequest; onOffered
       <p>
         Has <strong>{r.have}</strong>, wants <strong>{r.wants.join(", ")}</strong>
       </p>
-      <p className="hint">Posted {timeAgo(r.createdAt)}</p>
+      <p className="hint">
+        Posted by <strong>{r.isMine ? "you" : r.postedBy}</strong> {timeAgo(r.createdAt)}
+      </p>
 
       {r.isMine && <p className="hint">This is your request.</p>}
       {r.myOffer === "pending" && <p className="hint">Offer sent. You'll hear back on My requests.</p>}

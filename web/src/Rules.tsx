@@ -41,10 +41,9 @@ export function Rules() {
       <h3>Your privacy</h3>
       <p>
         We store your TMU email, display name, course choices, and what you send through the site: chat messages,
-        reports and feedback. Your open requests appear on the Board without your name, and other students only see your
-        display name once you're matched. Chats are deleted 30 days after a match ends,
-        and you can delete your account and everything in it at any time from the <Link to="/account">Account</Link>{" "}
-        page.
+        reports and feedback. Other students only ever see your display name, never your email: on your open requests on
+        the Board, and in your matches. Chats are deleted 30 days after a match ends, and you can delete your account and
+        everything in it at any time from the <Link to="/account">Account</Link> page.
       </p>
 
       <p className="hint">TMU Swap is a student project and is not affiliated with Toronto Metropolitan University.</p>

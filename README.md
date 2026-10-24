@@ -23,7 +23,7 @@ Section swaps happen in Reddit threads and Discord servers today. Posts get buri
 - **TMU-only, passwordless login.** A 6-digit code sent to an `@torontomu.ca` address. Codes are HMAC-hashed, expire in 10 minutes, allow 5 attempts, and are limited to 3 per hour.
 - **Automatic matching.** Direct swaps first, then 3-way cycles, oldest requests first. Runs the moment a request is posted, plus a safety sweep every 30 minutes.
 - **Accept within 24 hours**, or the match expires and everyone else goes back into the pool.
-- **Board with direct offers.** Every open request is listed (without names) and searchable by course. If your section isn't on someone's list, offer it anyway; if they accept, you're matched straight into the chat. Accepting locks both requests in the same order as the matcher, so an offer and an automatic match can't claim the same seat.
+- **Board with direct offers.** Every open request is listed with the poster's display name (never their email) and searchable by course. If your section isn't on someone's list, offer it anyway; if they accept, you're matched straight into the chat. Accepting locks both requests in the same order as the matcher, so an offer and an automatic match can't claim the same seat.
 - **Real-time chat** per match over WebSockets, with typing indicators.
 - **Shared countdown.** It starts only when everyone has pressed Start, using the server's clock, so every phone says "Go!" at the same moment. It's paused during MyServiceHub's nightly maintenance (11:45 pm to 1:15 am).
 - **Step-by-step plan.** Who drops first, who uses Swap into which freed seat, and who adds last. Only one person is ever without a seat, for a few seconds.
