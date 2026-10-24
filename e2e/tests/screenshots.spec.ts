@@ -36,40 +36,48 @@ test("README screenshots", async ({ browser }) => {
   await login.screenshot({ path: `${OUT}/1-login.png` });
 
   const maya = await phoneStudent(browser, "Maya");
-  const omar = await phoneStudent(browser, "Omar");
+  const daquan = await phoneStudent(browser, "Daquan");
+  const jerome = await phoneStudent(browser, "Jerome");
 
-  await maya.getByRole("link", { name: "New request" }).click();
-  await maya.getByPlaceholder("CPS 510 or Database").fill("510");
-  await maya.getByRole("button", { name: /Database Systems I/ }).click();
-  await maya.getByLabel(/Your lecture section/).fill("011");
-  await maya.getByLabel(/Sections you'd take instead/).fill("012, 015");
-  await maya.getByLabel(/None of these sections has a wait list/).check();
+  async function post(page: typeof maya, have: string, wants: string) {
+    await page.getByRole("link", { name: "New request" }).click();
+    await page.getByPlaceholder("CPS 510 or Database").fill("510");
+    await page.getByRole("button", { name: /Database Systems I/ }).click();
+    await page.getByLabel(/Your lecture section/).fill(have);
+    await page.getByLabel(/Sections you'd take instead/).fill(wants);
+    await page.getByLabel(/None of these sections has a wait list/).check();
+  }
+
+  await post(maya, "011", "012, 015");
   await maya.screenshot({ path: `${OUT}/2-new-request.png` });
   await maya.getByRole("button", { name: "Post request" }).click();
 
-  await omar.getByRole("link", { name: "New request" }).click();
-  await omar.getByPlaceholder("CPS 510 or Database").fill("510");
-  await omar.getByRole("button", { name: /Database Systems I/ }).click();
-  await omar.getByLabel(/Your lecture section/).fill("012");
-  await omar.getByLabel(/Sections you'd take instead/).fill("011");
-  await omar.getByLabel(/None of these sections has a wait list/).check();
-  await omar.getByRole("button", { name: "Post request" }).click();
+  // No two of them want each other's sections, so only a 3-way swap works:
+  // Maya's 011 → Jerome, Jerome's 013 → Daquan, Daquan's 012 → Maya.
+  await post(daquan, "012", "013");
+  await daquan.getByRole("button", { name: "Post request" }).click();
+  await post(jerome, "013", "011");
+  await jerome.getByRole("button", { name: "Post request" }).click();
 
   await expect(maya.getByText("You have a new swap match!")).toBeVisible();
   await maya.screenshot({ path: `${OUT}/3-matched.png` });
 
-  for (const page of [maya, omar]) {
+  const everyone = [maya, daquan, jerome];
+  for (const page of everyone) {
     await page.getByRole("link", { name: "You have a match! View it →" }).click();
     await page.getByRole("button", { name: "Accept swap" }).click();
   }
   await expect(maya.getByText("The swap, step by step")).toBeVisible();
-  await omar.getByLabel("Message").fill("Hey! Free at 3 today?");
-  await omar.getByRole("button", { name: "Send" }).click();
+  await daquan.getByLabel("Message").fill("Hey! Free at 3 today?");
+  await daquan.getByRole("button", { name: "Send" }).click();
+  await expect(jerome.getByText("Hey! Free at 3 today?")).toBeVisible();
+  await jerome.getByLabel("Message").fill("3 works for me");
+  await jerome.getByRole("button", { name: "Send" }).click();
+  await expect(maya.getByText("3 works for me")).toBeVisible();
   await maya.getByLabel("Message").fill("Perfect, let's do it 👍");
   await maya.getByRole("button", { name: "Send" }).click();
-  await expect(omar.getByText("Perfect, let's do it 👍")).toBeVisible();
-  await maya.getByRole("button", { name: "Start countdown" }).click();
-  await omar.getByRole("button", { name: "Start countdown" }).click();
+  await expect(daquan.getByText("Perfect, let's do it 👍")).toBeVisible();
+  for (const page of everyone) await page.getByRole("button", { name: "Start countdown" }).click();
   await expect(maya.locator(".countdown-number")).toBeVisible();
   await maya.screenshot({ path: `${OUT}/4-countdown.png`, fullPage: true });
 });
