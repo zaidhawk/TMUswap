@@ -9,9 +9,11 @@ export function ReceivedOffers({ offers, onChange }: { offers: ReceivedOffer[]; 
   return (
     <>
       <h3>Offers for you</h3>
-      {offers.map((o) => (
-        <ReceivedOfferCard key={o.id} offer={o} onChange={onChange} />
-      ))}
+      <div className="cards">
+        {offers.map((o) => (
+          <ReceivedOfferCard key={o.id} offer={o} onChange={onChange} />
+        ))}
+      </div>
     </>
   );
 }
@@ -86,28 +88,30 @@ export function SentOffers({ offers, onChange }: { offers: SentOffer[]; onChange
     <>
       <h3>Offers you've sent</h3>
       {error && <p className="error">{error}</p>}
-      {offers.map((o) => {
-        const waiting = o.status === "pending" && o.requestOpen;
-        return (
-          <article key={o.id} className="card">
-            <div className="card-head">
-              <strong>{o.courseCode}</strong>
-              <span className="badge">
-                {o.status === "pending" && !o.requestOpen ? "No longer available" : STATUS_TEXT[o.status]}
-              </span>
-            </div>
-            <p>
-              Your {KIND_LABELS[o.kind].toLowerCase()} <strong>{o.yourSection}</strong> for their{" "}
-              <strong>{o.theirSection}</strong>
-            </p>
-            {waiting && (
-              <button className="secondary" onClick={() => withdraw(o.id)}>
-                Withdraw offer
-              </button>
-            )}
-          </article>
-        );
-      })}
+      <div className="cards">
+        {offers.map((o) => {
+          const waiting = o.status === "pending" && o.requestOpen;
+          return (
+            <article key={o.id} className="card">
+              <div className="card-head">
+                <strong>{o.courseCode}</strong>
+                <span className="badge">
+                  {o.status === "pending" && !o.requestOpen ? "No longer available" : STATUS_TEXT[o.status]}
+                </span>
+              </div>
+              <p>
+                Your {KIND_LABELS[o.kind].toLowerCase()} <strong>{o.yourSection}</strong> for their{" "}
+                <strong>{o.theirSection}</strong>
+              </p>
+              {waiting && (
+                <button className="secondary" onClick={() => withdraw(o.id)}>
+                  Withdraw offer
+                </button>
+              )}
+            </article>
+          );
+        })}
+      </div>
     </>
   );
 }

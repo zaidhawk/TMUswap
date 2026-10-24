@@ -39,7 +39,7 @@ export function Board() {
   }
 
   return (
-    <section>
+    <section className="full">
       <h2>Board</h2>
       <p className="hint">
         Every open request, newest first. Find your course and offer a swap, even if your section isn't on their list.
@@ -58,9 +58,13 @@ export function Board() {
           <Link to="/new">Post one</Link> so others can find you.
         </p>
       )}
-      {requests?.map((r) => (
-        <BoardCard key={r.id} request={r} onOffered={() => offered(r.id)} />
-      ))}
+      {requests && requests.length > 0 && (
+        <div className="cards">
+          {requests.map((r) => (
+            <BoardCard key={r.id} request={r} onOffered={() => offered(r.id)} />
+          ))}
+        </div>
+      )}
     </section>
   );
 }
