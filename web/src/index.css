@@ -5,6 +5,9 @@
   --border: #d0d0d5;
   --accent: #1d4ed8;
   --error: #b91c1c;
+  /* How wide the page gets on big screens, and the width that keeps forms and text easy to read. */
+  --page: 1040px;
+  --readable: 600px;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color: var(--text);
   background: var(--bg);
@@ -96,7 +99,7 @@ p {
 }
 
 header {
-  max-width: 560px;
+  max-width: var(--page);
   margin: 0 auto;
   padding: 24px 16px 0;
 }
@@ -129,8 +132,31 @@ nav .hint {
 }
 
 main.wide {
-  max-width: 560px;
+  max-width: var(--page);
   padding-top: 24px;
+}
+
+/* Forms and text stay at a comfortable reading width. Pages built from lists of cards (class
+   "full") use the whole page instead, with the cards in a grid. */
+main.wide > * {
+  max-width: var(--readable);
+}
+
+main.wide > .full {
+  max-width: none;
+}
+
+.full > p,
+.full > label {
+  max-width: var(--readable);
+}
+
+/* As many 300px+ columns as fit: one on a phone, about three on a laptop. */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 12px;
+  align-items: start;
 }
 
 h3 {
@@ -236,7 +262,7 @@ button.result:hover {
 .banner {
   box-sizing: border-box;
   /* Same width as the page content, with a 16px gutter on phones. */
-  width: min(528px, calc(100% - 32px));
+  width: min(var(--page), calc(100% - 32px));
   margin: 12px auto 0;
   padding: 10px 14px;
   border: 1px solid var(--accent);
@@ -309,6 +335,44 @@ button.result:hover {
   font-weight: 600;
 }
 
+/* Match page: one column on phones (details, chat, report). On wide screens the chat moves to
+   its own column on the right, next to the details and countdown. */
+.match-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+@media (min-width: 900px) {
+  .match-layout.with-chat {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "info chat"
+      "report chat";
+    grid-template-rows: auto 1fr;
+    column-gap: 32px;
+    align-items: start;
+  }
+
+  .match-info {
+    grid-area: info;
+  }
+
+  .match-chat {
+    grid-area: chat;
+  }
+
+  .match-report {
+    grid-area: report;
+  }
+
+  .match-layout .chat-log {
+    max-height: 60vh;
+  }
+}
+
 .countdown {
   display: flex;
   flex-direction: column;
@@ -333,7 +397,7 @@ button.result:hover {
 }
 
 footer {
-  max-width: 560px;
+  max-width: var(--page);
   margin: 0 auto;
   padding: 32px 16px;
   color: var(--muted);

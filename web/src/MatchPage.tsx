@@ -94,69 +94,71 @@ export function MatchPage({ user }: { user: User }) {
   // Missing if that student has since deleted their account.
   const giverToMe = match.members.find((m) => m.gives === me.gets);
 
+  const chatOpen = CHAT_OPEN.has(match.status);
+
   return (
-    <section>
-      <h2>
-        {match.courseCode} {KIND_LABELS[match.kind].toLowerCase()} swap
-      </h2>
-      <p className="hint">
-        {match.courseTitle} · {match.size === 2 ? "2-way" : "3-way"} swap
-      </p>
-
-      <div className="card">
-        <p>
-          You give <strong>{me.gives}</strong> and get <strong>{me.gets}</strong>
-          {giverToMe ? ` from ${giverToMe.displayName}` : ""}.
+    <section className={chatOpen ? "full match-layout with-chat" : "match-layout"}>
+      <div className="match-info">
+        <h2>
+          {match.courseCode} {KIND_LABELS[match.kind].toLowerCase()} swap
+        </h2>
+        <p className="hint">
+          {match.courseTitle} · {match.size === 2 ? "2-way" : "3-way"} swap
         </p>
-        {others.map((m) => (
-          <p key={m.memberId} className="hint">
-            {m.displayName} gives {m.gives}, gets {m.gets}
-            {match.status === "proposed" && (m.accepted ? " · ✓ accepted" : " · hasn't answered yet")}
-          </p>
-        ))}
-      </div>
 
-      {match.status === "proposed" && (
-        <>
+        <div className="card">
           <p>
-            {me.accepted
-              ? "You accepted. Waiting for the others."
-              : "Everyone has to accept before you can chat and coordinate the swap."}{" "}
-            <span className="hint">({timeLeft(match.expiresAt, now + clockOffset)})</span>
+            You give <strong>{me.gives}</strong> and get <strong>{me.gets}</strong>
+            {giverToMe ? ` from ${giverToMe.displayName}` : ""}.
           </p>
-          {!me.accepted && (
-            <div className="row">
-              <button disabled={busy} onClick={() => act("accept", { accept: true })}>
-                Accept swap
-              </button>
-              <button
-                className="secondary danger"
-                disabled={busy}
-                onClick={() =>
-                  act(
-                    "accept",
-                    { accept: false },
-                    "Decline this swap? Your request will be cancelled, and you can post a new one.",
-                  )
-                }
-              >
-                Decline
-              </button>
-            </div>
-          )}
-        </>
-      )}
+          {others.map((m) => (
+            <p key={m.memberId} className="hint">
+              {m.displayName} gives {m.gives}, gets {m.gets}
+              {match.status === "proposed" && (m.accepted ? " · ✓ accepted" : " · hasn't answered yet")}
+            </p>
+          ))}
+        </div>
 
-      {match.status === "expired" && (
-        <p>
-          This match has ended. <Link to="/">Back to my requests</Link>
-        </p>
-      )}
+        {match.status === "proposed" && (
+          <>
+            <p>
+              {me.accepted
+                ? "You accepted. Waiting for the others."
+                : "Everyone has to accept before you can chat and coordinate the swap."}{" "}
+              <span className="hint">({timeLeft(match.expiresAt, now + clockOffset)})</span>
+            </p>
+            {!me.accepted && (
+              <div className="row">
+                <button disabled={busy} onClick={() => act("accept", { accept: true })}>
+                  Accept swap
+                </button>
+                <button
+                  className="secondary danger"
+                  disabled={busy}
+                  onClick={() =>
+                    act(
+                      "accept",
+                      { accept: false },
+                      "Decline this swap? Your request will be cancelled, and you can post a new one.",
+                    )
+                  }
+                >
+                  Decline
+                </button>
+              </div>
+            )}
+          </>
+        )}
 
-      {error && <p className="error">{error}</p>}
+        {match.status === "expired" && (
+          <p>
+            This match has ended. <Link to="/">Back to my requests</Link>
+          </p>
+        )}
 
-      {CHAT_OPEN.has(match.status) && (
-        <>
+        {error && <p className="error">{error}</p>}
+
+        {chatOpen && (
           <Countdown
             match={match}
             clockOffset={clockOffset}
@@ -165,11 +167,17 @@ export function MatchPage({ user }: { user: User }) {
             onChooseFirst={(memberId) => act("first-mover", { memberId })}
             onOutcome={(outcome) => act("outcome", { outcome })}
           />
-          <Chat matchId={match.id} myUserId={user.id} canSend={CHAT_OPEN.has(match.status)} />
-        </>
-      )}
+        )}
+      </div>
 
-      <ReportForm matchId={match.id} others={others} />
+      {chatOpen && (
+        <div className="match-chat">
+          <Chat matchId={match.id} myUserId={user.id} canSend={chatOpen} />
+        </div>
+      )}
+      <div className="match-report">
+        <ReportForm matchId={match.id} others={others} />
+      </div>
     </section>
   );
 }

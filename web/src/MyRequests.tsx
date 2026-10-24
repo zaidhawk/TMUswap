@@ -46,7 +46,7 @@ export function MyRequests() {
   const past = requests.filter((r) => r.status !== "open" && r.status !== "matched");
 
   return (
-    <section>
+    <section className="full">
       <h2>My requests</h2>
       <ReceivedOffers offers={offers.received} onChange={loadOffers} />
       {offers.received.length > 0 && <h3>Your requests</h3>}
@@ -56,16 +56,22 @@ export function MyRequests() {
           <Link to="/board">Board</Link>.
         </p>
       )}
-      {open.map((r) => (
-        <RequestCard key={r.id} request={r} onChange={replace} />
-      ))}
+      {open.length > 0 && (
+        <div className="cards">
+          {open.map((r) => (
+            <RequestCard key={r.id} request={r} onChange={replace} />
+          ))}
+        </div>
+      )}
       <SentOffers offers={offers.sent} onChange={loadOffers} />
       {past.length > 0 && (
         <>
           <h3>Past requests</h3>
-          {past.map((r) => (
-            <RequestCard key={r.id} request={r} onChange={replace} />
-          ))}
+          <div className="cards">
+            {past.map((r) => (
+              <RequestCard key={r.id} request={r} onChange={replace} />
+            ))}
+          </div>
         </>
       )}
     </section>
