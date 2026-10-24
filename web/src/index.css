@@ -136,10 +136,11 @@ main.wide {
   padding-top: 24px;
 }
 
-/* Forms and text stay at a comfortable reading width. Pages built from lists of cards (class
-   "full") use the whole page instead, with the cards in a grid. */
+/* Forms and text stay at a comfortable reading width, centred on the page. Pages built from lists
+   of cards (class "full") use the whole page instead, with the cards in a grid. */
 main.wide > * {
   max-width: var(--readable);
+  margin-inline: auto;
 }
 
 main.wide > .full {
