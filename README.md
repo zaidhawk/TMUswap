@@ -27,7 +27,7 @@ Section swaps happen in Reddit threads and Discord servers today. Posts get buri
 - **Real-time chat** per match over WebSockets, with typing indicators.
 - **Shared countdown.** It starts only when everyone has pressed Start, using the server's clock, so every phone says "Go!" at the same moment. It's paused during MyServiceHub's nightly maintenance (11:45 pm to 1:15 am).
 - **Step-by-step plan.** Who drops first, who uses Swap into which freed seat, and who adds last. Only one person is ever without a seat, for a few seconds.
-- **Safety.** A report button in every match, and an automatic admin alert when a chat mentions money (selling seats is banned).
+- **Safety.** A report button in every match, an automatic admin alert when a chat mentions money (selling seats is banned), and display names are checked for swear words and slurs, including disguised spellings like "sh1t" or "f u c k".
 - **Privacy.** Other students only see your display name. Chats are deleted 30 days after a match ends, and you can delete your account at any time.
 - **3,721 courses** across all 116 subjects in TMU's 2026–27 undergraduate calendar, from accounting to nursing. Students type their own section numbers, so new sections need no setup.
 - **Feedback from any page.** Each message reaches the admin with the page it came from and the browser used, so bugs can be reproduced.
@@ -117,6 +117,9 @@ UPDATE swap_requests SET status = 'cancelled'
 
 -- Mark a report as handled (the id is in the email).
 UPDATE reports SET resolved_at = now() WHERE id = '<report id>';
+
+-- Make someone pick a new display name. They're asked for one the next time they open the site.
+UPDATE users SET display_name = NULL WHERE email = 'someone@torontomu.ca';
 ```
 
 ## TMU policy
