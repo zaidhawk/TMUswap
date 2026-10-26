@@ -24,7 +24,7 @@ export type SwapRequest = {
 // Someone's open request as it appears on the Board, with the poster's display name.
 export type BoardRequest = {
   id: string;
-  postedBy: string;
+  postedBy: string | null; // null if the admin reset their display name
   createdAt: string;
   courseCode: string;
   courseTitle: string;

@@ -15,6 +15,7 @@ import {
 } from "./codes.js";
 import { currentUser, requireAuth, toPublicUser } from "./middleware.js";
 import { deleteAccount } from "./delete-account.js";
+import { isProfane } from "./profanity.js";
 import {
   SESSION_COOKIE,
   SESSION_TTL_MS,
@@ -47,7 +48,9 @@ const updateMeBody = z.object({
     .string({ error: "Display name is required" })
     .trim()
     .min(2, "Display name must be at least 2 characters")
-    .max(30, "Display name must be at most 30 characters"),
+    .max(30, "Display name must be at most 30 characters")
+    // Other students see it on the Board and in matches.
+    .refine((name) => !isProfane(name), "That display name isn't allowed. Pick a different one."),
 });
 
 const expiredCode = { error: "This code has expired. Request a new one." };

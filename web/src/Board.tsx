@@ -103,7 +103,7 @@ function BoardCard({ request: r, onOffered }: { request: BoardRequest; onOffered
         Has <strong>{r.have}</strong>, wants <strong>{r.wants.join(", ")}</strong>
       </p>
       <p className="hint">
-        Posted by <strong>{r.isMine ? "you" : r.postedBy}</strong> {timeAgo(r.createdAt)}
+        Posted by <strong>{r.isMine ? "you" : (r.postedBy ?? "a student")}</strong> {timeAgo(r.createdAt)}
       </p>
 
       {r.isMine && <p className="hint">This is your request.</p>}
